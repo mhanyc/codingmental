@@ -654,7 +654,7 @@ list-style-type:square;
         display: block;
         height: 110px;
         margin: 0 -25px 10px -25px !important;
-        background: url('http://ccnmtl.columbia.edu/images/compiled/banner.jpg') left top no-repeat;
+        background: url('/images/banner.jpg') left top no-repeat;
 }
 
 #banner a
