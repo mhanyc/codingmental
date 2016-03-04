@@ -1,12 +1,12 @@
-+++
-author_name = "Anders Pearson"
-author_url = "http://ccnmtl.columbia.edu/staff/pearson/"
-date = "2010-07-23T14:15:53Z"
-tags = ["cloud", "EC2", "hosting", "rackspace", "slicehost", "vps", "xen"]
-title = "A Survey of the Clouds"
-type = "post"
+---
+author_name: "Anders Pearson"
+author_url: "http://ccnmtl.columbia.edu/staff/pearson/"
+date: "2010-07-23"
+tags: ["cloud", "EC2", "hosting", "rackspace", "slicehost", "vps", "xen"]
+title: "A Survey of the Clouds"
+type: "post"
 
-+++
+---
 
 <p>Nothing like having to spend time in a noisy, cold, cramped server
 room doing upgrades on hardware to make you appreciate the virtues of
