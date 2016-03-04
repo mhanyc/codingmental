@@ -1,7 +1,7 @@
-#STAGING_URL=https://flgstatic.stage.ccnmtl.columbia.edu/
-#PROD_URL=https://filmglossary.ccnmtl.columbia.edu/
-#STAGING_BUCKET=flgstatic.stage.ccnmtl.columbia.edu
-#PROD_BUCKET=filmglossary.ccnmtl.columbia.edu
+STAGING_URL=https://compiled.stage.ccnmtl.columbia.edu/
+PROD_URL=https://compiled.ccnmtl.columbia.edu/
+STAGING_BUCKET=compiled.stage.ccnmtl.columbia.edu
+PROD_BUCKET=compiled.ccnmtl.columbia.edu
 #INTERMEDIATE_STEPS ?= make $(PUBLIC)/js/all.json
 
 #JS_FILES=static/js/search.js static/js/srcswap.js static/js/alphalist.js static/js/bgswap.js \
