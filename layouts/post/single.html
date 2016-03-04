@@ -1,0 +1,19 @@
+<h1>{{.Title}}</h1>
+
+<p><a href="{{.Params.author_url}}">{{.Params.author_name}}</a></p>
+
+<h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+<h5 id="wc"> {{ .FuzzyWordCount }} Words </h5>
+
+{{ .Content }}
+
+<div class="entry-footer">
+		<div>Topic: {{.Section}}</div>
+
+    <div class="taglist">
+    {{ range .Params.tags }}
+    <a href="/tags/{{ . | urlize }}" rel="tag">{{ . }}</a>
+        {{ end }}
+    </div>
+</div>
+

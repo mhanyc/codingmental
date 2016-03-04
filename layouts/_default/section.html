@@ -1,0 +1,7 @@
+Section <h1>{{.Title}}</h1>
+
+{{ $paginator := .Paginate .Data.Pages }}
+
+{{ range $paginator.Pages }}
+{{ .Render "summary" }}
+{{ end }}
