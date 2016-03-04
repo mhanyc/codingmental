@@ -1,7 +1,10 @@
-Section <h1>{{.Title}}</h1>
+{{partial "header.html"}}
+<h2 id="archive-title" class="header2">Topic: {{.Title}}</h2>
 
 {{ $paginator := .Paginate .Data.Pages }}
 
 {{ range $paginator.Pages }}
 {{ .Render "summary" }}
 {{ end }}
+
+{{partial "footer.html"}}

@@ -1,19 +1,36 @@
-<h1>{{.Title}}</h1>
+{{partial "header.html"}}
 
-<p><a href="{{.Params.author_url}}">{{.Params.author_name}}</a></p>
+<div class="entry">
+<div class="entryheader">
+		<h2 class="entry-title">{{.Title}}</h2>
+</div>
 
-<h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-<h5 id="wc"> {{ .FuzzyWordCount }} Words </h5>
+		<div class="byline">
+		    By <a href="{{.Params.author_url}}">{{.Params.author_name}}</a>
+		<br />
+		Published: {{ .Date.Format "Jan 2, 2006" }}
+		</div><!-- class="byline" -->
+
+
+		
+		<div class="entry-body">
 
 {{ .Content }}
 
-<div class="entry-footer">
-		<div>Topic: {{.Section}}</div>
+    </div><!--  class="entry-body" -->
 
-    <div class="taglist">
-    {{ range .Params.tags }}
-    <a href="/tags/{{ . | urlize }}" rel="tag">{{ . }}</a>
-        {{ end }}
+    <div class="entry-footer">
+		    <div>Topic: {{.Section}}</div>
+
+        <div class="taglist">
+            {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}" rel="tag">{{ . }}</a>
+            {{ end }}
+        </div>
     </div>
+
+		<div class="visualclear"></div><!-- id="visualclear" -->
+    
 </div>
 
+{{partial "footer.html"}}
