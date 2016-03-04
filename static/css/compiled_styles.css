@@ -1,0 +1,780 @@
+body
+{
+	/*background: #cfdee6;*/
+	background: #666666;
+	text-align: left;
+	font-family: 'lucida grande', verdana, arial, helvetica, sans-serif;
+}
+
+form
+{
+	margin: 0;
+	padding: 0;
+}
+p 
+{
+	text-align: left;
+}
+
+a { text-decoration: underline; }
+a img { border: 0; }
+h1,  h3, h4, h5, h6 { font-weight: normal;
+	background-color: #fff;}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+        text-align: left;
+}
+
+h2
+{
+    color: #003300;
+	/*font-family: Georgia, 'Times New Roman', serif;*/
+	
+	/*font-weight: bold;*/
+	text-align: left;
+}
+
+.headline
+{
+	
+	background: #ddd;
+	/*width: 100%;*/
+	font-size: 14px;
+	margin: 1px 0 5px 0;
+	/*padding-top: 5px;
+	padding-left: 5px;*/
+	border: 0;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-decoration:underline;
+	 color: #003300;
+	
+}
+
+/* standard helper classes */
+.clr
+{
+	clear: both;
+	overflow: visible;
+	width: 1px;
+	height: 1px;
+	margin: 0 -1px -1px 0;
+	border: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* .pkg class wraps enclosing block element around inner floated elements */
+.pkg:after
+{
+	content: " ";
+	display: block;
+	visibility: scroll;
+	clear: both;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+}
+
+* html .pkg { display: inline-block; }
+
+/* no ie mac \*/
+* html .pkg { height: 1%; }
+.pkg { display: block; }
+
+/* */
+/* page layout */
+
+#pagebody
+{
+	border: 1px solid #999;
+}
+
+#imagebanner_img
+{
+	/*background-image: url(img/dbback2.gif);*/
+	background-repeat: repeat-x;
+	text-align:left;
+	margin-bottom: 0;
+}
+
+#ccnmtl-titlebar {
+	background:#336699;
+	height:24px;
+	margin-left:-16px;
+	margin-top:-15px;
+	margin-bottom: 15px;
+	overflow:hidden;
+	width:800px;
+}
+
+.leftfloat {
+	float:left;
+}
+
+.ccnmtllogo {
+	top: 0px;
+	right: 0px;
+	float: right; 
+	text-align: right;
+	z-index: 1;
+	clear: none;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+
+#main
+{
+	display: inline;
+	/* ie win bugfix */
+	position: relative;
+	float: left;
+	min-height: 1px;
+	width: 90%;
+	padding: 5px 20px 10px 20px;
+      
+}
+
+#alpha, #beta, #gamma
+{
+	display: inline; /* ie win bugfix */
+	position: relative;
+	float: left;
+	min-height: 1px;
+	border: none;
+
+}
+
+#alpha
+{
+	/*width:70%;*/
+	height: 100%;
+	padding: 5px 10px 10px 0;
+	margin-left: 0;
+}
+
+#beta
+{
+	width: 170px;
+	padding: 5px;
+	border-left: #999;
+	border-width: 0 0 0 1px;
+	border-style: none none none solid;
+}
+
+#alpha-inner, #beta-inner, #gamma-inner
+{
+	position: static;
+}
+
+
+/* content */
+.content-nav
+{
+	margin: 10px;
+	text-align: center;
+}
+
+.date-header,
+.entry-content
+{
+	position: static;
+	clear: both;
+}
+
+.entry,
+.trackbacks,
+.comments,
+.archive
+{
+	position: static;
+	overflow: visible;
+	clear: both;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+
+.entry
+{
+	padding-bottom: 20px;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.entryheader, .pageheader
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.entry-title
+{
+	color:#006;
+	font: normal 20px/22px arial, helvetica, verdana, 'lucida grande', sans-serif;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.entry-title a
+{
+	color:#339 !important;
+	text-decoration: none;
+}
+
+.entry-title a:hover
+{
+	color:#66c !important;
+	text-decoration: underline;
+}
+
+.entry-content,
+.trackbacks-info,
+.trackback-content,
+.comment-content,
+.comments-open-content,
+.comments-closed
+{
+	clear: both;
+	margin: 5px 10px;
+}
+
+.entry-excerpt,
+.entry-body,
+.entry-more-link,
+.entry-more { clear: both; }
+
+.entry-body { 	
+	margin: 0;
+	text-align: left;
+}
+
+
+.trackback-footer,
+.comment-footer,
+.comments-open-footer,
+.archive-content
+{
+	clear: both;
+	margin: 5px 10px 20px 10px;
+}
+
+/*end base-weblog.css*/
+a:link { color: #003366; }
+a:visited { color: #003366; }
+a:active { color: #003366; }
+a:hover { color: #003366; }
+
+/* layout */
+/* default to artistic/calendar/timeline layout */
+/*delta nav info*/
+
+
+
+#delta
+{
+	width: 818px;
+	margin: -9px -25px 0 -25px;
+	padding: 0px;
+	border: none;
+	border-top: 1px solid #339;
+	background: #ccf;
+	display: block;
+	float: none;
+	height: 18px;
+	/*font-family: Georgia, 'Times New Roman', serif;*/
+	color: #003300;
+}
+
+#delta-inner
+{
+	margin: 0px 10px 0px 10px;
+	padding: 0;
+	border: 0;
+	visibility: hidden;
+	display: none;
+}
+
+
+#delta a
+{
+	color: #003300;
+}
+ 
+/*#delta ul
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+	border: 0;
+	height: 18px; color: #003300;
+}*/
+
+#delta ul li
+{
+	/*display: block;
+	float: left;*/
+	top-margin: -10px;
+	padding: 0;
+	border: 0;
+	/*border-right: 1px dotted #063;*/
+	list-style: none;
+	line-height: 18px;
+	color: #003300;
+}
+
+#delta ul li a, #delta ul li a:visited
+{
+	display: block;
+	margin: 0;
+	padding: 0 12px;
+	border: 0;
+	color: #003300;
+	text-decoration: none;
+}
+
+#delta ul li a:hover
+{
+	background-color: transparent;
+	color: #003300;
+	text-decoration: underline;
+}
+
+/* end delta nav info */
+/* content */
+.content-nav { margin-top: 0; }
+
+.date-header,
+.trackbacks-header,
+.comments-header,
+.comments-open-header,
+.archive-header
+{
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #333333;
+	padding: 3px;
+	color: #333333;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: large;
+	text-align: left;
+}
+
+h2.module-header
+{
+	background:#edf1d6;
+	color:#003300;
+	font-size: 12px;
+}
+
+h2.simple
+{
+	color:#003300;
+	font-size: 14px;
+}
+
+
+.header2
+{
+	margin: 1px 0 5px 0;
+	padding-top: 5px;
+	padding-left: 0px;
+	border: 0;
+	background-color: transparent;
+	color: #000;
+	font: normal 24px arial, helvetica, verdana, 'lucida grande', sans-serif;
+}
+
+
+.header2 a
+{
+	color:#003300;
+}
+
+.entry-header
+{
+	margin: 1px 0 5px 0;
+	padding-top: 5px;
+	padding-left: 5px;
+	border: 0;
+	/*color: #277194;*/
+	/*color: #003300;*/
+	background: #f3f7f9;
+	width:100%;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 14px;
+	text-align: left;
+	background-color: #ddd;
+	font-variant: small-caps;
+	font-weight: bold;
+	color:#003300;
+}
+
+.entry-header a
+{
+	color:#003300;
+}
+
+.entry-content,
+.trackbacks-info,
+.trackback-content,
+.comment-content,
+.comments-open-content,
+.comments-open-footer,
+.comments-closed,
+.archive-content { margin: 5px 0; }
+.entry-content p { text-align: left; }
+
+.trackback-footer,
+.comment-footer
+{
+	margin: 0 0 10px 0;
+	border: 0;
+	color: #000000;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: x-small;
+	line-height: normal;
+	text-align: left;
+}
+
+
+.entry-footer
+{
+	clear: both;
+	margin: 20px 0 0 0;
+	padding: 0;
+	border: 0;
+	font-size: 92%;
+}
+
+.entry-footer div
+{
+	float: left;
+	margin: 0 6px 0 0;
+	padding: 0 12px 0 0;
+	border: 0;
+	font-weight: bold;
+}
+
+.entry-footer div.commentnotice
+{
+	
+	margin-left: 10px;
+	padding-left: 22px;
+	line-height: 15px;
+	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_discussion.gif') top left no-repeat;
+}
+
+.entry-footer div.taglist
+{
+	
+	margin: 5px 6px 0 0;
+	padding: 0 0 0 22px;
+	border: 0;
+	clear: both;
+	display: block;
+	background: none;
+	font-weight: normal;
+	line-height: 15px;
+	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_tags.gif') top left no-repeat;
+}
+
+.byline
+{
+	display: block;
+	clear: both;
+	margin: 0 0 1.3em 0;
+	color: #666;
+	text-align: left;
+	font: normal 13px arial, helvetica, sans-serif;
+}
+
+.byline a
+{
+	color: #666;
+	text-decoration: underline;
+}
+
+.byline a:hover
+{
+	color: #339;
+	text-decoration: underline;
+}
+
+.entrydate
+{
+	display: block;
+	clear: both;
+	margin: 0 0 1.3em 0;
+	color: #666;
+	text-align: left;
+}
+
+/* Clearing block */
+.visualclear
+{
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: 0;	
+}
+
+
+
+
+/* new experiment */
+
+
+
+.pullquote
+{
+	width: 200px;
+	padding: 5px;
+	border-top: #c7d28d 3px double;
+	border-bottom: #c7d28d 3px double;
+	position: relative;
+	color: #369;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+float: right;
+margin: 8px;
+}
+
+
+* two-column-left tweaks */
+/*.layout-two-column-left #container {border: 1px solid #999;}*/
+
+.layout-two-column-left #alpha
+{
+	margin: 0;
+	width: 526px;
+	background: none;
+	border: 1px solid #000;
+	float: right;
+}
+
+.layout-two-column-left #alpha-inner { padding: 10px 10px 0 10px; }
+
+
+.layout-two-column-left #beta
+{
+	/*margin: 15px 15px 0 15px;
+	width: 480px;*/
+	width: 215px;
+	border-left: 1px solid #ccc;
+	text-align: left;
+	background-color: #fff;
+	margin-left: 15px;
+	margin-top: 10px;
+	float: right;
+}
+
+.layout-two-column-left #beta-inner
+{
+	/*padding: 0;
+	border-width: 0;*/
+	background-color: #FFF;
+	position: static;
+	/*padding: 0px 10px 0 10px;*/
+	text-align: left;
+	
+}
+
+ul 
+{
+line-height:1.5em;
+/*  list-style-image:url(http://enhanced.ccnmtl.columbia.edu/bullet.gif);*/
+list-style-type:square;
+}
+
+.feed-footer { text-align: left; }
+
+.caption
+{
+	font-family: 'Lucida Grande', arial, sans-serif;
+	color: #666;
+	font-size: 10px;
+}
+#leftcolumn
+{
+	float:left;
+	width:47%;
+	border-top: 1px dashed #ccc;
+	border-right: 1px dashed #ccc;
+	padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+}
+
+#rightcolumn
+{
+	float:left;
+	width:47%;
+	padding-left: 10px;
+	padding-top: 10px;
+        padding-right: 10px;
+	border-top: 1px dashed #ccc;
+	border-left: 1px dashed #ccc;
+        text-align: left;
+}
+
+#projectsblock
+{
+	margin-top: 1px;
+	border-top:  1px dashed #CCC;
+	padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: left;
+}
+
+.delicious-banner a {font-size: 12px;}
+.delicious-posts ul {list-style-type:none; list-style-image:none;}
+.delicious-tag a {font-size: 12px;}
+.delicious-extended {font-size: 12px;}
+.delicious-extended {margin:0;padding:0 0 0.25em 0}
+.module-list-item .delicious-posts ul {margin:0;padding:0}
+.module-list-item .delicious-posts h2,.module-list-item .delicious-posts li:first-child {margin-top:0}
+
+
+#banner
+{
+        display: block;
+        height: 110px;
+        margin: 0 -25px 10px -25px !important;
+        background: url('http://ccnmtl.columbia.edu/images/compiled/banner.jpg') left top no-repeat;
+}
+
+#banner a
+{
+        display: block;
+        height: 110px;
+        width: 400px;
+        padding: 0;
+        margin: 0;
+}
+
+.module-list
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0;
+	list-style: none;
+}
+
+.module-list-item
+{
+	padding-left: 12px;
+	background: url('http://ccnmtl.columbia.edu/images/compiled/bullet_sub.gif') left 4px no-repeat;
+}
+
+.module-list-item li
+{
+	background: url('http://ccnmtl.columbia.edu/images/compiled/bullet_sub2.gif') left 4px no-repeat;
+}
+
+.module-header
+{
+	color:#000;
+	font: normal 14px arial, helvetica, verdana, 'lucida grande', sans-serif !important;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #fff !important;
+}
+
+.module-syndicate .module-content
+{
+	padding-left: 25px;
+	line-height: 20px;
+	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_rss.gif') left center no-repeat;
+}
+#alpha
+{
+	width: 550px;
+	border-right: 1px solid #ccc;
+}
+
+#beta
+{
+	width: 190px;
+	border-left: 0;
+}
+
+.module-content
+{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.module
+{
+	margin-top: 10px;
+	border-bottom: 1px dashed #b2b2b2;
+}
+
+.tagview
+{
+	
+	margin: 10px 0 0 0;
+	padding: 0 0 0 22px;
+	border: 0;
+	line-height: 15px;
+	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_tags.gif') top left no-repeat;
+}
+
+.tagview a
+{
+	text-decoration: none;
+}
+
+.tagview a:hover
+{
+	text-decoration: underline;
+}
+
+.mission
+{
+	font: normal 12px/14px courier, 'courier new';
+	margin: 0;
+}
+
+.readmore
+{
+	display: block;
+	float: right;
+	margin: 10px 0 0 0 !important;
+	line-height: 20px;
+	background: url('http://ccnmtl.columbia.edu/images/compiled/arrow_right.jpg') top right no-repeat;
+}
+
+.readmore a
+{
+	color: #339;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 20px 0 0 !important;
+}
+
+.readmore a:hover
+{
+	color:#66c !important;
+	text-decoration: underline;
+}
+
+.print_only
+{
+	display: none;
+}

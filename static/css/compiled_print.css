@@ -1,0 +1,39 @@
+body
+{
+	background-color: transparent;
+}
+
+
+#alpha, #alpha-inner
+{
+	display: block;
+width: auto !important;
+border: 0;
+}
+
+#masthead,
+#delta,
+#beta
+{
+	display: none;
+}
+
+#container, #pagebody
+{
+border: 0;
+}
+
+#banner
+{
+	background: none;
+}
+
+#banner a
+{
+	display: none;
+}
+
+.print_only
+{
+	display: block;
+}
