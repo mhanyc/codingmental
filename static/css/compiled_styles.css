@@ -471,7 +471,7 @@ h2.simple
 	margin-left: 10px;
 	padding-left: 22px;
 	line-height: 15px;
-	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_discussion.gif') top left no-repeat;
+	background: url('/images/icon_discussion.gif') top left no-repeat;
 }
 
 .entry-footer div.taglist
@@ -485,7 +485,7 @@ h2.simple
 	background: none;
 	font-weight: normal;
 	line-height: 15px;
-	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_tags.gif') top left no-repeat;
+	background: url('/images/icon_tags.gif') top left no-repeat;
 }
 
 .byline
@@ -677,12 +677,12 @@ list-style-type:square;
 .module-list-item
 {
 	padding-left: 12px;
-	background: url('http://ccnmtl.columbia.edu/images/compiled/bullet_sub.gif') left 4px no-repeat;
+	background: url('/images/bullet_sub.gif') left 4px no-repeat;
 }
 
 .module-list-item li
 {
-	background: url('http://ccnmtl.columbia.edu/images/compiled/bullet_sub2.gif') left 4px no-repeat;
+	background: url('/images/bullet_sub2.gif') left 4px no-repeat;
 }
 
 .module-header
@@ -699,7 +699,7 @@ list-style-type:square;
 {
 	padding-left: 25px;
 	line-height: 20px;
-	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_rss.gif') left center no-repeat;
+	background: url('/images/icon_rss.gif') left center no-repeat;
 }
 #alpha
 {
@@ -732,7 +732,7 @@ list-style-type:square;
 	padding: 0 0 0 22px;
 	border: 0;
 	line-height: 15px;
-	background: url('http://ccnmtl.columbia.edu/images/compiled/icon_tags.gif') top left no-repeat;
+	background: url('/images/icon_tags.gif') top left no-repeat;
 }
 
 .tagview a
@@ -757,7 +757,7 @@ list-style-type:square;
 	float: right;
 	margin: 10px 0 0 0 !important;
 	line-height: 20px;
-	background: url('http://ccnmtl.columbia.edu/images/compiled/arrow_right.jpg') top right no-repeat;
+	background: url('/images/arrow_right.jpg') top right no-repeat;
 }
 
 .readmore a
