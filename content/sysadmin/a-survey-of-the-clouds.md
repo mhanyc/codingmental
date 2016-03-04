@@ -1,7 +1,7 @@
 +++
 author_name = "Anders Pearson"
 author_url = "http://ccnmtl.columbia.edu/staff/pearson/"
-date = "2016-03-04T14:15:53Z"
+date = "2010-07-23T14:15:53Z"
 tags = ["cloud", "EC2", "hosting", "rackspace", "slicehost", "vps", "xen"]
 title = "A Survey of the Clouds"
 type = "post"
