@@ -1301,7 +1301,7 @@ select.dropdown
 /* Social media icons for the masthead  */
 
 #head-soc ul li {list-style :none; padding: 0 0 0 6px; float: right;}
-#head-soc ul li a {text-indent: -9999px; font-size: 0; line-height: 0; overflow: hidden ; height: 16px; width: 16px ;border: 0; background: url(images/home/social-media-16px.png) no-repeat; display: block;}
+#head-soc ul li a {text-indent: -9999px; font-size: 0; line-height: 0; overflow: hidden ; height: 16px; width: 16px ;border: 0; background: url(/images/social-media-16px.png) no-repeat; display: block;}
 
 #head-soc li#g a:hover {background-position: 0px 0px;}
 #head-soc li#g a {background-position: 0px -16px;}
