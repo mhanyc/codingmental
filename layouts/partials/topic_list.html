@@ -1,10 +1,7 @@
 <ul class="module-list">
-    <li class="module-list-item"><a href="/events/">Events</a></li>
-    <li class="module-list-item"><a href="/process/">Process</a></li>
-    <li class="module-list-item"><a href="/projects/">Projects</a></li>
-    <li class="module-list-item"><a href="/projects/released/">Released</a></li>
-    <li class="module-list-item"><a href="/randd/">RandD</a></li>
-    <li class="module-list-item"><a href="/reviewed/">Reviewed</a></li>
-    <li class="module-list-item"><a href="/sysadmin/">Sysadmin</a></li>
-    <li class="module-list-item"><a href="/user_interface/">User Interface</a></li>
+    {{ range $.Site.Menus.main }}
+    <li class="module-list-item"><a href="{{.URL}}">{{.Name}}</a></li>
+    {{ end }}
 </ul>
+
+

@@ -1,4 +1,4 @@
-{{partial "header.html"}}
+{{partial "header.html" .}}
 <h2 id="archive-title" class="header2">Topic: {{.Title}}</h2>
 
 {{ $paginator := .Paginate .Data.Pages }}
@@ -7,4 +7,4 @@
 {{ .Render "summary" }}
 {{ end }}
 
-{{partial "footer.html"}}
+{{partial "footer.html" .}}
