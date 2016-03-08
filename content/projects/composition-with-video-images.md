@@ -9,6 +9,8 @@ type: "post"
 
 <p>We are very excited to announce the release of our latest iteration on a web-based, multimedia, annotation environment - code named: <del>Mondrian</del> Mediathread ( <a href="http://github.com/ccnmtl/mediathread">source code</a> ). Mediathread builds on the strengths and experiences of our <a href="http://ccnmtl.columbia.edu/compiled/projects/annotating_conversations.html">long history</a> of annotation projects here at <span class="caps">CCNMTL. </span></p>
 
+<!--more-->
+
 <p>Mediathread is a collaborative multimedia analysis environment that supports deep critical exploration of primary multimedia source material, i.e. participatory education, research, democracy, and culture. The Mediathread platform supports a robust access control model with multiple analysis spaces and a variety of workflows (solo projects, collaborative projects, versioning, private projects, public projects, etc).  The community portal also organizes streams of activity notifications to help the participants track each other's (net)work.</p>
 
 <p>Participants in the analysis space collect multimedia assets from around the web, clip/annotate these assets, organize their clips, and create a multimedia composition where their clips are directly embedded inline in their analysis/argument.   The upcoming release supports video clipping (quicktime, <a href="http://flowplayer.org/">flowplayer</a>, and youtube), and drawing on images (using the fabulous <a href="http://openlayers.org/">OpenLayers</a> viewer).</p>

@@ -9,6 +9,8 @@ type: "post"
 
 <p><a href="http://openid.net/">OpenID</a> is an increasingly popular universal sign-on mechanism on the web. Google, Facebook, LiveJournal, even Sears' online store are supporting it.  We can, in theory, adapt Columbia logins to be an OpenID provider. This would allow members of the Columbia community to login to other sites which accept OpenID with their Columbia <span class="caps">UNI</span>s.</p>
 
+<!--more-->
+
 <p>At Columbia, <span class="caps">CUIT </span>provides a single sign-on mechanism for services within the university called <a href="http://www.columbia.edu/acis/webdev/wind.html">Wind</a> , which is based on the more ubiquitous <a href="http://www.jasig.org/cas"><span class="caps">CAS</span></a> .</p>
 
 <p>One problem with depending on Columbia-only authentication/authorization is that it makes it awkward, if not impossible, for students or faculty to work together with non-Columbia affiliates in the same protected environments. Guest lecturers can't access the course materials. Researchers have difficulty collaborating across institutions.</p>

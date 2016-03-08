@@ -9,6 +9,8 @@ type: "post"
 
 <p>As an experiment, <a href="http://ccnmtl.columbia.edu/staff/pearson/">Anders</a> has ported the <a href="http://ccnmtl.columbia.edu/portfolio/medicine_and_health/reliefsim.html">ReliefSim</a> application to Google's <a href="https://developers.google.com/appengine/">AppEngine</a> and gotten it running on the free version at <a href="http://reliefsim.appspot.com/">reliefsim.appspot.com</a> (the source code for this application has been released on github: <a href="https://github.com/ccnmtl/reliefsim">github.com/ccnmtl/reliefsim</a>).</p>
 
+<!--more-->
+
 <p><b>Brief Technical History of ReliefSim</b></p>
 
 <p>Eric Mattes wrote the original version of ReliefSim as a text-based unix console application. It would run on an account on one of our servers that users could ssh or telnet to and interact with via keyboard commands. ReliefSim has a very detailed model underneath it but has a very simple turn-based interaction model. Each turn, the user assigns each of their "workers" a task, which will take one or more turns to complete. Those tasks involve either gathering information (doing different types of health surveys, etc.) on the camp's population, or working to improve camp conditions in some way (improving food/water supply, giving vaccinations, etc). </p>

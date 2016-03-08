@@ -9,6 +9,8 @@ type: "post"
 
 <p>Firefox 3.5 is just released today.  <a href="http://www.mozilla.com/en-US/firefox/firefox.html">Download it now!</a></p>
 
+<!--more-->
+
 <p>Especially for our more public projects, we aim to support all of the most popular web browsers.  However, our favorite browser is Firefox.  When development time is short, or we have a controlled environment, we will default to requiring Firefox.</p>
 
 <p>Why? Generally many of our projects go like this.  We develop an application in a couple of weeks or months.  It works perfectly in Firefox.  Making it work in Safari is often a small tweak, at most, taking an hour or so.  But for Internet Explorer, we often need<br />

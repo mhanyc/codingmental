@@ -9,6 +9,8 @@ type: "post"
 
 <p>In <a href="http://ccnmtl.columbia.edu/compiled/process/preventing_network_access_with.html">my previous post</a> I talked about how to ensure that none of your Python project's dependencies are being downloaded from the Internet when you create a fresh virtualenv and install them.  This is good for deployments: each deployment is completely reproducible since every package's source is installed from a specific version of the codebase that's versioned alongside the code you're deploying, and deployments don't require external network access to succeed.</p>
 
+<!--more-->
+
 <p>There's one piece that's still missing, though: isolating and pinning the installation of <i>the installation/bootstrapping tools themselves </i>-- virtualenv, pip, and setuptools.</p>
 
 <h2>Virtualenv / Pip Anatomy</h2><p>First, a quick run-through of the relationship between them all. &nbsp; Pip can be made to invoke virtualenv, and invoking virtualenv will install both pip and setuptools, so it's a bit hard to keep it all straight.</p><p>When you create a new virtualenv, the virtualenv tool will pre-install pip and setuptools (or, if you prefer, a setuptools fork called distribute) in your new environment. &nbsp;I'll come back to this fact later in the post.</p>

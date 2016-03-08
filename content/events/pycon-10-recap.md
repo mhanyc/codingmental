@@ -9,6 +9,8 @@ type: "post"
 
 <p>Here are some belated highlights from PyCon2010, straight from the Ministry of Silly Talks. The talks are all published on the <a href="http://us.pycon.org/2010/about/">PyCon website</a> and all the video are now posted and organized at http://python.mirocommunity.org. </p>
 
+<!--more-->
+
 <p>This year I participated on the PyCon video team, and helped record the tutorial sessions.  After being burned a few years ago trying to get volunteers to do post-production for hundreds of hours of conference video, PyCon borrowed a few tricks (and people, and software) from the <a href="http://www.debconf.org/">Debian Linux</a> community and started mixing their conference captures - live, in real-time.  Now, using an inexpensive laptop as a mixing board, the audio, video and <span class="caps">VGA </span>streams are all mixed and captured using the libre <a href="http://dvswitch.alioth.debian.org/wiki/">DVswitch</a>. </p>
 
 <p>This kind of setup used to cost thousands of dollars just a few years ago, and it was pretty amazing to participate in a video production project at this scale.  Most of the videos were published within a day or two of being recorded. Projects like <a href="http://www.opencastproject.org/">OpenCast</a> are poised to continue to improve their encoding and publishing workflows - a complex problem with so much footage being processed so quickly.  The a/v squad documents their process - <a href="http://wiki.videokollektiv.org/pycon2010-atlanta">these</a> are the best notes I have found so far. </p>

@@ -9,6 +9,8 @@ type: "post"
 
 <p><a href="http://www.djangocon.us/">DjangoCon '12</a> is on the East Coast this year, and we submitted a proposal to present on our <a href="http://ccnmtl.columbia.edu/news/announcements/south-africa-trip-informs-hiv-adherence-project.html">recent intervention</a> in South Africa.  We hope to see you in DC!</p>
 
+<!--more-->
+
 <p><b>Title:</b> Offline and Off-Road: Django, Health and Human Rights</p>
 
 <p><b>Description:</b> For years, <span class="caps">CCNMTL </span>has been using Django to create interactive multimedia health interventions. We'll spotlight our latest <span class="caps">NIMH</span>-funded project where we deployed Django to offline netbooks at South African <span class="caps">HIV </span>clinics, and developed a sneakernet-based (ie <span class="caps">USB </span>drives) data synchronization protocol. We'll also present our <span class="caps">FOSS CMS </span>for authoring these ebook-like sites.</p>

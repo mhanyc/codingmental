@@ -9,6 +9,8 @@ type: "post"
 
 <p>For thousands of years critical and scholarly discourse around text has revolved around citation and reference. What might this kind of discourse look like around multimedia - html text, images, audio, and  video?</p>
 
+<!--more-->
+
 <p>This question is a central theme in our technical work here at <span class="caps">CCNTML, </span>and a variety of our projects have taken a pass at this question from one angle or another.  My colleagues have also taught me the importance of designing these kinds of features in ways that encourage students to critically engage with the source materials they are studying. How can we facilitate the marshaling of multimedia sources as evidence to support an argument or hypothesis?</p>
 
 <p>Over the years I have become convinced that the 'annotation' abstraction represents the heart of participatory media and social networking systems. Central to these systems is the symmetry of the relationships. It may be as important to be able to look up all the annotations by a particular user, as it is to look up all the annotations on a particular object, as it is to look up all the annotations which have something in common and tie them back to the contributor and the original object.</p>

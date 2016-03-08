@@ -9,6 +9,8 @@ type: "post"
 
 <p>Walking past the round-the-block lines for the iPad 2 prompted me to reflect on the long-term educational significance of the tablet. The futurists who predicted the rise of mobile will most likely claim that these tablets fulfill their vision. Tech pundits insist that this new form-factor goes beyond superficial cosmetics and represents a transformation in computing. What should we make of the hype?</p>
 
+<!--more-->
+
 <p>The <a href="http://wp.nmc.org/horizon2011/">2011 Horizon Report</a> predicts both mobile and ebook/ereader adoption within the next year:</p>
 
 <blockquote>"For more involved web browsing, reading, watching videos, or to use any of the tens of thousands of Internet productivity and lifestyle applications, the tablet provides just enough extra space to enable comfortable use over longer periods of time."</blockquote> 

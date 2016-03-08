@@ -12,6 +12,8 @@ type: "post"
 room doing upgrades on hardware to make you appreciate the virtues of
 the cloud. </p>
 
+<!--more-->
+
 <p>Here at CCNMTL, we have a pretty diversified setup when it comes to
 servers and hosting. <a href="http://www.columbia.edu/cuit/">CUIT</a>
 provides a lot of resources for us: a very solid network

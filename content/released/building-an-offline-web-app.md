@@ -9,6 +9,8 @@ type: "post"
 
 <p>In March, <span class="caps">CCNMTL </span><a href="http://ccnmtl.columbia.edu/news/announcements/smartsa-sout.html">shipped a laptop to a South African <span class="caps">AIDS </span>clinic</a> as a part of a multimedia health-care intervention.</p>
 
+<!--more-->
+
 <p>We're not that experienced with desktop application development, so the main discussion was how do we bundle a web application on a stand-alone laptop with no connection to the Internet.  The first proposal was to run a virtual machine (Xen or VMware) which would run the web server on the Windows desktop.</p>
 
 <p>I was less sanguine about diagnosing problems with a web server across continents and timezones, and looked for a way to store state information from static web pages. <a href="https://developer.mozilla.org/en/DOM/Storage">Firefox's <span class="caps">DOM</span> Storage</a> was close to a <span class="caps">HTML5 </span>standard (now finally implemented in Firefox 3.5), and seemed to work with <span class="caps">URL</span>s visited as "file://localhost/C:/..." so this made the following process possible:</p>

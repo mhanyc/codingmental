@@ -9,6 +9,8 @@ type: "post"
 
 <p>One of the primary tenets of <a href="http://en.wikipedia.org/wiki/Agile_software_development">agile development</a> is test first, test often. After working in a small <a href="http://www.extremeprogramming.org/">XP</a> shop doing mobile development, I came to believe strongly that quality code hinges on a test-driven approach. </p>
 
+<!--more-->
+
 <p>Coders, impatient with paper specs and endless product meetings, often rush to their keyboards and push out half-baked, poorly implemented solutions that don't meet anyone's needs. Writing tests -- especially in a test-first approach -- provides time for thoughtful inquiry into an application's overall design and specific functionality. The coder can express herself in her own comfortable environment and language. The resulting tests become permanent artifacts, able to verify functionality as the application is enhanced and refactored. </p>
 
 <p>And, in less altruistic, more self-serving terms: good tests mean good code, and good code makes the coder look good. Why wouldn't you want to write tests?</p>

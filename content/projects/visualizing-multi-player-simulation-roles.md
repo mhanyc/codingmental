@@ -9,6 +9,8 @@ type: "post"
 
 <p>I've been largely an outside observer to our <a href="http://ccnmtl.columbia.edu/portfolio/political_science_and_social_policy/country_x.html">Country X project</a>.  CountryX is a simulation used for International Policy students studying what scenarios lead to genocide.  In the early stages, the rules of the 'game.' converged on:</p>
 
+<!--more-->
+
 <p>1. Four players, each in a specified role, starting with a watershed moment in an imaginary country.<br />
 2. The four roles are President, First-world Envoy, Regional Representative, and an Opposition Leader. (I immediately abbreviated these in my notes to 'P','E','R','O')<br />
 3. The game has four turns. In each turn, each of the four players decides on a context-specific list of three choices for their particular role. This is like playing a 'trick' in Bridge or Hearts.</p>

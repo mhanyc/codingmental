@@ -10,6 +10,8 @@ type: "post"
 
 <p>At <span class="caps">CCNMTL </span>we focus on pedagogical innovation, but we continue to work on projects that involve delivering static educational materials in traditional sequential formats. We work hard to carve out <a href="http://www.studyplace.org/files/McClintock/1971-Place-for-Study-McClintock.pdf">places for study in a world of instruction</a>, but there is plenty of important knowledge that people want to acquire, and training people on skills continues to be an important component of education and often a precondition of concept formation.<br /><br />In many of our projects, we've explored the boundaries of what we call - "Serial Directed Learning Modules". The key properties of these projects include:</p>
 
+<!--more-->
+
 
 <ul>
 <li>Nested, hierarchical, rich content with idiosyncratic navigation and access rules</li>

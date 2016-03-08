@@ -9,6 +9,8 @@ type: "post"
 
 <p>While working on a Javascript interactive for the <a href="http://ccnmtl.columbia.edu/portfolio/social_work/diabeaters.html">diaBeaters</a> project, we stumbled across an interesting problem with jQuery UI <a href="http://jqueryui.com/demos/draggable/">draggables</a>.  To wit: if you have draggable items inside a div with overflow:hidden, they're stuck.  You can't drag them out of the container -- the div just scrolls out to infinity.  (Try it sometime, it's awful.)</p>
 
+<!--more-->
+
 <p>Here's the original drag-and-drop setup.  The game involves dragging magnets from a menu on the left-hand side onto a refrigerator on the right.</p>
 
 <pre><code>jQuery(".magnet").draggable({

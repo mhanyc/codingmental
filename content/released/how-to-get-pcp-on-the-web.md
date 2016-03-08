@@ -13,6 +13,8 @@ companies would be shocked at how much high quality work our team
 produces with so few staff, a tight budget, and tighter time
 constraints. </p>
 
+<!--more-->
+
 <p>When I look closely at how they do what they do, I&#8217;m impressed and
 just a little frightened at how many manual steps are involved in
 getting a video online. Manual steps that take time, attention to

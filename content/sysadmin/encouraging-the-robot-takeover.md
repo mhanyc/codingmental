@@ -9,6 +9,8 @@ type: "post"
 
 <p>I subscribe to a lot of programming oriented newsfeeds so I seem to have a steady stream of links coming in that I find interesting and like to share with the rest of the dev team. I usually post the links in our IRC channel as a nice way of informally spreading them around to the other developers who might be interested in them. It's nice and simple. Just copy and paste the URL into my IRC client, maybe followup with a line explaining what the link is, and then the other developers will see it and can check it out and we can discuss it. </p>
 
+<!--more-->
+
 <p>For the use case of "share a link with a small community and then discuss", I think it's much easier than sending an email, and really even easier than twitter (plus no obnoxious URL shorteners obfuscating things). </p>
 
 <p>The downside is that not everyone's in the IRC channel all the time. We have a bot that logs the channel, but I don't think many of us rigorously check the IRC logs every time we've been out of the channel for a bit. So sometimes I have a link sitting in a tab in my browser that I want to share with the group but I know that one of the developers who would be particularly interested in it happens to be offline at the moment. So I frequently end up accumulating tabs in my browser until there's sort of a quorum of developers in the channel. That feels like a step back. I might as well be sending a message to a mailing list. What is this, 2003?</p>

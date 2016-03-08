@@ -10,6 +10,8 @@ type: "post"
 <img alt="gource.png" src="http://ccnmtl.columbia.edu/compiled/gource.png" class="mt-image-right" style="padding-right: 20px;" height="375" width="315" align="left" />
 <p><a href="http://infosthetics.com/archives/2009/12/gource_software_version_control_visualization.html">Gource</a> is a fun tool that takes your source repository, and outputs a video showing your developers as little gnomes dancing around the source tree building the program. I think it's a great visualization to demonstrate to the less technical members of our organization and the world, what a programmer does on a daily basis. The source-tree is simple enough to be graspable as program components, yet reflects some of the complexity we handle. Thus it shows pretty vividly how fractured a programmer's attention can be, and why we need time and space to develop.</p><p>I've run this on a couple of our own projects. I think this could also be useful in visualizing the activity of classes; for example in a wiki.<br /></p>
 
+<!--more-->
+
 <p>The little gnomes are contributors.  The dots are files (colored by 
 file-type) and the rays coming represent changes to the file by the 
 contributor.<br /></p><p>This doesn't reflect perfectly how much one contributes to a 

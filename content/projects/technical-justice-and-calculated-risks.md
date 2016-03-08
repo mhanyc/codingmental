@@ -9,6 +9,8 @@ type: "post"
 
 <p>The Collateral Consequences Calculator is premiering this week at the New York State Bar Association's annual <a href="http://www.nysba.org/AM2009/AMDailyUpdate.htm">meeting</a>, marking the culmination of a 2 year development effort. The motivation and curricular goals driving this project are <a href="http://ccnmtl.columbia.edu/triangle/from_portfolio.html#TI_5244">described</a> in our portfolio. In addition to the formidable educational and logistical challenges, this project also presented some very unique technical challenges, which are worth documenting and celebrating.</p>
 
+<!--more-->
+
 <p><span class="caps">CCNMTL'</span>s primary mission is educational, and our design research is usually focused on pedagogy and improving the user experience, rather than infrastructure or basic research. Typically, we attempt to apply well understood software solutions to educational contexts and improve the experience around a well understood technical problem. While our developers dance on the cutting edge of enterprise solutions, it is difficult and risky to work on problems that computer scientists still consider 'hard'.</p>
 
 <p>The Collateral Consequences Calculator is one of the more technically aggressive projects we have embarked on. The project has gone through various stages of complexity and sophistication, but at its core, we were asked to model the Law within Code. Since the Law is expressed using natural human language, this problem falls within the domain of artificial intelligence.</p>

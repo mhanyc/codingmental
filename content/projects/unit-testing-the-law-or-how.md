@@ -9,6 +9,8 @@ type: "post"
 
 <p>The light at the end of the tunnel seems to actually be visible now for the Collateral Consequences project. There's still a formidable amount of manual data entry to be done, but we've got a part-timer on that, so it's not my primary concern. The difficult work is now out of the way. If you've been following the development at all, you know that we've basically got a system worked out and running. There were plenty of tricky problems to solve to get there and I've written about some of them here.</p>
 
+<!--more-->
+
 <p>The last big "how on earth are we going to do that?" problem that I kept putting off solving was verification. This project involves law and even though we have big disclaimers plastered over everything, none of us really wanted to release this application to be used without being really confident that it's not going to give people wrong results. The problem, as I've explained before, is that the inherent complexity makes it really difficult to verify. You could change a single line of N3 code somewhere and potentially affect all the consequences on all the charges. It just isn't feasible to predict exactly what repercussions a change will have without running it for all the charges and manually inspecting the results.</p>
 
 <p>The first step towards coming up with a solution for the verification stuff was to acknowledge that part of the problem is insurmountable. To have confidence in the system, at some point, the lawyers need to just go through the list of charges one by one and check that the consequences are sane. There's just no way around it. Automated verification at least needs that baseline to exist.</p>

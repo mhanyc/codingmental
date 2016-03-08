@@ -9,6 +9,8 @@ type: "post"
 
 <p>I see programmers as inherently helpful people. Given a  57-step flowchart describing the steps some poor soul has to execute manually, most programmers get a little gleam in their eye and set about providing a streamlined solution. Programmers truly love removing those inefficiencies. Meanwhile, the customer stops wrestling with a frustrating system and gets on with his job.</p>
 
+<!--more-->
+
 <p>I recently had the opportunity to untangle a complicated little process knot. The technical details are applicable solely to the Columbia community, but I think the story is a reminder that a core engineering duty is to tackle real world inefficiencies.</p>
 
 <p><u><b>The Story</b></u><br /><a href="http://ccnmtl.columbia.edu/staff/ferrigno/">Briana</a>, our Communication and Marketing Manager, is responsible for posting events on our <a href="http://ccnmtl.columbia.edu/events"><span class="caps">CCNMTL </span>website</a> and getting those events into the Columbia <a href="http://calendar.columbia.edu/">calendar</a>. To post the events to the Columbia calendar, she used the university's Sundial event management software. To post events to the <span class="caps">CCNMTL </span>website, she used our site content management software and recreated the events, adding links to the Sundial registration system. </p>

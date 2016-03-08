@@ -9,6 +9,8 @@ type: "post"
 
 <p>There is alot of buzz right now around the latest version of Firefox which  finally implemented the native <code>&lt;video&gt;</code> tag specified in <a href="http://en.wikipedia.org/wiki/HTML_5">html5</a> .</p>
 
+<!--more-->
+
 <p>These developments were a hot topic at the <a href="http://openvideoconference.org">Open Video Conference</a>, which was about a whole lot more than just the video tag, but the timing was really perfect. For more about the <span class="caps">OVC, </span>see <a href="http://alchemicalmusings.org/2009/06/24/ov-high/">Jonah</a> and <a href="http://www.clayfox.com/2009/06/22/reflections-on-the-ovc/">Mark Phillipson's</a> reports, as well as the announcement of our <a href="http://openvideoconference.org/2009/06/columbias-educational-video-environment-released-at-ovc/">Open Sourcing of <span class="caps">VITAL</span></a> . </p>
 
 <p>The introduction of the <code>&lt;video&gt;</code> tag is a pretty big deal. Up until now, to display video in a browser, you needed to use third party plugins embedded in object tags. This allowed for the video to be seen in the browser, but the video wasn't really part of the web page - it was trapped inside a box.</p>
