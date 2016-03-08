@@ -2,3 +2,6 @@ baseurl = "https://compiled.ccnmtl.columbia.edu/"
 languageCode = "en-us"
 title = "CTL Compiled"
 SectionPagesMenu = "main"
+
+[taxonomies]
+tag = "tags"
