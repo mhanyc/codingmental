@@ -1,11 +1,11 @@
 {{ partial "header.html" . }}
 
-<h2>{{ .Title }}</h2>
-
-    <ul>
+<h2 id="archive-title" class="header2">Tag Topics</h2>
+<p><i>A listing of article tags.</i></p>
+    <ul style="padding-left: 15px">
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms }}
-      <li><a href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> {{ len $value }}</li>
+        <li><a href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ title $key }} ({{ len $value }})</a></li>
     {{ end }}
    </ul>
 
