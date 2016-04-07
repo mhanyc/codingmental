@@ -7,7 +7,7 @@ var index = lunr(function() {
 });
 index.ref('url');
 var data = {};
-$.getJSON('/js/all.js').done(function(item) {
+$.getJSON('/js/all.json').done(function(item) {
     item.forEach(function(d) {
         index.add(d);
         data[d.url] = d;
