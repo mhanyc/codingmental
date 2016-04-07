@@ -39,11 +39,11 @@ def saveurl(phenny, input):
 
     poster = input.nick
     now = datetime.now()
-    comment_url = "http://quimby.ccnmtl.columbia.edu/ircbot/web/" \
-    "?y=%04d&amp;m=%02d&amp;d=" \
-    "%02d#%04d%02d%02d%02d%02d%02d" % (now.year,now.month,now.day,
-                                        now.year,now.month,now.day,
-                                        now.hour,now.minute,now.second)
+    comment_url = ("http://quimby.ccnmtl.columbia.edu/ircbot/web/" 
+        "?y=%04d&amp;m=%02d&amp;d=" 
+        "%02d#%04d%02d%02d%02d%02d%02d" % (now.year,now.month,now.day,
+                                           now.year,now.month,now.day,
+                                            now.hour,now.minute,now.second))
 
     a = DeliciousAPI('phennyccnmtl','nottherealpassword')
     a.posts_add(url,title,"posted by %s: %s" % (poster,comment_url))
