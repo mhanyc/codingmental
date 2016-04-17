@@ -1,5 +1,5 @@
 <ul class="module-list">
-    {{ range $.Site.Menus.main }}
+    {{ range where $.Site.Menus.main ".Name" "!=" "Json" }}
     <li class="module-list-item"><a href="{{.URL}}">{{.Name}}</a></li>
     {{ end }}
 </ul>
