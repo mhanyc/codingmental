@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2010-02-05"
 tags: ["collaboration", "git", "process", "versioncontrol"]
 title: "Collaborative Futures"

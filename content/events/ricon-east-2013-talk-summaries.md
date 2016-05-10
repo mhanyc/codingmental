@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2013-06-30"
 tags: ["conference", "distributed", "nosql", "riak"]
 title: "Ricon East 2013 Talk Summaries"

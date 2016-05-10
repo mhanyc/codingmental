@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2011-12-22"
 tags: ["agile", "directedlearning", "django", "pagetree", "scorm"]
 title: "The Forest for the Trees"
