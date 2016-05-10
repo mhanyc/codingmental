@@ -1,6 +1,6 @@
 ---
 author_name: "Kathryn Hagan"
-author_url: "http://ccnmtl.columbia.edu/staff/hagan/"
+author_url: "https://github.com/codebykat/"
 date: "2010-10-01"
 tags: ["javascript", "jquery"]
 title: "Clone wars: jQuery UI draggables and overflow:hidden"
