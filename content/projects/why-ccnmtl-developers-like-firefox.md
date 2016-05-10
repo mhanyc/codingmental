@@ -1,6 +1,6 @@
 ---
 author_name: "Schuyler Duveen"
-author_url: "http://ccnmtl.columbia.edu/staff/duveen/"
+author_url: "https://github.com/schuyler1d/"
 date: "2009-06-30"
 tags: ["firefox"]
 title: "Why CCNMTL Developers like Firefox"
