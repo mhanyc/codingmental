@@ -1,6 +1,6 @@
 ---
 author_name: "Eddie Rubeiz"
-author_url: "http://ccnmtl.columbia.edu/staff/rubeiz/"
+author_url: "https://github.com/eddierubeiz/"
 date: "2009-03-09"
 tags: ["geo", "geography", "gis", "google", "sprint"]
 title: "Google geo hackathon"
