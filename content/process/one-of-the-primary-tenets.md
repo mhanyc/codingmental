@@ -1,6 +1,6 @@
 ---
 author_name: "Susan Dreher"
-author_url: "http://ccnmtl.columbia.edu/staff/dreher/"
+author_url: "http://ctl.columbia.edu/about/team/dreher/"
 date: "2010-02-15"
 tags: ["agile", "javascript", "testing"]
 title: "Test.AnotherWay: JavaScript Unit Tests Made Easy"

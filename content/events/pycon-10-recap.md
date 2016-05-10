@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2010-05-23"
 tags: ["diversity", "dvswitch", "nosql", "pycon", "python", "video", "vistrails"]
 title: "PyCon '10 Recap"

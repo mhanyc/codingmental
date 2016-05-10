@@ -1,6 +1,6 @@
 ---
 author_name: "Kathryn Hagan"
-author_url: "http://ccnmtl.columbia.edu/staff/hagan/"
+author_url: "https://github.com/codebykat/"
 date: "2008-07-21"
 tags: ["conference", "thelasthope", "ui"]
 title: "Musings on Evil UI"

@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2010-01-14"
 tags: ["annotations", "django", "html5", "javascript", "mashup", "openlayers", "video"]
 title: "Announcing Mediathread: Composition with Video, Images, and Text"

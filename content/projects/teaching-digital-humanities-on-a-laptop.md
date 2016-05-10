@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2014-07-23"
 tags: ["dh", "digital humanities", "docker", "ipython-notebook", "python", "vagrant"]
 title: "Teaching Digital Humanities on a laptop"

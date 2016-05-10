@@ -1,6 +1,6 @@
 ---
 author_name: "Anders Pearson"
-author_url: "http://ccnmtl.columbia.edu/staff/pearson/"
+author_url: "http://ctl.columbia.edu/about/team/pearson/"
 date: "2010-10-25"
 tags: ["deployment", "django", "python"]
 title: "Deploying Django and Deploying With Django"

@@ -1,6 +1,6 @@
 ---
 author_name: "Anders Pearson"
-author_url: "http://ccnmtl.columbia.edu/staff/pearson/"
+author_url: "http://ctl.columbia.edu/about/team/pearson/"
 date: "2006-11-30"
 tags: ["n3", "python", "semantic web"]
 title: "Unit testing the law or \"how I ended up with an n3 to sql compiler\""

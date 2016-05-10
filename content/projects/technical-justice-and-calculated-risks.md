@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2009-01-28"
 tags: ["python", "semantic web"]
 title: "Technical Justice & Calculated Risks"

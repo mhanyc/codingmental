@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ccnmtl.columbia.edu/staff/bossewitch/"
+author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2013-06-30"
 tags: ["analytics", "big data", "drill", "elasticsearch", "logstashd", "python"]
 title: "Reflections on the Open Analytics Summit"

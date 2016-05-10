@@ -1,6 +1,6 @@
 ---
 author_name: "Schuyler Duveen"
-author_url: "http://ccnmtl.columbia.edu/staff/duveen/"
+author_url: "https://github.com/schuyler1d/"
 date: "2010-05-19"
 tags: ["javascript", "nodejs"]
 title: "Node.js frameworks review"

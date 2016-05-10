@@ -1,6 +1,6 @@
 ---
 author_name: "Anders Pearson"
-author_url: "http://ccnmtl.columbia.edu/staff/pearson/"
+author_url: "http://ctl.columbia.edu/about/team/pearson/"
 date: "2009-10-23"
 tags: ["bots", "irc", "python"]
 title: "Encouraging the robot takeover"

@@ -1,6 +1,6 @@
 ---
 author_name: "Anders Pearson"
-author_url: "http://ccnmtl.columbia.edu/staff/pearson/"
+author_url: "http://ctl.columbia.edu/about/team/pearson/"
 date: "2010-07-23"
 tags: ["cloud", "EC2", "hosting", "rackspace", "slicehost", "vps", "xen"]
 title: "A Survey of the Clouds"

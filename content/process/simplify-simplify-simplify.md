@@ -1,6 +1,6 @@
 ---
 author_name: "Susan Dreher"
-author_url: "http://ccnmtl.columbia.edu/staff/dreher/"
+author_url: "http://ctl.columbia.edu/about/team/dreher/"
 date: "2010-08-21"
 tags: []
 title: "Simplify, Simplify, Simplify"

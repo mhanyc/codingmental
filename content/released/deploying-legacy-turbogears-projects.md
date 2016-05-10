@@ -1,6 +1,6 @@
 ---
 author_name: "Ethan Jucovy"
-author_url: "http://ccnmtl.columbia.edu/staff/jucovy/"
+author_url: "https://github.com/ejucovy/"
 date: "2011-04-21"
 tags: ["deployment", "process", "python", "turbogears"]
 title: "Python Deployment Chronicles: Deploying legacy TurboGears projects with modern tools"
