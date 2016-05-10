@@ -1,6 +1,6 @@
 ---
 author_name: "Anders Pearson"
-author_url: "http://ccnmtl.columbia.edu/staff/pearson/"
+author_url: "http://ctl.columbia.edu/about/team/pearson/"
 date: "2011-05-13"
 tags: ["pcp", "python", "video"]
 title: "How to Get PCP on the Web"

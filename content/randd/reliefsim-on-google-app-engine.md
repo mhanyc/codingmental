@@ -1,13 +1,13 @@
 ---
 author_name: "Anders Pearson"
-author_url: "http://ccnmtl.columbia.edu/staff/pearson/"
+author_url: "http://ctl.columbia.edu/about/team/pearson/"
 date: "2013-02-09"
 tags: ["gae", "googleappengine", "simulation", "turbogears"]
 title: "ReliefSim on Google App Engine"
 type: "post"
 ---
 
-<p>As an experiment, <a href="http://ccnmtl.columbia.edu/staff/pearson/">Anders</a> has ported the <a href="http://ccnmtl.columbia.edu/portfolio/medicine_and_health/reliefsim.html">ReliefSim</a> application to Google's <a href="https://developers.google.com/appengine/">AppEngine</a> and gotten it running on the free version at <a href="http://reliefsim.appspot.com/">reliefsim.appspot.com</a> (the source code for this application has been released on github: <a href="https://github.com/ccnmtl/reliefsim">github.com/ccnmtl/reliefsim</a>).</p>
+<p>As an experiment, <a href="http://ctl.columbia.edu/about/team/pearson/">Anders</a> has ported the <a href="http://ccnmtl.columbia.edu/portfolio/medicine_and_health/reliefsim.html">ReliefSim</a> application to Google's <a href="https://developers.google.com/appengine/">AppEngine</a> and gotten it running on the free version at <a href="http://reliefsim.appspot.com/">reliefsim.appspot.com</a> (the source code for this application has been released on github: <a href="https://github.com/ccnmtl/reliefsim">github.com/ccnmtl/reliefsim</a>).</p>
 
 <!--more-->
 
