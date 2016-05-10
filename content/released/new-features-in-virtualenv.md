@@ -1,6 +1,6 @@
 ---
 author_name: "Ethan Jucovy"
-author_url: "http://ccnmtl.columbia.edu/staff/jucovy/"
+author_url: "https://github.com/ejucovy/"
 date: "2011-04-11"
 tags: ["deployment", "process", "python"]
 title: "Python Deployment Chronicles: New features in virtualenv"
