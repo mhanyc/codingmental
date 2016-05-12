@@ -1,7 +1,6 @@
-<ul class="module-list">
+<h2>Topics</h2>
+<ul class="nav topic-list">
     {{ range where $.Site.Menus.main ".Name" "!=" "Json" }}
-    <li class="module-list-item"><a href="{{.URL}}">{{.Name}}</a></li>
+    <li><a href="{{.URL}}">{{replace .Name " and " " & " }}</a></li>
     {{ end }}
 </ul>
-
-

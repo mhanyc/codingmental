@@ -4,4 +4,6 @@ date: "2015-01-12T19:20:04-07:00"
 tags: []
 author_name:  ""
 author_url: ""
+lede: ""
+poster: ""
 ---

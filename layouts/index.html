@@ -1,16 +1,5 @@
-{{partial "header.html" .}}
+{{ partial "header.html" . }}
 
-<p class="mission">/*<br />
-* A compilation of comments from CCNMTL's software developers.
-<br />* These reflections are rooted in our professional and personal experiences 
-<br />* developing educational technology. This blog is directed at hackers, 
-<br />* designers, and architects of all flavors, but everyone is welcome.
-<br />*/</p>
+{{ partial "cover.html" . }}
 
-{{ $paginator := .Paginate .Data.Pages }}
-
-{{ range $paginator.Pages }}
-{{ .Render "summary" }}
-{{ end }}
-
-{{partial "footer.html" .}}
+{{ partial "footer.html" . }}

@@ -2,6 +2,7 @@
 author_name: "Jonah Bossewitch"
 author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
 date: "2013-06-30"
+lede: "Back in June, I attended the one-day Open Analytics Summit. We aren't really doing much with analytics or big data here at CCNMTL (yet), but there are many conversations and projects happening around campus and I wanted to get a better sense of the kinds of value these methods are yielding."
 tags: ["analytics", "big data", "drill", "elasticsearch", "logstashd", "python"]
 title: "Reflections on the Open Analytics Summit"
 type: "post"
