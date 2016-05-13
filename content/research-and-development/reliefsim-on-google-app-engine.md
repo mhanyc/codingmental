@@ -1,17 +1,18 @@
 ---
 author_name: "Anders Pearson"
 author_url: "http://ctl.columbia.edu/about/team/pearson/"
+lede: "As an experiment, Anders has ported the ReliefSim application to Google's AppEngine and gotten it running on the free version at reliefsim.appspot.com (the source code for this application has been released on github: github.com/ccnmtl/reliefsim)"
 date: "2013-02-09"
 tags: ["gae", "googleappengine", "simulation", "turbogears"]
 title: "ReliefSim on Google App Engine"
 type: "post"
 ---
 
-<p>As an experiment, <a href="http://ctl.columbia.edu/about/team/pearson/">Anders</a> has ported the <a href="http://ccnmtl.columbia.edu/portfolio/medicine_and_health/reliefsim.html">ReliefSim</a> application to Google's <a href="https://developers.google.com/appengine/">AppEngine</a> and gotten it running on the free version at <a href="http://reliefsim.appspot.com/">reliefsim.appspot.com</a> (the source code for this application has been released on github: <a href="https://github.com/ccnmtl/reliefsim">github.com/ccnmtl/reliefsim</a>).</p>
+As an experiment, <a href="http://ctl.columbia.edu/about/team/pearson/">Anders</a> has ported the <a href="http://ccnmtl.columbia.edu/portfolio/medicine_and_health/reliefsim.html">ReliefSim</a> application to Google's <a href="https://developers.google.com/appengine/">AppEngine</a> and gotten it running on the free version at <a href="http://reliefsim.appspot.com/">reliefsim.appspot.com</a> (the source code for this application has been released on github: <a href="https://github.com/ccnmtl/reliefsim">github.com/ccnmtl/reliefsim</a>).
 
 <!--more-->
 
-<p><b>Brief Technical History of ReliefSim</b></p>
+## Brief Technical History of ReliefSim
 
 <p>Eric Mattes wrote the original version of ReliefSim as a text-based unix console application. It would run on an account on one of our servers that users could ssh or telnet to and interact with via keyboard commands. ReliefSim has a very detailed model underneath it but has a very simple turn-based interaction model. Each turn, the user assigns each of their "workers" a task, which will take one or more turns to complete. Those tasks involve either gathering information (doing different types of health surveys, etc.) on the camp's population, or working to improve camp conditions in some way (improving food/water supply, giving vaccinations, etc). </p>
 
@@ -27,11 +28,11 @@ type: "post"
 
 <p>Since the actual "web application" part of ReliefSim is quite small, and the expected traffic is very low, I felt that it made an interesting candidate for attempting to get it running on Google App Engine (GAE). </p>
 
-<p><b>Existing Architecture</b></p>
+## Existing Architecture
 
 <p>ReliefSim consists of a simulation module (contained in <a href="https://github.com/ccnmtl/reliefsim/blob/master/simulation.py">simulation.py</a>), which exposes Simulation and WebUI classes, respectively containing the main game logic and helpers for adapting game state to the web framework. The TG component exposes "/", "/new", "/turn", "/execute", "/data" and "/quit", "/game_over", and "/loadData" URLs. Typical flow through the application is that the user visits "/", is prompted to begin a new game, which they initiate by a <span class="caps">POST </span>request to "/new". That creates  new Simulation and WebUI objects, saves them to the built-in user session store, then redirects the user to "/turn". "/turn" just renders an <span class="caps">HTML </span>template and control is handed off to some Javascript libraries which handle the user-interaction of the game. As the user performs actions in the game, Javascript makes <span class="caps">POST </span>requests to "/execute", which retrieves the simulation/ui from the user's session, processes the actions performed, and returns data to the javascript to update the user interface. Eventually, the user "dies" or quits the game and gets sent to the "/game_over" or "/quit" page, both of which just display a message and offer to let the user download their data in csv format (via "/data"). Meanwhile, during game play, if the user turns on contextual help, hovering over a game element triggers a <span class="caps">GET </span>request to "/loadData" to retrieve information about that element which is stored in an <span class="caps">XML </span>file.</p>
 
-<p><b>Porting</b></p>
+## Porting
 
 <p>Porting to <span class="caps">GAE </span>involved replacing only the TG component of ReliefSim. The Simulation module, the Javascript and (most) of the <span class="caps">HTML </span>templates were left unchanged.</p>
 
@@ -49,7 +50,7 @@ type: "post"
 
 <p>I completed the port, up to the point documented here in about 8 hours total development time. In fairness, a couple of those hours were spent doing a flake8 cleanup of the simulation module to get it in line with our other codebases, and this work was not strictly necessary for the port. The code for the <span class="caps">GAE </span>version is up on our <span class="caps">CCNMTL </span>github account: <a href="https://github.com/ccnmtl/reliefsim">github.com/ccnmtl/reliefsim</a></p>
 
-<p><b>Concerns</b></p>
+## Concerns
 
 <p>From a bit of informal testing, everything seems to work the same, and performs about as well on <span class="caps">GAE</span>/appspot as the TG version does on our server.</p>
 

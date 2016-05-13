@@ -1,36 +1,44 @@
 {{partial "header.html" .}}
 
-<div class="entry">
-<div class="entryheader">
-		<h2 class="entry-title">{{.Title}}</h2>
-</div>
-
-		<div class="byline">
-		    By <a href="{{.Params.author_url}}">{{.Params.author_name}}</a>
-		<br />
-		Published: {{ .Date.Format "Jan 2, 2006" }}
-		</div><!-- class="byline" -->
-
-
-		
-		<div class="entry-body">
-
-{{ .Content }}
-
-    </div><!--  class="entry-body" -->
-
-    <div class="entry-footer">
-		    <div>Topic: {{.Section}}</div>
-
-        <div class="taglist">
-            {{ range .Params.tags }}
-            <a href="/tags/{{ . | urlize }}" rel="tag">{{ . }}</a>
+<div class="row">
+    <div class="col-md-9">
+    <article class="entry-layout" itemscope itemtype="https://schema.org/BlogPosting">
+        <header>
+            {{ if .Params.poster }}
+            <figure>
+                <img src="{{ .Site.BaseURL }}img/assets/{{ .Params.poster }}" alt="" itemprop="image">
+            </figure>
             {{ end }}
+            <div class="entry-topic">
+            <a href="/{{.Section}}/"><span class="sr-only">Article topic: </span><span itemprop="about">{{replace .Section "-" " " | title }}</span></a>
+            </div>
+            <h1 class="entry-title" itemprop="headline">
+                {{.Title}}
+            </h1>
+            <div class="entry-other-info">
+                By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="{{.Params.author_url}}"><span itemprop="name">{{.Params.author_name}}</span></a></span>
+                
+                |
+                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}' itemprop="datePublished">{{ .Date.Format "Jan 2, 2006" }}</time>
+                <div class="entry-keywords">
+                <h4>Tags:</h4> 
+                {{ range $i, $e := .Params.tags }}{{if $i}},{{end}} <a href="/tags/{{ . | urlize | lower}}/" rel="tag"><span itemprop="keywords">{{$e}}</span></a>{{ end }}                
+                </div>
+            </div>
+        </header>
+        
+        <div class="entry-content" itemprop="articleBody">
+            {{ .Content }}
+            <div class="bookend">
+                <span class="glyphicon glyphicon-menu-left" role=""></span><span class="glyphicon glyphicon-cog"></span><span class="glyphicon glyphicon-menu-right"></span>
+                <span class="sr-only">End of article.</span>
+            </div>
         </div>
+    </article>
     </div>
-
-		<div class="visualclear"></div><!-- id="visualclear" -->
-    
+    <div class="col-md-3 sidenav" role="complementary">
+        {{partial "topic_list.html" .}}        
+    </div>
 </div>
 
 {{partial "footer.html" .}}

@@ -1,7 +1,17 @@
----
-title: "About"
----
++++
+date = "2016-05-09T11:57:04-04:00"
+title = "about"
 
-<p>Coming soon</p>
++++
 
-<p>Artwork used for this site's banner is by <a href="http://ccnmtl.columbia.edu/staff/pearson/">Anders Pearson</a> from his <a href="http://www.flickr.com/photos/thraxil/2361736905/">Flickr set</a>.</p>
+Software increasingly mediates human-to-human communication, not only human-to-machine interactions. Much like the design of a physical classroom the architecture and design of digital learning environments expresses the values of their creators and significantly shapes learning experiences.  Does a digital environment foster an atmosphere where students are figuratively sitting in the rows of a lecture hall, asking permission before they speak? Or, are they arranged in the familiar circle of a seminar room where the conversation flows organically? Software helps create the conditions for learning by catalyzing communicative dynamics. Good software supports good pedagogy by guiding the flows of knowledge, information and power. 
+
+Making and building software that facilitates good teaching requires working closely with all of the project’s stakeholders throughout an iterative development process. Our projects always begin with an educational hypothesis, one that imagines ways that digital media and networked environments can promote learning objectives. Our approach is grounded in the curriculum with a focus on translating and preserving traditional scholarly practices such as critical analysis, close reading, citing primary sources and showing your work. We also help faculty explore the frontiers of study and scholarship by creating opportunities for students to develop new digital literacies, meaningfully collaborate, analyze (and help construct) large multimedia archives and authentically engage in public discourse. 
+
+Unlike many third-party consumer tools, technology designed for education often provides capabilities to protect student’s privacy, support different pedagogies, workflows that match curricular goals, as well as tools designed to administer and assess student performance. Customizing software, often by participating and extending existing open source platforms, allows for even more control of the student experience, allowing faculty to design experiences tailored to their specific needs. 
+
+We follow the principles of Design Research as well as industry best practices. Our entire team of project managers, programmers, web designers and video specialists all work closely with the faculty to understand and refine project deliverables. We embrace agile development processes, iterating and improvising throughout the development journey. We specialize in designing intuitive, user friendly experiences, and have extensive experience delivering complex applications, on time and feature complete. Our work begins with supporting commodity platforms such as the LMS, wikis and blogs. Our projects often begin where these systems leave off, and we have a great deal of experience improving users’ experiences with rich media, annotations, collaboration, simulations, and translating software developed on a lab bench to the web. 
+
+Our project teams are passionate about Columbia’s mission and maintain a playful sense fascination around technology at the intersection of education, library science and research. We take pride our adoption of cutting edge engineering, and our approach to quality control includes techniques such as test-driven development, code reviews, and continuous integration.
+
+Our team, as well as most of our projects are accessible, responsive and open. You can follow our reflections on the technical aspects of the Center’s work at http://compiled.ctl.columbia.edu and on http://github.com/ccnmtl.
