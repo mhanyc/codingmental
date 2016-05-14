@@ -24,7 +24,7 @@
 		
 		<div class="entry-footer">
 			  <div><a href="{{.Permalink}}" rel="bookmark">Permalink</a> |
-            Topic: <a href="/{{.Section}}/">{{.Section}}</a>
+            {{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/"><span itemprop="about">{{$e}}</span></a>{{ end }}           
         </div>
 			  
 			  

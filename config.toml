@@ -6,6 +6,7 @@ title = "CompilED: And Often Interpreted"
 SectionPagesMenu = "main"
 
 [taxonomies]
+    topic = "topics"
     tag = "tags"
 
 [params]

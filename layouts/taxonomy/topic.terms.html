@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+
+<h2 id="archive-title" class="header2">Tag Topics</h2>
+<p><i>A listing of article tags.</i></p>
+<p><span class="text-danger">This is from layout/taxonomy/topic.terms.html</span></p>
+
+
+<div id="tag-all" class="taglist">
+    <ul>
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms }}
+        <li><a href="/{{ $data.Plural }}/{{ $key | urlize }}">{{  $key }}</a></li>
+    {{ end }}
+   </ul>
+</div>
+
+{{ partial "footer.html" . }}
+

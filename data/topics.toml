@@ -1,0 +1,20 @@
+[events]
+    description="Lorem ipsum events."
+
+[process]
+    description="Lorem ipsum process."
+
+[projects]
+    description="Lorem ipsum projects."
+
+[research-and-development]
+    description="Lorem ipsum R and D."
+
+[reviews]
+    description="Lorem ipsum reviews."
+
+[sysadmin]
+    description="Lorem ipsum sysadmin."
+
+[user-experience]
+    description="Lorem ipsum UI."

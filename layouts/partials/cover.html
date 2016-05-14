@@ -39,7 +39,7 @@
                 <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
             </div>
             <div class="other-info">
-                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic"><a href="/{{ .Section }}/">{{ (index .Site.Data.sections .Section).title }}</a></span>
+                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic">{{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/">{{$e}}</a>{{ end }}</span>
             </div>
         </article>
     </div>

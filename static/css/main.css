@@ -305,6 +305,15 @@ hr.front-page {
     outline: 0;
 }
 
+#primary-title {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 34px;
+    line-height: 110%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 #page-title {
     margin-top: 0;
     padding-top: 20px;
@@ -463,6 +472,25 @@ hr.front-page {
 
 #interaction-links img {
     width: 20px;
+}
+
+.indices {
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.indices .pagination {
+    margin-bottom: 0;
+}
+
+.indices .pagination>.disabled>a {
+    color: #ccc;
+}
+
+.indices .pagination>.active>a {
+    background-color: #9c9;
+    border-color: #9c9;
 }
 
 /* Footer ------------------------------ */

@@ -2,7 +2,7 @@
 
 {{ "<!-- Standard Meta Data -->" | safeHTML }}
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.lede }}{{ end }}" />
-<meta name="keywords" content="{{ if .IsHome }}{{ .Site.Params.keywords }}{{ else }}{{ .Params.tags }}{{ end }}" />
+<meta name="keywords" content="{{ if .IsHome }}{{ .Site.Params.keywords }}{{ else }}{{ range $i, $e := .Params.tags }}{{if $i}},{{end}}{{$e}}{{ end }}{{ end }}" />
 <meta name="author" content="{{.Params.author_name}}" />
 <meta name="copyright" content="{{ .Site.Copyright }}">
 
@@ -12,9 +12,11 @@
 
 {{ "<!-- Open Graph -->" | safeHTML }}
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Params.shortTitle }}: {{ .Title }}{{ end }}" />
+<meta property="og:type" content="blog" />
 <meta property="og:image" content="{{ if .IsHome }}{{ .Site.BaseURL }}img/ogg-image.jpg{{ else }}{{ .Site.BaseURL }}img/assets/{{ .Params.poster }}{{ end }}" />
 <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.lede }}{{ end }}" />
 <meta property="og:url" content="{{ if .IsHome }}{{ .Site.BaseURL }}{{ else }}{{ .Permalink }}{{ end }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
 
 {{ "<!-- Twitter -->" | safeHTML }}
 <meta name="twitter:card" content="summary" />
