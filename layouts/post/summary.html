@@ -1,37 +1,14 @@
-<div class="entry">
-    <div class="entryheader">
-			  <h2 class="entry-title"><a href="{{.Permalink}}">{{.Title}}</a></h2>
-		</div><!-- class="entryheader" -->
-		
-		<div class="byline">
-		    By <a href="{{.Params.author_url}}">{{.Params.author_name}}</a>
-		<br />
-		Published: {{ .Date.Format "January 2, 2006" }}
-
-		</div><!-- class="byline" -->
-
-		
-		<div class="entry-body">
-		    {{.Summary}}
-
-        {{ if .Truncated }}
-		    <div class="readmore">
-		        <a href="{{.Permalink}}">Read more...</a>
-		    </div>
-        {{ end }}
-		    
-		</div><!--  class="entry-body" -->
-		
-		<div class="entry-footer">
-			  <div><a href="{{.Permalink}}" rel="bookmark">Permalink</a> |
-            {{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/"><span itemprop="about">{{$e}}</span></a>{{ end }}           
-        </div>
-			  
-			  
-			  <div class="taglist">
-            {{ range .Params.tags }}
-            <a href="/tags/{{ . | urlize }}" rel="tag">{{ . }}</a>
-            {{ end }}
-        </div>
-		</div>
-</div><!-- class="entry-footer" -->
+                    <article class="summary">
+            <h2 class="entry-title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="entry-byline" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                By <a itemprop="url" href="{{ .Params.author_url }}"><span itemprop="name">{{ .Params.author_name }}</span></a>
+            </div>
+            <div class="entry-summary">
+                <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
+            </div>
+            <div class="other-info">
+                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic">{{ range .Params.topics }}<a href="/topics/{{ . | urlize | lower}}/">{{ . }}</a>{{ end }}</span>
+            </div>
+                    </article>
