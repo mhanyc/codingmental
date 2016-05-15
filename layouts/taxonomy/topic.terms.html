@@ -1,18 +1,91 @@
 {{ partial "header.html" . }}
 
-<h2 id="archive-title" class="header2">Tag Topics</h2>
-<p><i>A listing of article tags.</i></p>
-<p><span class="text-danger">This is from layout/taxonomy/topic.terms.html</span></p>
+<h1 id="primary-title">Topics</h1>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="topics-index">
+                        <h2 class="item-title">
+                            <a href="/topics/events/"><span class="item-link glyphicon glyphicon-link"></span>Events</a>
+                        </h2>
+                        <div class="item-summary">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec pharetra finibus, ligula erat suscipit felis, id finibus massa tortor et ante. Donec tincidunt ac tellus sit amet laoreet. Mauris consequat ullamcorper posuere. Ut tempor lacus vitae vehicula aliquet. Integer aliquet mattis malesuada. Integer consectetur iaculis est sit.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="topics-index">
+                        <h2 class="item-title">
+                            <a href="/topics/process/"><span class="item-link glyphicon glyphicon-link"></span>Process</a>
+                        </h2>
+                        <div class="item-summary">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec pharetra finibus, ligula erat suscipit felis, id finibus massa tortor et ante. Donec tincidunt ac tellus sit amet laoreet. Mauris consequat ullamcorper posuere. Ut tempor lacus vitae vehicula aliquet. Integer aliquet mattis malesuada. Integer consectetur iaculis est sit.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="topics-index">
+                        <h2 class="item-title">
+                            <a href="/topics/projects/"><span class="item-link glyphicon glyphicon-link"></span>Projects</a>
+                        </h2>
+                        <div class="item-summary">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec pharetra finibus, ligula erat suscipit felis, id finibus massa tortor et ante. Donec tincidunt ac tellus sit amet laoreet. Mauris consequat ullamcorper posuere. Ut tempor lacus vitae vehicula aliquet. Integer aliquet mattis malesuada. Integer consectetur iaculis est sit.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="topics-index">
+                        <h2 class="item-title">
+                            <a href="/topics/research-and-development/"><span class="item-link glyphicon glyphicon-link"></span>Research and Development</a>
+                        </h2>
+                        <div class="item-summary">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec pharetra finibus, ligula erat suscipit felis, id finibus massa tortor et ante. Donec tincidunt ac tellus sit amet laoreet. Mauris consequat ullamcorper posuere. Ut tempor lacus vitae vehicula aliquet. Integer aliquet mattis malesuada. Integer consectetur iaculis est sit.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="topics-index">
+                        <h2 class="item-title">
+                            <a href="/topics/reviews/"><span class="item-link glyphicon glyphicon-link"></span>Reviews</a>
+                        </h2>
+                        <div class="item-summary">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec pharetra finibus, ligula erat suscipit felis, id finibus massa tortor et ante. Donec tincidunt ac tellus sit amet laoreet. Mauris consequat ullamcorper posuere. Ut tempor lacus vitae vehicula aliquet. Integer aliquet mattis malesuada. Integer consectetur iaculis est sit.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="topics-index">
+                        <h2 class="item-title">
+                            <a href="/topics/sysadmin/"><span class="item-link glyphicon glyphicon-link"></span>Sysadmin</a>
+                        </h2>
+                        <div class="item-summary">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec pharetra finibus, ligula erat suscipit felis, id finibus massa tortor et ante. Donec tincidunt ac tellus sit amet laoreet. Mauris consequat ullamcorper posuere. Ut tempor lacus vitae vehicula aliquet. Integer aliquet mattis malesuada. Integer consectetur iaculis est sit.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="topics-index">
+                        <h2 class="item-title">
+                            <a href="/topics/user-experience/"><span class="item-link glyphicon glyphicon-link"></span>User Experience</a>
+                        </h2>
+                        <div class="item-summary">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec pharetra finibus, ligula erat suscipit felis, id finibus massa tortor et ante. Donec tincidunt ac tellus sit amet laoreet. Mauris consequat ullamcorper posuere. Ut tempor lacus vitae vehicula aliquet. Integer aliquet mattis malesuada. Integer consectetur iaculis est sit.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    &nbsp;
+                </div>
+                 <div class="col-md-4">
+                    &nbsp;
+                </div>
+           </div>
 
 
-<div id="tag-all" class="taglist">
-    <ul>
-    {{ $data := .Data }}
-    {{ range $key, $value := .Data.Terms }}
-        <li><a href="/{{ $data.Plural }}/{{ $key | urlize }}">{{  $key }}</a></li>
-    {{ end }}
-   </ul>
-</div>
 
 {{ partial "footer.html" . }}
 
