@@ -1,11 +1,11 @@
 ---
 title: "new post"
-date: "2015-01-12T19:20:04-07:00"
+date: "2015-01-12"
 type: "post"
 author_name:  ""
-author_url: ""
+author_url: "http://ctl.columbia.edu/about/team/LASTNAME/"
 lede: ""
-poster: ""
+poster: "filename"
 topics: 
 - 
 tags: []
