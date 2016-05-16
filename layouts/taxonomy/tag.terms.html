@@ -23,7 +23,7 @@
     {{ $data := .Data.Terms }}
     {{ range $key, $value := first 10 .Data.Terms.ByCount }}
     <li>
-        <a rel="tag" href="{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }} <span>{{$value.Count}}</span></a></li>
+        <a rel="tag" href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }} <span>{{$value.Count}}</span></a></li>
     {{ end }}
 </ul>
 </div>
