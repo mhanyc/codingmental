@@ -25,6 +25,17 @@
                 {{ range $i, $e := .Params.tags }}{{if $i}},{{end}} <a href="/tags/{{ . | urlize | lower}}/" rel="tag"><span itemprop="keywords">{{$e}}</span></a>{{ end }}                
                 </div>
             </div>
+
+            <div class="socmedia-share clearfix">
+                <h4>Share<span class="sr-only"> this article on</span>:</h4>
+                <ul class="clearfix">
+                    <li><span><a rel="nofollow" class="share-window" href="http://www.facebook.com/share.php?u={{.Permalink}}&title={{.Title}}"><img src="{{ .Site.BaseURL }}img/icon-facebook.png" alt="Facebook" /></a></span></li>
+                    <li><span><a rel="nofollow" class="share-window" href="https://twitter.com/intent/tweet?text=CompilED:%20{{ .Title }}&url={{ .Permalink }}&via=ColumbiaCTL"><img src="{{ .Site.BaseURL }}img/icon-twitter.png" alt="Twitter" /></a></span></li>
+                    <li><span><a rel="nofollow" class="share-window" href="https://plus.google.com/share?url={{ .Permalink }}"><img src="{{ .Site.BaseURL }}img/icon-googleplus.png" alt="Google Plus" /></a></span></li>
+                </ul>
+            </div>
+
+
         </header>
         
         <div class="entry-content" itemprop="articleBody">
