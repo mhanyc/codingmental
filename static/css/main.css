@@ -185,7 +185,7 @@ header.container {
 }
 
 #latest-entry .entry-title {
-	font: 700 26px/100% 'Montserrat', sans-serif;
+	font: 700 26px/120% 'Montserrat', sans-serif;
 	text-align: center;
     display: block;
 }
@@ -201,6 +201,7 @@ header.container {
 	font: 400 18px/150% 'Open Sans', sans-serif;
     display: block;
     padding-top: 10px;
+    text-align: center;
 }
 
 #latest-entry .entry-more-link {
@@ -695,6 +696,9 @@ div.interactive-placeholder {
     .front-page-banner .navbar-default .navbar-nav>.active>a,
     .page-banner .navbar-default .navbar-nav>.active>a {
         background-color: transparent;
+    }
+    #latest-entry .entry-summary {
+        text-align: left;
     }
     .sidenav {
         margin-top: 0;
