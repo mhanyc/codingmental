@@ -1,14 +1,16 @@
-                    <article class="summary">
-            <h2 class="entry-title">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
-            <div class="entry-byline" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                By <a itemprop="url" href="{{ .Params.author_url }}"><span itemprop="name">{{ .Params.author_name }}</span></a>
-            </div>
-            <div class="entry-summary">
-                <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
-            </div>
-            <div class="other-info">
-                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic">{{ range .Params.topics }}<a href="/topics/{{ . | urlize | lower}}/">{{ . }}</a>{{ end }}</span>
-            </div>
-                    </article>
+<article class="summary clearfix">
+    <h2 class="entry-title">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <div class="entry-byline" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By <span itemprop="name">{{ .Params.author_name }}</span>
+    |
+    <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time>
+    </div>
+    <div class="other-info">
+    Posted in <span class="entry-topic">{{ range .Params.topics }}<a href="/topics/{{ . | urlize | lower}}/">{{ . }}</a>{{ end }}</span>
+    </div>
+    <div class="entry-summary">
+    <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
+    </div>
+</article>
