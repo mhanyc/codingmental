@@ -16,7 +16,7 @@ Unlike many third-party consumer tools, technology designed for education often 
 
 We follow the principles of Design Research as well as industry best practices. Our entire team of project managers, programmers, web designers and video specialists all work closely with the faculty to understand and refine project deliverables. We embrace agile development processes, iterating and improvising throughout the development journey. We specialize in designing intuitive, user friendly experiences, and have extensive experience delivering complex applications, on time and feature complete. Our work begins with supporting commodity platforms such as the LMS, wikis and blogs. Our projects often begin where these systems leave off, and we have a great deal of experience improving users’ experiences with rich media, annotations, collaboration, simulations, and translating software developed on a lab bench to the web. 
 
-Our project teams are passionate about Columbia’s mission and maintain a playful sense fascination around technology at the intersection of education, library science and research. We take pride our adoption of cutting edge engineering, and our approach to quality control includes techniques such as test-driven development, code reviews, and continuous integration.
+Our project teams are passionate about Columbia’s mission and maintain a playful sense of fascination around technology at the intersection of education, library science and research. We take pride our adoption of cutting edge engineering, and our approach to quality control includes techniques such as test-driven development, code reviews, and continuous integration.
 
 &nbsp;
 
