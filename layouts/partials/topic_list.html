@@ -1,6 +1,6 @@
 <h2>Topics</h2>
 <ul class="nav topic-list">
-    {{ range where $.Site.Menus.main ".Name" "!=" "Json" }}
-    <li><a href="{{.URL}}">{{replace .Name " and " " & " }}</a></li>
+    {{ range $key, $taxonomy := .Site.Taxonomies.topics }}
+    <li><a href="/topics/{{ $key }}">{{ replace $key "-" " " | title }}</a></li>
     {{ end }}
 </ul>

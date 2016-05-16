@@ -1,14 +1,11 @@
 {{ partial "header.html" . }}
 
-<h2 id="archive-title" class="header2">Tag Topics</h2>
-<p><i>A listing of article tags.</i></p>
-<p><span class="text-danger">This is from layout/_default/terms.html</span></p>
-
+<h1 id="primary-title">Tags</h1>
 
 <ul class="nav nav-tabs">
-  <li role="presentation"><a class="view-taglist">View tag as list</a></li>
-  <li role="presentation" class="active"><a class="view-tagcloud">View tag as cloud</a></li>
-  <li role="presentation"><a class="view-popular">View most popular</a></li>
+  <li role="presentation"><a class="view-taglist">View all tags as list</a></li>
+  <li role="presentation" class="active"><a class="view-tagcloud">View all tags as cloud</a></li>
+  <li role="presentation"><a class="view-popular">View most popular tags</a></li>
 </ul>
 
 
@@ -24,7 +21,7 @@
 <div id="tag-popular">
 <ul>
     {{ $data := .Data.Terms }}
-    {{ range $key, $value := first 5 .Data.Terms.ByCount }}
+    {{ range $key, $value := first 10 .Data.Terms.ByCount }}
     <li>
         <a rel="tag" href="{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }} <span>{{$value.Count}}</span></a></li>
     {{ end }}

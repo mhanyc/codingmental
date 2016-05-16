@@ -29,6 +29,9 @@
     {{ partial "meta.html" . }}
 
     {{ partial "favicon.html" . }}
+
+    <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
 

@@ -9,8 +9,8 @@
                 <img src="{{ .Site.BaseURL }}img/assets/{{ .Params.poster }}" alt="" itemprop="image">
             </figure>
             {{ end }}
-            <div class="entry-topic">
-            <a href="/{{.Section}}/"><span class="sr-only">Article topic: </span><span itemprop="about">{{replace .Section "-" " " | title }}</span></a>
+            <div class="entry-topic"><span class="sr-only">Article topic: </span>
+            {{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/"><span itemprop="about">{{$e}}</span></a>{{ end }}           
             </div>
             <h1 class="entry-title" itemprop="headline">
                 {{.Title}}

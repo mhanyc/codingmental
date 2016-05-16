@@ -1,8 +1,12 @@
-+++
-date = "2016-05-09T11:57:04-04:00"
-title = "about"
+---
+date: "2016-05-09T11:57:04-04:00"
+title: "About CompilED"
+lede: "CompilED is a collection of reflections and comments by the software developers at Columbia's Center for Teaching and Learning (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome."
+---
 
-+++
+CompilED is a collection of reflections and comments by the software developers at Columbia's [Center for Teaching and Learning](http://ctl.columbia.edu) (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome.
+
+---------
 
 Software increasingly mediates human-to-human communication, not only human-to-machine interactions. Much like the design of a physical classroom the architecture and design of digital learning environments expresses the values of their creators and significantly shapes learning experiences.  Does a digital environment foster an atmosphere where students are figuratively sitting in the rows of a lecture hall, asking permission before they speak? Or, are they arranged in the familiar circle of a seminar room where the conversation flows organically? Software helps create the conditions for learning by catalyzing communicative dynamics. Good software supports good pedagogy by guiding the flows of knowledge, information and power. 
 
@@ -14,4 +18,11 @@ We follow the principles of Design Research as well as industry best practices. 
 
 Our project teams are passionate about Columbia’s mission and maintain a playful sense fascination around technology at the intersection of education, library science and research. We take pride our adoption of cutting edge engineering, and our approach to quality control includes techniques such as test-driven development, code reviews, and continuous integration.
 
-Our team, as well as most of our projects are accessible, responsive and open. You can follow our reflections on the technical aspects of the Center’s work at http://compiled.ctl.columbia.edu and on http://github.com/ccnmtl.
+&nbsp;
+
+## The codes and blog
+
+Our team, as well as most of our projects are accessible, responsive and open. You can follow our reflections on the technical aspects of the Center’s work here in [CompilED](..) and on [Github](http://github.com/ccnmtl).
+
+CompilED is built with [Hugo](https://gohugo.io/) by [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/) and [Anders Pearson](http://ctl.columbia.edu/about/team/pearson/). The artwork for the banner is "<i>[Revisionism](https://myopica.org/oil/revisionism/)</i>" by Anders Pearson.
+

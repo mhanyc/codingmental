@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+
+<h1 class="primary-title"><a href="/{{ .Data.Plural }}/">{{title .Data.Singular}}</a>: {{.Title}}</h1>
+
+{{ range .Data.Pages }}
+{{ .Render "summary" }}
+{{ end }}
+
+
+{{ partial "footer.html" . }}

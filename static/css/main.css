@@ -227,16 +227,12 @@ header.container {
     padding-right: 0;
 }
 
-.recent-entry {
+.recent-entry,
+.topics-index  {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 20px;
-}
-
-article.topics {
-    padding-top: 0;
-    padding-bottom: 10px;
 }
 
 .recent-entry .entry-date {
@@ -245,20 +241,20 @@ article.topics {
 }
 
 .recent-entry .entry-title,
-.topics .item-title {
+.topics-index .item-title {
 	font: 400 16px/120% 'Montserrat', sans-serif;
 	text-align: left;
     display: block;
 }
 
 .recent-entry .entry-title a .entry-link,
-.topics .item-title a .item-link {
+.topics-index .item-title a .item-link {
     display: none;
     width: 20px;
 }
 
 .recent-entry .entry-title a:hover .entry-link,
-.topics .item-title a:hover .item-link {
+.topics-index .item-title a:hover .item-link {
     display: block;
     margin-left: -20px;
     float: left;
@@ -272,7 +268,7 @@ article.topics {
 }
 
 .recent-entry .entry-summary,
-.topics .item-summary {
+.topics-index .item-summary {
 	font: 400 12px/150% 'Open Sans', sans-serif;
     display: block;
     padding-top: 10px;
@@ -303,6 +299,15 @@ hr.front-page {
 
 #maincontent:focus {
     outline: 0;
+}
+
+#primary-title {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 34px;
+    line-height: 110%;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 #page-title {
@@ -463,6 +468,25 @@ hr.front-page {
 
 #interaction-links img {
     width: 20px;
+}
+
+.indices {
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.indices .pagination {
+    margin-bottom: 0;
+}
+
+.indices .pagination>.disabled>a {
+    color: #ccc;
+}
+
+.indices .pagination>.active>a {
+    background-color: #9c9;
+    border-color: #9c9;
 }
 
 /* Footer ------------------------------ */
@@ -667,13 +691,10 @@ div.interactive-placeholder {
         padding-left: 20px;
         padding-right: 0;
     }
-    .recent-entry {
+    .recent-entry,
+    .topics-index {
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    article.topics {
         padding-top: 0;
         padding-bottom: 0;
     }
