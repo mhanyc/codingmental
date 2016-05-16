@@ -1,12 +1,14 @@
 {{partial "header.html" .}}
+
 <h1 id="primary-title">Topic: {{.Title}}</h2>
-<p><span class="text-danger">This is from _default/section.html</span></p>
 
 {{ $paginator := .Paginate .Data.Pages }}
 
 {{ range $paginator.Pages }}
 {{ .Render "summary" }}
 {{ end }}
-{{ template "_internal/pagination.html" . }}
+
+{{partial "pagination.html" .}}
+
 
 {{partial "footer.html" .}}

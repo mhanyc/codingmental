@@ -284,8 +284,34 @@ hr.front-page {
     margin: 50px 0;
 }
 
-.centered-text {
-    text-align: center;
+.summary {
+    margin-bottom: 30px;
+}
+
+.summary .entry-title {
+	margin: 0;
+	padding: 0;
+	font: 400 18px/140% 'Montserrat', sans-serif;
+}
+
+.summary .entry-byline {
+	margin: 0;
+	padding: 0;
+	font: 400 16px/140% 'Montserrat', sans-serif;
+}
+
+.summary .entry-date {
+	font: 400 14px/20px 'Montserrat', sans-serif;
+}
+
+.summary .entry-summary {
+    margin-top: 10px;
+}
+
+.summary .other-info {
+	font: 400 14px/20px 'Montserrat', sans-serif;
+    margin: 0;
+    color: #000;
 }
 
 /* Main content ------------------------------ */
@@ -340,7 +366,7 @@ hr.front-page {
 }
 
 .entry-layout .entry-title {
-	font: 700 26px/100% 'Montserrat', sans-serif;
+	font: 700 26px/120% 'Montserrat', sans-serif;
 	text-align: center;
     display: block;
     margin: 20px 0;

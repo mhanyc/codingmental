@@ -1,13 +1,14 @@
 {{ partial "header.html" . }}
 
-<p><span class="text-danger">This is from layout/taxonomy/tag.html</span></p>
+<h1 id="primary-title"><a href="/{{ .Data.Plural }}/">{{title .Data.Singular}}</a>: {{.Title}}</h1>
 
+{{ $paginator := .Paginate .Data.Pages }}
 
-<h2><a href="/{{ .Data.Plural }}/">{{title .Data.Singular}}</a>: {{.Title}}</h2>
-
-{{ range .Data.Pages }}
+{{ range $paginator.Pages }}
 {{ .Render "summary" }}
 {{ end }}
 
+{{partial "pagination.html" .}}
 
-{{ partial "footer.html" . }}
+
+{{partial "footer.html" .}}
