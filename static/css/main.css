@@ -377,7 +377,8 @@ hr.front-page {
     padding-right: 10px;
 }
 
-.entry-layout .entry-content p {
+.entry-layout .entry-content p,
+.singlepage-content p {
     margin-bottom: 1em;
 }
 
