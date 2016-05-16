@@ -47,7 +47,6 @@
        -moz-border-radius: 50%;
             border-radius: 50%;
     vertical-align: middle;
-    outline: 0;
     cursor: pointer;
     background: #ff8585 url('/img/icon-clearclose.png') center center no-repeat;
 }
