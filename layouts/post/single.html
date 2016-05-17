@@ -1,9 +1,10 @@
 {{partial "header.html" .}}
+{{partial "header-print.html" .}}
 
 <div class="row">
     <div class="col-md-9">
-    <article class="entry-layout" itemscope itemtype="https://schema.org/BlogPosting">
-        <header>
+    <article class="entry-layout hentry" itemscope itemtype="https://schema.org/BlogPosting">
+        <header class="entry-header">
             {{ if .Params.poster }}
             <figure>
                 <img src="{{ .Site.BaseURL }}img/assets/{{ .Params.poster }}" alt="" itemprop="image">
@@ -26,7 +27,7 @@
                 </div>
             </div>
 
-            <div class="socmedia-share clearfix">
+            <div class="socmedia-share hidden-print clearfix">
                 <h4>Share<span class="sr-only"> this article on</span>:</h4>
                 <ul class="clearfix">
                     <li><span><a rel="nofollow" class="share-window" href="http://www.facebook.com/share.php?u={{.Permalink}}&title={{.Title}}"><img src="{{ .Site.BaseURL }}img/icon-facebook.png" alt="Facebook" /></a></span></li>
@@ -40,14 +41,19 @@
         
         <div class="entry-content" itemprop="articleBody">
             {{ .Content }}
-            <div class="bookend">
+            <div class="bookend hidden-print">
                 <span class="glyphicon glyphicon-menu-left" role=""></span><span class="glyphicon glyphicon-cog"></span><span class="glyphicon glyphicon-menu-right"></span>
                 <span class="sr-only">End of article.</span>
             </div>
         </div>
+        <div class="visible-print-block">
+        <hr />
+        {{ .Permalink }}
+        <hr />
+        </div>
     </article>
     </div>
-    <div class="col-md-3 sidenav" role="complementary">
+    <div class="col-md-3 sidenav hidden-print" role="complementary">
         {{partial "topic_list.html" .}}        
     </div>
 </div>
