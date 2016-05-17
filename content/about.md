@@ -24,5 +24,6 @@ Our project teams are passionate about Columbia’s mission and maintain a playf
 
 Our team, as well as most of our projects are accessible, responsive and open. You can follow our reflections on the technical aspects of the Center’s work here in [CompilED](..) and on [Github](http://github.com/ccnmtl).
 
-CompilED is built with [Hugo](https://gohugo.io/) by [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/) and [Anders Pearson](http://ctl.columbia.edu/about/team/pearson/). The artwork for the banner is "<i>[Revisionism](https://myopica.org/oil/revisionism/)</i>" by Anders Pearson.
+CompilED is built with [Hugo](https://gohugo.io/) and [Bootstrap](http://getbootstrap.com/) by [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/) and [Anders Pearson](http://ctl.columbia.edu/about/team/pearson/). The artwork for the banner is "<i>[Revisionism](https://myopica.org/oil/revisionism/)</i>" by Anders Pearson.
 
+Unless otherwise noted, the content on this blog is licensed under a [Creative Commons Attribution-ShareAlike 3.0 United States](http://creativecommons.org/licenses/by-sa/3.0/us/) license.
