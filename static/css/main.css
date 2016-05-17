@@ -731,7 +731,13 @@ div.interactive-placeholder {
     }
 }
 
-@media (min-width: 1200px) {
+@media print {
+    .video-display {
+        display: none;
+    }
+    .print-header {
+        margin: 0 0 1em 0;
+    }
 }
 
 

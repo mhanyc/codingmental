@@ -1,4 +1,4 @@
-<header role="banner" class="container {{ if .IsHome }}front-page-banner{{ else }}page-banner{{ end }}" id="headcontainer">
+<header role="banner" class="container {{ if .IsHome }}front-page-banner{{ else }}page-banner{{ end }} hidden-print" id="headcontainer">
 <a id="skippy" class="sr-only sr-only-focusable" href="#maincontent"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
     {{ if .IsHome }}
     <h1 id="front-page-logo"><img src="{{ .Site.BaseURL }}img/banner-front-logo.png" role="presentation" alt="" itemprop="primaryImageOfPage" /><span class="sr-only" itemprop="name">CompilED:</span><span id="tagline">And Often Interpreted</span></h1>
