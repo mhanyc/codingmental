@@ -2,6 +2,7 @@
 author_name: "Schuyler Duveen"
 author_url: "https://github.com/schuyler1d/"
 date: "2010-01-05"
+lede: "Gource is a fun tool that takes your source repository, and outputs a video showing your developers as little gnomes dancing around the source tree building the program. I think it’s a great visualization to demonstrate to the less technical members of our organization and the world, what a programmer does on a daily basis."
 topics: 
 - Reviews
 tags: ["gource", "millenniumvillage", "mondrian", "svn", "visualization", "worth"]
