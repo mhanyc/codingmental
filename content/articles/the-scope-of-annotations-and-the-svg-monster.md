@@ -2,6 +2,7 @@
 author_name: "Schuyler Duveen"
 author_url: "https://github.com/schuyler1d/"
 date: "2011-04-06"
+lede: "I just came back from the Open Annotation Collaboration (OAC) workshop, working to develop a standard format for annotations on images, video, text and other resources.The group's current work is on the right track--there are two parts to any annotation: the 'constraint' which is the part of a resource we're focusing on, and the 'body' which is the metadata describing details of that constrained section of the resource."
 topics: 
 - Events
 tags: ["annotations", "digital humanities", "mediathread", "svg"]
