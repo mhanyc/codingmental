@@ -17,10 +17,10 @@
                 {{.Title}}
             </h1>
             <div class="entry-other-info">
-                By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="{{.Params.author_url}}"><span itemprop="name">{{.Params.author_name}}</span></a></span>
+                By <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="{{.Params.author_url}}"><span itemprop="name" class="fn">{{.Params.author_name}}</span></a></span>
                 
                 |
-                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}' itemprop="datePublished">{{ .Date.Format "Jan 2, 2006" }}</time>
+                <time class="entry-date published" datetime='{{ .Date.Format "2006-01-02"  }}' itemprop="datePublished">{{ .Date.Format "Jan 2, 2006" }}</time>
                 <div class="entry-keywords">
                 <h4>Tags:</h4> 
                 {{ range $i, $e := .Params.tags }}{{if $i}},{{end}} <a href="/tags/{{ . | urlize | lower}}/" rel="tag"><span itemprop="keywords">{{$e}}</span></a>{{ end }}                
