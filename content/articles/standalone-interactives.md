@@ -64,7 +64,7 @@ npm and Webpack do not dictate a standard package structure. [After a little res
 [Anders](http://ctl.columbia.edu/about/team/pearson/), a senior developer here, composed Makefiles for our Django projects. I wanted to do the same here for consistency. The pack's [Makefile](https://github.com/ccnmtl/supportservices-pack/blob/master/Makefile) can build the bundle, run the dev server and publish the project. Per our team's standards, jshint and jscs are also run.
 
 ### Static Data
-Many of our interactives rely on a database for static data. That data is usually fetched directly from the server and loaded into a Backbone collection. To replicate this flow, I generated a json file via Django's dumpdata method. The json file was then loaded into the Backbone collection.
+Many of our interactives rely on a database for static data. That data is usually fetched directly from the server and loaded into a Backbone collection. To replicate this flow, I generated a json file via Django's [dumpdata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#dumpdata) method. The json file was then loaded into the Backbone collection.
 
 ## Summary
 The interactive migration coalesced into a [published package](https://www.npmjs.com/package/supportservices-pack) with minimal pain. Our long-term goal is to create an interactives gallery to allow our work to be reviewed and embedded. For now, I'm on to a [more complex interactive migration](https://github.com/ccnmtl/dentalvisitactivity-pack) to validate this approach.
