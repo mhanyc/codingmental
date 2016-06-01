@@ -1,10 +1,9 @@
 ---
 author_name: "Susan Dreher"
 author_url: http://ctl.columbia.edu/about/team/dreher/
-date: 2016-05-31T12:16:55+01:00
-draft: true
-lede: ""
-poster: filename
+date: 2016-05-31
+lede: "At CTL, client-side interactives enrich many of our serial-learning web applications. These discrete Javascript blocks challenge students with quizzes, animations, case studies, calculators and games. Many of our interactives carry enough context to stand on their own statelessly. We recently explored ways to package these interactives for wider distribution."
+poster: poster-webpack.jpg
 tags: ["javascript", "html5", "testing"]
 title: Packaging Javascript Interactives 
 topics:
