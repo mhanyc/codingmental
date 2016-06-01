@@ -21,10 +21,10 @@
                 
                 |
                 <time class="entry-date published" datetime='{{ .Date.Format "2006-01-02"  }}' itemprop="datePublished">{{ .Date.Format "Jan 2, 2006" }}</time>
-                <div class="entry-keywords">
+                {{ if .Params.tags }}<div class="entry-keywords">
                 <h4>Tags:</h4> 
                 {{ range $i, $e := .Params.tags }}{{if $i}},{{end}} <a href="/tags/{{ . | urlize | lower}}/" rel="tag"><span itemprop="keywords">{{$e}}</span></a>{{ end }}                
-                </div>
+                </div>{{ end }}
             </div>
 
             <div class="socmedia-share hidden-print clearfix">
