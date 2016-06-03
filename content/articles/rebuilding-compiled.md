@@ -107,7 +107,7 @@ More will be written soon about what I've learned in making sites for access and
 
 Hugo, similar to Movable Type v4.x,  doesn't come with a seach functionality. We could have set up a Google custom site search like we did in the old CompilED, but, according to Anders, "that would've limited our ability to customize the display and integration of search results and there would always be a delay between changes to content being made and Google re-indexing the site."
 
-Anders implemented [lunr.js](http://lunrjs.com), client-side full text and faceted search engine. lunr.js loads a JSON file containing all of the content for the entire site and running the search algorithm directly in the browser rather than back on a server. At the moment, the scale of content in CompilED is small enough for us to use lunr.js.
+Anders implemented [lunr.js](http://lunrjs.com), client-side full text and faceted search engine. lunr.js loads a JSON file containing all of the content for the entire site and runs the search algorithm directly in the browser rather than back on a server. At the moment, the scale of content in CompilED is small enough for us to use lunr.js.
 
 The content in CompilED is [highly structured](https://developers.google.com/search/docs/guides/intro-structured-data) using the [schema.org](http://schema.org) vocabulary, so that it can be recognized, organized and displayed accordingly by seach engines. Social media sharing of articles is markedly improved also in the new site.
 
