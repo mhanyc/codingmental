@@ -447,6 +447,17 @@ hr.front-page {
     padding: 10px 0 0 0;
 }
 
+.entry-layout .entry-content figcaption {
+    margin: 10px 0 40px;
+	font: 400 12px/120% 'Open Sans', sans-serif;
+	color: #666;
+}
+
+.entry-layout .entry-content figcaption p {
+    margin: 0;
+    padding: 0;
+}
+
 .video-display {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -661,7 +672,11 @@ div.interactive-placeholder {
     margin-top: 20px;
 }
 
+/* 404 error page */
 
+.error-not-found h1 {
+    font: 700 40px/100% 'Montserrat', sans-serif;
+}
 
 
 
@@ -669,6 +684,12 @@ div.interactive-placeholder {
 }
 
 @media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+    .poster-404 {
+        width: 330px;
+    }
 }
 
 @media (min-width: 768px) {

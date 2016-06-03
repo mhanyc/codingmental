@@ -90,47 +90,27 @@ I used the [Bootstrap framework](http://getbootstrap.com) to develop the skin. F
 
 ## Access and accessibility
 
-The older CompilED site was designed and developed with little accommodations for mobile devices or assistive technology (AT) for web accessibility. For the new CompilED, I set out to implement comprehensive responsive design, from mobile to desktop, using the [Bootstrap framework](http://getbootstrap.com).
+The older CompilED site was designed and developed with little accommodations for mobile devices or assistive technology (AT) for web accessibility. One of my goals is to make the site accessible to everyone, independent of the devices they use. For the new CompilED, I set out to implement comprehensive responsive design, from mobile to desktop, using the [Bootstrap framework](http://getbootstrap.com). 
 
 <div class="row">
 <div class="col-sm-6">{{< figure src="/img/assets/before-phone-desktop.jpg" class="text-center" alt="Article page, before (on iPhone 6)" caption="Article page, before (on iPhone 6)" >}}</div>
 <div class="col-sm-6 text-center">{{< figure src="/img/assets/after-phone-desktop.jpg" class="text-center" alt="Article page, after (on iPhone 6)" caption="Article page, after (on iPhone 6)" >}}</div>
 </div>
 
-In addition to
+In addition to this, I adhered closely to common web standards (HTML5, semantic elements) so that the site is [accessible](https://www.w3.org/standards/webdesign/accessibility) to those using assistive technologies.  While my experience in developing and designing fully accessible sites is in the early stages, I put in a good faith effort to make CompilED work with [VoiceOver](http://www.apple.com/accessibility/osx/voiceover/) for OSX and [TalkBack](https://support.google.com/accessibility/android/) for Android tablets. The site passed reasonably well when tested with WebAIM's [web accessibility evaluation tool](http://wave.webaim.org), where the errors the site encountered are from yet-to-be-improved functionalities.
 
+As always, the development and design of CompilED is an iterative process. There is a bit more to be done, for example, the search functionality has to be optimized for accessibility.
 
-http://wave.webaim.org/
-
-http://www.apple.com/accessibility/osx/voiceover/
-
-https://support.google.com/accessibility/android/
-
-https://www.readability.com/
-
-Will write more on this issue later.
+More will be written soon about what I've learned in making sites for access and accessibility.
 
 ## Structure, search, and share
 
-http://lunrjs.com/
+Hugo, similar to Movable Type v4.x,  doesn't come with a seach functionality. We could have set up a Google custom site search like we did in the old CompilED, but, according to Anders, "that would've limited our ability to customize the display and integration of search results and there would always be a delay between changes to content being made and Google re-indexing the site."
 
-https://developers.google.com/search/docs/guides/intro-structured-data
+Anders implemented [lunr.js](http://lunrjs.com), client-side full text and faceted search engine. lunr.js loads a JSON file containing all of the content for the entire site and running the search algorithm directly in the browser rather than back on a server. At the moment, the scale of content in CompilED is small enough for us to use lunr.js.
 
-http://schema.org/
+The content in CompilED is [highly structured](https://developers.google.com/search/docs/guides/intro-structured-data) using the [schema.org](http://schema.org) vocabulary, so that it can be recognized, organized and displayed accordingly by seach engines. Social media sharing of articles is markedly improved also in the new site.
 
-http://microformats.org/wiki/hnews
+## What's the deal with the kitties?
 
-Readability, printing
-
-Social media (sharing)
-
-Pellentesque nec dui id nisi volutpat fringilla nec sed magna. Aliquam non arcu quis lorem tempor hendrerit. Cras ultrices libero quis cursus finibus. Cras efficitur, orci a imperdiet sodales, magna metus interdum metus, vel ultricies ipsum metus nec urna. Morbi viverra tincidunt nunc sit amet placerat. Maecenas eget lorem vel.
-
-## More nuggets
-
-Sed est ex, euismod nec posuere a, tristique quis neque. Nulla eget dolor tortor. In ac fermentum magna. Sed tempus eros id laoreet aliquam. Vestibulum turpis enim, consequat iaculis aliquam in, tristique sed mauris. Praesent quis lectus sit amet nulla congue ultricies. Cras porta egestas libero quis porttitor. Aliquam ultricies.
-
-## A few to do
-
-Quisque lobortis eget metus sit amet elementum. Integer in leo magna. Praesent ullamcorper convallis porta. Maecenas bibendum nunc rhoncus, lobortis lectus eu, venenatis leo. Nam porttitor lorem eu mi consectetur cursus. Duis venenatis sapien ac tellus rhoncus tincidunt. In neque ante, ultrices quis tortor et, pulvinar porta nibh. Nam in.
-
+We write about educational technology and projects that are largely used on the web, that require internet access. The internet is [made of cats](https://en.wikipedia.org/wiki/Cats_and_the_Internet). It is only logical to include cats in our posts, and the [404 error page](/404.html).
