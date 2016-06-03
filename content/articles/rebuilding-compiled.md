@@ -54,7 +54,7 @@ Initially, the conversion preserved the original directory structure from Movabl
 
 This structure made it difficult for me to use the existing Hugo list of content templates, layout template assigments, and other functionality such as global pagination. It also complicated the editorial process where contributors would have to drop their posts in a topic directory and move the files around if the topic changed.
 
-To simplify content and template management, I eliminated the topic directories, and turned the topics into taxanomies that are defined in each article's front matter. Here, an article's topic can be edited, deleted, or created at anytime without moving the file between directories. All posts are now in one directory, `articles`. This is the new content structure:
+To simplify content and template management, I eliminated the topic directories, and turned the topics into taxonomies that are defined in each article's front matter. Here, an article's topic can be edited, deleted, or created at anytime without moving the file between directories. All posts are now in one directory, `articles`. This is the new content structure:
 
 ```
 .
