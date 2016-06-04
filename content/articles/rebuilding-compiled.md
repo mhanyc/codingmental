@@ -16,7 +16,7 @@ type: post
 
 Earlier in March we decided to move our previous blog to a different platform, with a fresh design in hope to breathe new life into it, and keep it going painlessly.
 
-CompilED has been online since 2009 on the erstwhile gratis and open-source [Movable Type](https://en.wikipedia.org/wiki/Movable_Type) (MT), a weblog publishing system developed by the company Six Apart. Over the years, it became increasingly difficult to upgrade and maintain the Movable Type platform in our server. When Six Apart changed its business model and terminated the open source licensing, we ceased to upgrade the platform and began looking for other options that would meet our changing requirements for static publishing tools at the Center.
+CompilED has been online since 2009 built in the erstwhile gratis and open-source [Movable Type](https://en.wikipedia.org/wiki/Movable_Type) (MT), a weblog publishing system developed by the company Six Apart. Over the years, it became increasingly difficult to upgrade and maintain the Movable Type platform in our server. When Six Apart changed its business model and terminated the open source licensing, we ceased to upgrade the platform and began looking for other options that would meet our changing requirements for static publishing tools at the Center.
 
 For the new publishing engine, we would like to: 
 
@@ -31,13 +31,13 @@ For the new publishing engine, we would like to:
 
 {{< figure src="/img/assets/hugo-logo.png" class="pull-right" alt="Hugo logo" link="http://gohugo.io" >}}
 
-Our programmer [Anders](http://ctl.columbia.edu/about/team/pearson/) has been testing and evaluating static site generators for the Center, and recommended [Hugo](http://gohugo.io) for sites that we published on Movable Type. Hugo is a general-purpose static site generator that renders HTML files as output from content files and layout templates. It doesn’t rely on a database; all the content is in simple text files with Markdown or limited HTML formatting that can be revised using any text editing tool. Hugo meets the requirements we’ve set earlier, and we’ve used it for the [Film Language Glossary](https://filmglossary.ccnmtl.columbia.edu) and the [Case Consortium](https://casestudies.ccnmtl.columbia.edu) in 2015. It seemed to be a ideal fit for CompilED, and we wanted to explore this framework's flexibility and durability.
+Our programmer [Anders](http://ctl.columbia.edu/about/team/pearson/) has been testing and evaluating static site generators for the Center, and recommended [Hugo](http://gohugo.io) for sites that we published on Movable Type. Hugo is a general-purpose static site generator that renders HTML files as output from content files and layout templates. It doesn’t rely on a database; all the content is in simple text files with Markdown or limited HTML formatting that can be revised using any text editing tool. Hugo meets the requirements we’ve set earlier, and we’ve used it for the [Film Language Glossary](https://filmglossary.ccnmtl.columbia.edu) and the [Case Consortium](https://casestudies.ccnmtl.columbia.edu) in 2015. It seemed to be an ideal fit for CompilED, and we wanted to explore this framework's flexibility and durability.
 
 Anders wrote a [Python scraper](http://docs.python-guide.org/en/latest/scenarios/scrape/) that took all the content from the previous CompilED and converted it into the formatting suited for Hugo. Then, he set up the [`compiled` repository](https://github.com/ccnmtl/compiled) on Github, as well as the continuous integration server, Jenkins, to deploy the site to staging and production. CompilED is published to and hosted on Amazon Simple Storage Service (Amazon S3).
 
 ## Architecture, theming, and skinning
 
-Initially, the conversion preserved the original directory structure from Movable Type. Each article post lived on its respective topic directory: 
+Initially, the conversion preserved the original directory structure from Movable Type. Each article post lived in its respective topic directory: 
 
 ```
 .
@@ -52,9 +52,9 @@ Initially, the conversion preserved the original directory structure from Movabl
 │   │   ├── article-post-files
 ```
 
-This structure made it difficult for me to use the existing Hugo list of content templates, layout template assigments, and other functionality such as global pagination. It also complicated the editorial process where contributors would have to drop their posts in a topic directory and move the files around if the topic changed.
+This structure made it difficult for me to use the existing Hugo list of content templates, layout template assignments, and other functionality such as global pagination. It also complicated the editorial process where contributors would have to drop their posts in a topic directory and move the files around if the topic changed.
 
-To simplify content and template management, I eliminated the topic directories, and turned the topics into taxonomies that are defined in each article's front matter. Here, an article's topic can be edited, deleted, or created at anytime without moving the file between directories. All posts are now in one directory, `articles`. This is the new content structure:
+To simplify content and template management, I eliminated the topic directories, and turned the topics into taxonomies that are defined in each article's front matter. Here, an article's topic can be edited, deleted, or created at any time without moving the file between directories. All posts are now in one directory, `articles`. This is the new content structure:
 
 ```
 .
@@ -76,7 +76,7 @@ type: post
 ---
 ```
 
-I used the [Bootstrap framework](http://getbootstrap.com) to develop the skin. For CompilED, I implemented the site design in `layouts/` instead of creating a sharable skin in `themes/`. While this will limit the reuse of the the skin in another Hugo site, converting the design into a theme for future use will not be difficult.
+I used the [Bootstrap framework](http://getbootstrap.com) to develop the skin. For CompilED, I implemented the site design in `layouts/` instead of creating a shareable skin in `themes/`. While this will limit the reuse of the the skin in another Hugo site, converting the design into a theme for future use will not be difficult.
 
 <div class="row">
 <div class="col-sm-6">{{< figure src="/img/assets/before-main-desktop.jpg" class="text-center" alt="Homepage, before (on desktop)" caption="Homepage, before (on desktop)" >}}</div>
@@ -97,7 +97,7 @@ The older CompilED site was designed and developed with little accommodations fo
 <div class="col-sm-6 text-center">{{< figure src="/img/assets/after-phone-desktop.jpg" class="text-center" alt="Article page, after (on iPhone 6)" caption="Article page, after (on iPhone 6)" >}}</div>
 </div>
 
-In addition to this, I adhered closely to common web standards (HTML5, semantic elements) so that the site is [accessible](https://www.w3.org/standards/webdesign/accessibility) to those using assistive technologies.  While my experience in developing and designing fully accessible sites is in the early stages, I put in a good faith effort to make CompilED work with [VoiceOver](http://www.apple.com/accessibility/osx/voiceover/) for OSX and [TalkBack](https://support.google.com/accessibility/android/) for Android tablets. The site passed reasonably well when tested with WebAIM's [web accessibility evaluation tool](http://wave.webaim.org), where the errors the site encountered are from yet-to-be-improved functionalities.
+In addition to this, I adhered closely to common web standards (HTML5, semantic elements) so that the site is [accessible](https://www.w3.org/standards/webdesign/accessibility) to those using assistive technologies. While my experience in developing and designing fully accessible sites is in the early stages, I put in a good faith effort to make CompilED work with [VoiceOver](http://www.apple.com/accessibility/osx/voiceover/) for OSX and [TalkBack](https://support.google.com/accessibility/android/) for Android tablets. The site passed reasonably well when tested with WebAIM's [web accessibility evaluation tool](http://wave.webaim.org), where the errors the site encountered are from yet-to-be-improved functionalities.
 
 As always, the development and design of CompilED is an iterative process. There is a bit more to be done, for example, the search functionality has to be optimized for accessibility.
 
@@ -105,11 +105,11 @@ More will be written soon about what I've learned in making sites for access and
 
 ## Structure, search, and share
 
-Hugo, similar to Movable Type v4.x,  doesn't come with a search functionality. We could have set up a Google custom site search like we did in the old CompilED, but, according to Anders, "that would've limited our ability to customize the display and integration of search results and there would always be a delay between changes to content being made and Google re-indexing the site."
+Hugo, similar to Movable Type v4.x,  doesn't come with search functionality. We could have set up a Google custom site search like we did in the old CompilED, but, according to Anders, "that would've limited our ability to customize the display and integration of search results and there would always be a delay between changes to content being made and Google re-indexing the site."
 
 Anders implemented [lunr.js](http://lunrjs.com), client-side full text and faceted search engine. lunr.js loads a JSON file containing all of the content for the entire site and runs the search algorithm directly in the browser rather than back on a server. At the moment, the scale of content in CompilED is small enough for us to use lunr.js.
 
-The content in CompilED is [highly structured](https://developers.google.com/search/docs/guides/intro-structured-data) using the [schema.org](http://schema.org) vocabulary, so that it can be recognized, organized and displayed accordingly by seach engines. Social media sharing of articles is markedly improved also in the new site.
+The content in CompilED is [highly structured](https://developers.google.com/search/docs/guides/intro-structured-data) using the [schema.org](http://schema.org) vocabulary, so that it can be recognized, organized and displayed accordingly by search engines. Social media sharing of articles is markedly improved also in the new site.
 
 ## What's the deal with the kitties?
 
