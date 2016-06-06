@@ -2,7 +2,7 @@
 [{{ range $index, $page := $posts }}{{ if $index }},{{ end }}
 {
    "url": "{{$page.RelPermalink}}",
-   "title": "{{$page.Title|safeHTML}}",
+   "title": "{{$page.Title}}",
    "author": "{{$page.Params.author_name}}",
    "date": "{{$page.Date}}",
    "content": "{{$page.PlainWords}}",
