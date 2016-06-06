@@ -5,7 +5,7 @@ date: "2011-04-05"
 topics: 
 - Process
 tags: ["deployment", "django", "process", "python"]
-title: "Python Deployment Chronicles: Preventing network access with \"pip install\""
+title: "Python Deployment Chronicles: Preventing network access with \u201Cpip install\u201D"
 type: "post"
 ---
 

@@ -5,7 +5,7 @@ date: "2012-06-24"
 topics: 
 - Events
 tags: ["django", "conference"]
-title: "DjangoCon '12 Submission - Offline and Off-Road: Django, Health and Human Rights"
+title: "DjangoCon \u201912 Submission - Offline and Off-Road: Django, Health and Human Rights"
 type: "post"
 ---
 
