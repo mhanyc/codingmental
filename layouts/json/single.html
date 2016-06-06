@@ -2,9 +2,9 @@
 [{{ range $index, $page := $posts }}{{ if $index }},{{ end }}
 {
    "url": "{{$page.RelPermalink}}",
-   "title": "{{$page.Title}}",
+   "title": "{{$page.Title|safeHTML}}",
    "author": "{{$page.Params.author_name}}",
-   "date": "{{$page.Params.date}}",
+   "date": "{{$page.Date}}",
    "content": "{{$page.PlainWords}}",
    "tags": [{{ range $ctindex, $term := $page.Params.tags }}{{ if $ctindex }}, {{ end }}"{{ $term }}"{{ end }}]
 }{{ end }}]
