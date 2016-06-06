@@ -7,7 +7,7 @@ poster: "poster-mediathread-extension.jpg"
 topics: 
 - Research and Development
 tags: ["javascript", "browser-extensions", "mediathread"]
-title: "Migrating Mediathread's Collection Bookmarklet to Browser Extensions"
+title: "Migrating Mediathread\u2019s Collection Bookmarklet to Browser Extensions"
 type: "post"
 ---
 
