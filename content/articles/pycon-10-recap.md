@@ -5,7 +5,7 @@ date: "2010-05-23"
 topics: 
 - Events
 tags: ["diversity", "dvswitch", "nosql", "pycon", "python", "video", "vistrails"]
-title: "PyCon '10 Recap"
+title: "PyCon \u201910 Recap"
 type: "post"
 ---
 

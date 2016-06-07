@@ -5,7 +5,7 @@ date: "2006-11-30"
 topics: 
 - Projects
 tags: ["n3", "python", "semantic web"]
-title: "Unit testing the law or \"how I ended up with an n3 to sql compiler\""
+title: "Unit testing the law or \u201Chow I ended up with an n3 to sql compiler\u201D"
 type: "post"
 ---
 
