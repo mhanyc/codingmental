@@ -31,7 +31,7 @@ For the new publishing engine, we would like to:
 
 {{< figure src="/img/assets/hugo-logo.png" class="pull-right" alt="Hugo logo" link="http://gohugo.io" >}}
 
-Our programmer [Anders](http://ctl.columbia.edu/about/team/pearson/) has been testing and evaluating static site generators for the Center, and recommended [Hugo](http://gohugo.io) for sites that we published on Movable Type. Hugo is a general-purpose static site generator that renders HTML files as output from content files and layout templates. It doesn’t rely on a database; all the content is in simple text files with Markdown or limited HTML formatting that can be revised using any text editing tool. Hugo meets the requirements we’ve set earlier, and we’ve used it for the [Film Language Glossary](https://filmglossary.ccnmtl.columbia.edu) and the [Case Consortium](https://casestudies.ccnmtl.columbia.edu) in 2015. It seemed to be an ideal fit for CompilED, and we wanted to explore this framework's flexibility and durability.
+[Anders](http://ctl.columbia.edu/about/team/pearson/), a senior developer at CTL, has been testing and evaluating static site generators for the Center, and recommended [Hugo](http://gohugo.io) for sites that we published on Movable Type. Hugo is a general-purpose static site generator that renders HTML files as output from content files and layout templates. It doesn’t rely on a database; all the content is in simple text files with Markdown or limited HTML formatting that can be revised using any text editing tool. Hugo meets the requirements we’ve set earlier, and we’ve used it for the [Film Language Glossary](https://filmglossary.ccnmtl.columbia.edu) and the [Case Consortium](https://casestudies.ccnmtl.columbia.edu) in 2015. It seemed to be an ideal fit for CompilED, and we wanted to explore this framework's flexibility and durability.
 
 Anders wrote a [Python scraper](http://docs.python-guide.org/en/latest/scenarios/scrape/) that took all the content from the previous CompilED and converted it into the formatting suited for Hugo. Then, he set up the [`compiled` repository](https://github.com/ccnmtl/compiled) on Github, as well as the continuous integration server, Jenkins, to deploy the site to staging and production. CompilED is published to and hosted on Amazon Simple Storage Service (Amazon S3).
 
@@ -54,7 +54,7 @@ Initially, the conversion preserved the original directory structure from Movabl
 
 This structure made it difficult for me to use the existing Hugo list of content templates, layout template assignments, and other functionality such as global pagination. It also complicated the editorial process where contributors would have to drop their posts in a topic directory and move the files around if the topic changed.
 
-To simplify content and template management, I eliminated the topic directories, and turned the topics into taxonomies that are defined in each article's front matter. Here, an article's topic can be edited, deleted, or created at any time without moving the file between directories. All posts are now in one directory, `articles`. This is the new content structure:
+To simplify content and template management, I eliminated the topic directories, and turned the topics iconto taxonomies that are defined in each article's front matter. Here, an article's topic can be edited, deleted, or created at any time without moving the file between directories. All posts are now in one directory, `articles`. This is the new content structure:
 
 ```
 .
