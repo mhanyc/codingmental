@@ -1,7 +1,7 @@
 ---
 author_name: "Jonah Bossewitch"
 author_url: http://ctl.columbia.edu/about/team/bossewitch/
-date: 2016-05-31
+date: 2016-05-15
 lede: "Revisiting Manning Marable's decade-old digital humanities project that predates the term itself."
 poster: poster-webpack.jpg
 tags: ["digitalhumanities", "malcolmx", "manningmarable"]
