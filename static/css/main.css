@@ -34,6 +34,45 @@ hr {
     border-top: 1px solid #ccc;
 }
 
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 10px 45px;
+  margin: 25px 0 20px 0;
+  position: relative;
+  
+  /*Font*/
+	font: 400 16px/150% 'Open Sans', sans-serif;
+  color: #666;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #d4e3fc;
+  border-right: 2px solid #d4e3fc;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #afc3e4;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+
 /*
 a {
     color: #39f;
