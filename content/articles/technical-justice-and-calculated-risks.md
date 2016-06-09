@@ -5,7 +5,7 @@ date: "2009-01-28"
 topics: 
 - Projects
 tags: ["python", "semantic web"]
-title: "Technical Justice & Calculated Risks"
+title: "Technical Justice \u0026 Calculated Risks"
 type: "post"
 ---
 
