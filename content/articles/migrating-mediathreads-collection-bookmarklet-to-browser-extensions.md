@@ -25,11 +25,18 @@ involves collecting images, audio, and video files from around the web
 and bringing them in to Mediathread for annotation or use in
 compositions. We accomplished this by providing a bookmarklet that
 looks for media on the user's web page and imports it into Mediathread
-when the user selects it. As web sites implement CSP mechanisms,
-there's a strong possibility of preventing external JavaScript from
-getting executed, which includes code in our bookmarklet.  We decided
-to develop browser extensions for Chrome, Firefox, and Safari to
-replace the bookmarklet. The JavaScript that runs in browser
+when the user selects it. As web sites implement CSP mechanisms, site
+developers are given the choice, often chosen, of preventing external
+JavaScript from getting executed, which disables our
+bookmarklet. Flickr, Dropbox, and GitHub have already implemented
+these mechanisms, preventing our collection bookmarklet from working
+on these sites. The issue could theoretically be fixed if each of
+these sites added Mediathread to their CSP whitelist. But that's too
+much to expect, and they would also need to add a whitelist entry for
+each Mediathread instance outside of Columbia University.
+
+We decided to develop browser extensions for Chrome, Firefox, and
+Safari to replace the bookmarklet. The JavaScript that runs in browser
 extensions is considered privileged code that can't be disabled
 outright via CSP.
 
