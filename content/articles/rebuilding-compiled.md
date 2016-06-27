@@ -1,7 +1,7 @@
 ---
 author_name: "Zarina Mustapha"
 author_url: http://ctl.columbia.edu/about/team/mustapha/
-date: 2016-06-09
+date: 2016-06-27
 lede: "We moved CompilED to Hugo, a general-purpose static site generator, to test this framework\u2019s flexibility and durability to accommodate our blog\u2019s requirements and workflow. This post outlines how we converted CompilED from Movable Type, streamlined its user experience, and optimized the site for accessibility, responsive design, and searchability."
 poster: poster-rebuilding-compiled.jpg
 tags: ["hugo","html5","accessibility","responsive design","structured data","microdata"]
@@ -26,6 +26,12 @@ For the new publishing engine, we would like to:
 - Have control over functionalities we can develop for the site,
 - Have clean codes,
 - Have a framework that is lightweight and easy to maintain or upgrade, at little or no cost.
+
+In addition to meeting these requirements, the new CompilED now:
+
+- has much more streamlined UI/UX,
+- is optimized for responsive design, readability, and accessibility,
+- is structured, searchable, and shareable.
 
 ## Conversion and infrastructure
 
@@ -68,7 +74,7 @@ Here's a snippet of an article's front matter:
 ```
 ---
 author_name: "Zarina Mustapha"
-date: 2016-05-19
+date: 2016-06-27
 title: "Rebuilding CompilED"
 topics:
 - Process
