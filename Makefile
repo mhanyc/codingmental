@@ -1,5 +1,5 @@
 STAGING_URL=https://compiled.stage.ccnmtl.columbia.edu/
-PROD_URL=https://compiled.ccnmtl.columbia.edu/
+PROD_URL=https://compiled.ctl.columbia.edu/
 STAGING_BUCKET=compiled.stage.ccnmtl.columbia.edu
 PROD_BUCKET=compiled.ctl.columbia.edu
 INTERMEDIATE_STEPS ?= make $(PUBLIC)/js/all.json
