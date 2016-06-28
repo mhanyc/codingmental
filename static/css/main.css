@@ -281,7 +281,8 @@ header.container {
 }
 
 .recent-entry .entry-title,
-.topics-index .item-title {
+.topics-index .item-title,
+.linkdump .column-title {
 	font: 400 16px/120% 'Montserrat', sans-serif;
 	text-align: left;
     display: block;
@@ -308,7 +309,8 @@ header.container {
 }
 
 .recent-entry .entry-summary,
-.topics-index .item-summary {
+.topics-index .item-summary,
+.linkdump li>a {
 	font: 400 12px/150% 'Open Sans', sans-serif;
     display: block;
     padding-top: 10px;
@@ -799,6 +801,9 @@ div.interactive-placeholder {
     }
     .second-row {
         margin-top: 30px;
+    }
+    .more-recent-entries {
+        border-right: 1px dotted #ccc;
     }
 }
 

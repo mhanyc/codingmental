@@ -1,4 +1,4 @@
-{{ range first 1 (where .Site.Pages "Type" "post") }}
+{{ range first 1 ( where ( where .Site.Pages "Type" "post" ) "Params.secondary_type" "!=" "linkdump" ) }}
 <section id="latest-entry">
     <article>
         <header class="front-page-header">
@@ -25,45 +25,62 @@
 
 <h1 class="text-center">Other recent CompilED posts</h1>
 
-<div class="row more-recent-entries">
-{{ range first 3 ( after 1 ( where .Site.Pages "Type" "post" ) ) }}
-    <div class="col-md-4">
-        <article class="recent-entry">
-            <h2 class="entry-title">
-                <a href="{{ .Permalink }}"><span class="entry-link glyphicon glyphicon-link"></span>{{ .Title }}</a>
+
+<div class="row">
+    <div class="col-md-9 more-recent-entries">
+        <div class="row">
+        {{ range first 2 ( after 1 ( where ( where .Site.Pages "Type" "post" ) "Params.secondary_type" "!=" "linkdump" ) ) }}
+            <div class="col-md-6">
+                <article class="recent-entry">
+                    <h2 class="entry-title">
+                        <a href="{{ .Permalink }}"><span class="entry-link glyphicon glyphicon-link"></span>{{ .Title }}</a>
+                    </h2>
+                    <div class="entry-byline" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        By <a itemprop="url" href="{{ .Params.author_url }}"><span itemprop="name">{{ .Params.author_name }}</span></a>
+                    </div>
+                    <div class="entry-summary">
+                        <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
+                    </div>
+                    <div class="other-info">
+                        <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic">{{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/">{{$e}}</a>{{ end }}</span>
+                    </div>
+                </article>
+            </div>
+        {{ end }}
+        </div>
+        <div class="row second-row">
+        {{ range first 2 ( after 3 ( where ( where .Site.Pages "Type" "post" ) "Params.secondary_type" "!=" "linkdump" ) ) }}
+            <div class="col-md-6">
+                <article class="recent-entry">
+                    <h2 class="entry-title">
+                        <a href="{{ .Permalink }}"><span class="entry-link glyphicon glyphicon-link"></span>{{ .Title }}</a>
+                    </h2>
+                    <div class="entry-byline" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        By <a itemprop="url" href="{{ .Params.author_url }}"><span itemprop="name">{{ .Params.author_name }}</span></a>
+                    </div>
+                    <div class="entry-summary">
+                        <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
+                    </div>
+                    <div class="other-info">
+                        <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic">{{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/">{{$e}}</a>{{ end }}</span>
+                    </div>
+                </article>
+            </div>
+        {{ end }}
+        </div>
+    </div>
+    <div class="col-md-3">
+        <article class="linkdump">
+            <h2 class="column-title">
+                Friday Linkdumps:
             </h2>
-            <div class="entry-byline" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                By <a itemprop="url" href="{{ .Params.author_url }}"><span itemprop="name">{{ .Params.author_name }}</span></a>
-            </div>
-            <div class="entry-summary">
-                <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
-            </div>
-            <div class="other-info">
-                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic">{{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/">{{$e}}</a>{{ end }}</span>
-            </div>
+            <ul class="nav">
+            {{ range (  where ( where .Site.Pages "Type" "post" ) "Params.secondary_type" "=" "linkdump" ) }}
+                <li><a href="{{ .Permalink }}">{{ replace .Title "Friday Linkdump for " "Week of " }}</a></li>
+            {{ end }}
+            </ul>
         </article>
     </div>
-{{ end }}
-</div>
-<div class="row more-recent-entries second-row">
-{{ range first 3 ( after 4 ( where .Site.Pages "Type" "post" ) ) }}
-    <div class="col-md-4">
-        <article class="recent-entry">
-            <h2 class="entry-title">
-                <a href="{{ .Permalink }}"><span class="entry-link glyphicon glyphicon-link"></span>{{ .Title }}</a>
-            </h2>
-            <div class="entry-byline" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                By <a itemprop="url" href="{{ .Params.author_url }}"><span itemprop="name">{{ .Params.author_name }}</span></a>
-            </div>
-            <div class="entry-summary">
-                <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
-            </div>
-            <div class="other-info">
-                <time class="entry-date" datetime='{{ .Date.Format "2006-01-02"  }}'>{{ .Date.Format "January 2, 2006" }}</time> in <span class="entry-topic">{{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/">{{$e}}</a>{{ end }}</span>
-            </div>
-        </article>
-    </div>
-{{ end }}
 </div>
 
 <div class="more-articles-link">
