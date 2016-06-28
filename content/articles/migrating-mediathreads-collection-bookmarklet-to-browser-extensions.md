@@ -35,6 +35,12 @@ these sites added Mediathread to their CSP whitelist. But that's too
 much to expect, and they would also need to add a whitelist entry for
 each Mediathread instance outside of Columbia University.
 
+Bookmarklets have some [history](https://en.wikipedia.org/wiki/Bookmarklet#History)
+on the web, and they've been around since the early 2000s. Sites like
+[Delicious](http://del.icio.us/) and
+[Instapaper](https://www.instapaper.com/) have used bookmarklets
+as central tools to their services.
+
 We decided to develop browser extensions for Chrome, Firefox, and
 Safari to replace the bookmarklet. The JavaScript that runs in browser
 extensions is considered privileged code that can't be disabled
