@@ -1,10 +1,9 @@
 ---
 author_name: "Anders Pearson"
 author_url: http://ctl.columbia.edu/about/team/pearson/
-date: 2016-06-10T12:58:30+01:00
-draft: true
-lede: "Notes from a talk about a promising new open source database"
-poster: filename
+date: 2016-06-10
+lede: "These are notes from a talk by Stephen Kimball about a promising new open source database. While ambitious in its priorities, it seems like CockroachDS developers have chosen a solid set of design goals and have a workable strategy for achieving them."
+poster:
 tags: ["cockroachdb", "databases", "distributed systems"]
 title: CockroachDB Talk Notes
 topics:
