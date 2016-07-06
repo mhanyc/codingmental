@@ -44,7 +44,7 @@ CockroachDB is a database that aims to nail the "4 S's":
 Once a dataset gets larger than what can easily fit on a single
 database server, traditional SQL databases become unwieldy at
 best. The most common approach is to
-[shard](https://en.wikipedia.org/wiki/Shard_(database_architecture))
+[shard](https://en.wikipedia.org/wiki/Shard_\(database_architecture\))
 the data. That allows the database to scale out horizontally but
 places a high burden on application developers and limits the types of
 queries the database can make (you can't do joins across shards on
