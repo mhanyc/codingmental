@@ -63,7 +63,7 @@ charges per CPU, so that must cost a lot).
 
 These are the problems that drove the evolution of the "NoSQL"
 ecosystem. [DynamoDB](https://aws.amazon.com/dynamodb/) from Amazon
-(and databases based its ideas like
+(and databases based on its ideas like
 [Riak](http://basho.com/products/)),
 [BigTable](https://cloud.google.com/bigtable/) at Google,
 [Cassandra](http://cassandra.apache.org/),
