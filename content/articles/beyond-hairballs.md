@@ -4,6 +4,8 @@ author_url: http://ctl.columbia.edu/about/team/bossewitch/
 date: 2016-05-15
 lede: "Revisiting Manning Marable\u2019s decade-old digital humanities project that predates the term itself."
 poster: poster-marable-malcolmx.jpg
+poster_source: mimi.candi on Flickr
+poster_sourceurl: https://www.flickr.com/photos/mimi70273/6374719323/
 tags: ["digitalhumanities", "malcolmx", "manningmarable"]
 title: Beyond Hairballs and TagClouds 
 topics:

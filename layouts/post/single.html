@@ -8,16 +8,21 @@
             {{ if .Params.poster }}
             <figure>
                 <img src="{{ .Site.BaseURL }}img/assets/{{ .Params.poster }}" alt="" itemprop="image">
+                {{ if .Params.poster_source }}
+                <figcaption class="text-right">
+                Source: <a href="{{ .Params.poster_sourceurl }}" target="_blank">{{ .Params.poster_source }}</a>
+                </figcaption>
+                {{ end }}
             </figure>
             {{ end }}
             <div class="entry-topic"><span class="sr-only">Article topic: </span>
             {{ range $i, $e := .Params.topics }}{{if $i}},{{end}} <a href="/topics/{{ . | urlize | lower}}/"><span itemprop="about">{{$e}}</span></a>{{ end }}           
             </div>
             <h1 class="entry-title" itemprop="headline">
-                {{.Title}}
+                {{ .Title }}
             </h1>
             <div class="entry-other-info">
-                By <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="{{.Params.author_url}}"><span itemprop="name" class="fn">{{.Params.author_name}}</span></a></span>
+                By <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="{{.Params.author_url}}"><span itemprop="name" class="fn">{{ .Params.author_name }}</span></a></span>
                 
                 |
                 <time class="entry-date published" datetime='{{ .Date.Format "2006-01-02"  }}' itemprop="datePublished">{{ .Date.Format "Jan 2, 2006" }}</time>

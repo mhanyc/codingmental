@@ -399,7 +399,24 @@ hr.front-page {
     display: block;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 0 auto;
+}
+
+.entry-layout figure {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.entry-layout figcaption {
+   padding: 4px;
+   font-size: 10px;
+   line-height: 10px;
+   color: #aaa;
+   font-style: italic;
+}
+
+.entry-layout figcaption a {
+   color: #aaa;
 }
 
 .entry-layout .entry-topic {
