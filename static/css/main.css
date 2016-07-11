@@ -413,6 +413,8 @@ hr.front-page {
    line-height: 10px;
    color: #aaa;
    font-style: italic;
+   max-width: 600px;
+   margin: auto;
 }
 
 .entry-layout figcaption a {
