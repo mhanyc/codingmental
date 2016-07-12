@@ -115,7 +115,7 @@ Hugo, similar to Movable Type v4.x,  doesn't come with search functionality. We 
 
 Anders implemented [lunr.js](http://lunrjs.com), client-side full text and faceted search engine. lunr.js loads a JSON file containing all of the content for the entire site and runs the search algorithm directly in the browser rather than back on a server. At the moment, the scale of content in CompilED is small enough for us to use lunr.js.
 
-The content in CompilED is [highly structured](https://developers.google.com/search/docs/guides/intro-structured-data) using the [schema.org](http://schema.org) vocabulary, so that it can be recognized, organized and displayed accordingly by search engines. Social media sharing of articles is markedly improved also in the new site.
+The content in CompilED is [highly structured](https://developers.google.com/search/docs/guides/intro-structured-data) using the [schema.org](http://schema.org) vocabulary, so that it can be recognized, organized and displayed accordingly by search engines. Social media sharing of articles is markedly improved also in the new site. This blog also provides [RSS feed](https://compiled.ctl.columbia.edu/index.xml) for readers to follow with any reader they choose.
 
 ## What's the deal with the kitties?
 
