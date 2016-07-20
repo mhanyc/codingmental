@@ -2,7 +2,6 @@
 author_name: Nik Nyby
 author_url: http://ctl.columbia.edu/about/team/nyby/
 date: 2016-07-19T13:57:15-04:00
-draft: true
 lede: "This post outlines some of the technologies involved in putting together a video juxtaposition tool for Mediathread."
 poster: filename
 poster_source: ""
