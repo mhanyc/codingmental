@@ -7,7 +7,7 @@ lede: "This post outlines some of the technologies involved in putting together 
 poster: filename
 poster_source: ""
 poster_sourceurl: ""
-tags: ["javascript", "mediathread"]
+tags: ["javascript", "mediathread", "working notes"]
 title: Overview of a React Application
 topics:
 - Research and Development
