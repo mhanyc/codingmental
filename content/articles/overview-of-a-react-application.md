@@ -3,7 +3,7 @@ author_name: Nik Nyby
 author_url: http://ctl.columbia.edu/about/team/nyby/
 date: 2016-07-19
 draft: true
-lede: "This post outlines some of the technologies involved in putting together a video juxtaposition tool for Mediathread."
+lede: "This post outlines some of the technologies involved in putting together a video juxtaposition tool for Mediathread. The primary technology I'm focusing on is React, which is a framework for building highly interactive user interfaces on the web in JavaScript."
 poster: filename
 poster_source: ""
 poster_sourceurl: ""
@@ -15,9 +15,11 @@ type: post
 ---
 
 This post outlines some of the technologies involved in putting
-together a video juxtaposition tool for Mediathread.
-
-_Explain a little bit what Reach application is for folk who have never encountered it. A short sentence or a link_
+together a video juxtaposition tool for
+[Mediathread](http://mediathread.info/).  The primary technology I'm
+focusing on is [React](https://facebook.github.io/react/), which is a
+framework for building highly interactive user interfaces on the web
+in JavaScript.
 
 Now that I've made some progress on
 [Juxtapose](https://github.com/ccnmtl/juxtapose) I wanted to review
