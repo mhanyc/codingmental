@@ -53,7 +53,7 @@ date with its state and props. `props` refers to the parameters passed
 to the component by its parent on initialization. A component doesn't
 change its own props, it just uses whatever props its parent gave it.
 The component can change its own `state`, though, using
-`this.setState()`. `state` is how your model changes over time in React
+`this.setState()`. `state` is how you model changes over time in React
 applications. There's more info in
 [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live),
 and the guideline is to identify which components depend on which
