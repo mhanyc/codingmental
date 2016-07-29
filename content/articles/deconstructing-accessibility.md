@@ -77,7 +77,7 @@ Here is the corresponding linear wireframe:
 
 A screen reader will read the page along the red path. If the user triggers the `skip` navigation, the screen reader will follow the green path.
 
-The reordering of the page elements is not the only approach that needed to be done for accessibility. Proper headings, ARIA (Accessible Rich Internet Applications) landmarks and roles are used extensively to identify these elements semantically (for instance, navigation, main content, complementary content, and footer).
+The reordering of the page elements is not the only update we introduced to improve accessibility. Proper headings, ARIA (Accessible Rich Internet Applications) landmarks and roles are used extensively to identify these elements semantically (for instance, navigation, main content, complementary content, and footer).
 
 And finally, these elements, with the new structure intact, are placed back in the original UI design using new CSS definitions and Bootstrap framework for responsiveness. This is the wireframe of the interface with the aforementioned screen reader paths.
 
