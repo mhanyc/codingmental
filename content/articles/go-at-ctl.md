@@ -3,9 +3,9 @@ author_name: "Anders Pearson"
 author_url: http://ctl.columbia.edu/about/team/pearson/
 date: 2016-08-23
 lede: "Go, a systems programming language developed and open sourced by Google, has emerged as a very important language for interesting infrastructure projects such as Docker and Prometheus. It's worth keeping a close eye on the Go community to stay updated on those kinds of projects. This post outlines how, where, and why we use Go at CTL."
-poster: 
-poster_source: ""
-poster_sourceurl: ""
+poster: poster-go-at-ctl.jpg
+poster_source: "Basil Farrow at La Carmina"
+poster_sourceurl: "http://lacarmina.com/basilfarrow/2013/01/scottish-fold-kitten-standing-up-on-hind-legs-cat-magazine-photoshoot-folded-eared-kitty-photos/"
 tags: ["golang"]
 title: Go at CTL
 topics:
