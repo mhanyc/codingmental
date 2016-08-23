@@ -643,7 +643,7 @@ only smaller chunks get stored in Cask).
 is that service on top of Cask for handling large file uploads. Cask
 is inherently inefficient if you give it very large files. It prefers
 to have lots of small files that can be more easily transferred
-between servers, etc. Multi-GB files are difficult to mvoe around or
+between servers, etc. Multi-GB files are difficult to move around or
 verify efficiently. Hakmes handles the uploading of a large file,
 splitting it into manageable chunks, uploading those chunks to Cask,
 and storing the list of chunk keys in a small database, giving the
