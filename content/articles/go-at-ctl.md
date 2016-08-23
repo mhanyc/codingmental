@@ -180,7 +180,7 @@ To summarize the strengths of Go:
   notorious for being "batteries included" but with a lot of low
   quality, crufty code that the community generally recommends against
   actually using (but that they can't seem to get rid of or clean up
-  because of backwards compatability). All the code in Go's standard
+  because of backwards compatibility). All the code in Go's standard
   library is well designed, well written, and very useful. One of the
   best ways to learn to write good, idiomatic Go code is to study the
   source in the standard library. It's surprising how much many useful
