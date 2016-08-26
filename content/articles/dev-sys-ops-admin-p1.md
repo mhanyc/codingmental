@@ -16,10 +16,10 @@ At the CTL we have about two dozen utility machines spread over 6 physical locat
 
 Deploy Studio is used to provide ‘thin’ base images for these machines.  The image consists of the base OS, a single user, and it is Salt installed.  Using a smaller image permits faster imaging.  It also decreases the complexity of the images, thus increasing their shelf-life.  Creating images is a time-consuming process, and I want to get the most out of each one.
 
-Having Salt preinstalled helps me control the machine once it’s up and running.  The use of a configuration management tool allows placing the config under version control which brings another layer of sanity to the process.  Salt is used to ensure that specific user accounts and credentials are present, and other system config like power settings and which desktop image to use.
+Having Salt preinstalled helps me control the machine once it’s up and running.  The use of a configuration management tool allows placing the config under version control which brings another layer of sanity to the process.  Salt is used to ensure that specific user accounts and credentials are present, and other system config such as power settings and which desktop image to use.
 
 Configuration management tools are really meant for servers, and so, there are some friction points when using Salt for user-oriented machines.  For example, OSX doesn’t have a package manager built in.  Because of this, Salt is used to make sure that Munki is installed by checking if its packages are present.  If not, Salt will download them and install.
 
 Munki—the third leg of the stool—is a tool specifically meant for deploying applications to OSX machines.  This allows me to push out new applications to specific or groups of machines.
 
-When a new machine is imaged, Salt and Munki do all the heavy lifting for me in a consistent and repeatable way.
+Finally, when a new machine is imaged, Salt and Munki do all the heavy lifting for me in a consistent and repeatable way.
