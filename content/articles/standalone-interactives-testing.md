@@ -3,8 +3,8 @@ author_name: "Susan Dreher"
 author_url: http://ctl.columbia.edu/about/team/dreher/
 date: 2016-08-29
 lede: ""
-poster:
-poster_source:
+poster: poster-standalone-interactives-testing.jpg
+poster_source: 
 poster_sourceurl:
 tags: ["javascript", "html5", "testing", "webpack", "mocha", "phantomjs", "chai"]
 title: Testing JavaScript Interactives 
@@ -14,10 +14,12 @@ type: post
 ---
 
 ## Background
+
 [In May](https://compiled.ctl.columbia.edu/articles/standalone-interactives/), I detailed our strategy for bundling JavaScript interactives into standard [webpacks](http://webpack.github.io/). We are now the proud authors of over [a dozen webpacks](https://github.com/search?p=1&q=org%3Accnmtl+pack&type=Repositories). The interactives embed seamlessly into our static learning modules, e.g. the [Older Adults Dresser Activity](https://pass.ctl.columbia.edu/older-adults/scenario-1/). A [gallery](https://github.com/ccnmtl/interactives) will be live soon, authored by my colleague [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/) in Hugo.
 
 ## Test, test, test
-Here at CTL, we are passionate about delivering high quality code that adheres to community standards. Our quality control arsenal includes unit tests, code reviews, static analyzers, style checkers and continuous integration. Our Django/Python projects have excellent unit test coverage.
+
+Here at CTL, we are passionate about delivering high quality code that adheres to community standards. Our quality control arsenal includes unit tests, code reviews, static analyzers, style checkers, and continuous integration. Our Django/Python projects have excellent unit test coverage.
 
 One noticeable testing gap is the JavaScript supporting our web applications. All JavaScript is subject to static code analysis ([JSHint](http://jshint.com/)) and style checks ([JSCS](http://jscs.info/)). Applications with complex client-side interactions are sometimes covered by [Selenium](http://www.seleniumhq.org/) tests. But a standard client-side testing habit has proved elusive. As part of the interactives migration effort, I wanted to settle on frameworks for unit tests and client-side tests, i.e. tests that rely on the presence of the DOM, then start writing tests.
 
@@ -72,8 +74,6 @@ Type ```npm test``` and voila. The unit tests run and the Nyan cat moves across 
 Configuring and writing a unit tests took an hour. Putting together DOM-based view tests that could run through the command line took days.
 
 The basic idea is to load a webpage, then interact and introspect the resulting DOM. Judging by the numerous blog posts and pleas for help on StackOverflow, an accepted common solution has not yet emerged. The fragmented world of JavaScript frameworks and testing tools complicates everything. Adding webpack to the mix boosts the pain. I ended up cobbling together an approach after *much* trial and error. I'm going to skip the heartache, and just review my final approach.
-
-
 
 ### Dependencies
 
@@ -229,10 +229,11 @@ forward. Good luck with your own testing efforts. I'd love to hear about any tri
 Now I have a lot more tests to write...
 
 ## Helpful Links
-[Webpack testing](https://github.com/webpack/docs/wiki/testing)  
-[Gettign started with mocha](https://medium.com/@_jh3y/getting-started-with-mocha-bfa20d403186#.7gegbbvza)  
-[Testing JavaScript with PhantomJS](http://code.tutsplus.com/tutorials/testing-javascript-with-phantomjs--net-28243)  
-[Testing jQuery with Mocha and PhantomJS](https://www.youtube.com/watch?v=ETge8HjRy5o)  
-[Testing with webpack and Mocha](https://www.youtube.com/watch?v=_sLLjPzOrXI)
+
+- [Webpack testing](https://github.com/webpack/docs/wiki/testing)  
+- [Getting started with mocha](https://medium.com/@_jh3y/getting-started-with-mocha-bfa20d403186#.7gegbbvza)  
+- [Testing JavaScript with PhantomJS](http://code.tutsplus.com/tutorials/testing-javascript-with-phantomjs--net-28243)  
+- [Testing jQuery with Mocha and PhantomJS](https://www.youtube.com/watch?v=ETge8HjRy5o)  
+- [Testing with webpack and Mocha](https://www.youtube.com/watch?v=_sLLjPzOrXI)
 
 
