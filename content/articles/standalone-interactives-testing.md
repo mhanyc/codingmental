@@ -2,7 +2,7 @@
 author_name: "Susan Dreher"
 author_url: http://ctl.columbia.edu/about/team/dreher/
 date: 2016-08-29
-lede: ""
+lede: "Here at the CTL, we are passionate about delivering high quality code that adheres to community standards. Our quality control arsenal includes unit tests, code reviews, static analyzers, style checkers, and continuous integration. Our recent adoption of webpack for JavaScript interactives required a fresh approach for unit and client-side testing complexities."
 poster: poster-standalone-interactives-testing.jpg
 poster_source: 
 poster_sourceurl:
