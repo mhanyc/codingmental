@@ -1,37 +1,37 @@
 ---
 author_name: "Susan Dreher"
 author_url: http://ctl.columbia.edu/about/team/dreher/
-date: 2016-05-31
+date: 2016-08-29
 lede: ""
 poster:
 poster_source:
 poster_sourceurl:
-tags: ["javascript", "html5", "testing"]
-title: Testing Javascript Interactives 
+tags: ["javascript", "html5", "testing", "webpack", "mocha", "phantomjs", "chai"]
+title: Testing JavaScript Interactives 
 topics:
 - Research and Development
 type: post
 ---
 
 ## Background
-[In May](https://compiled.ctl.columbia.edu/articles/standalone-interactives/), I detailed our strategy for bundling JavaScript interactives into standard [webpacks](http://webpack.github.io/). We are now the proud authors of over [a dozen webpacks](https://github.com/search?p=1&q=org%3Accnmtl+pack&type=Repositories). The interactives [embedded seamlessly](https://pass.ctl.columbia.edu/adolescents/interview-stakeholders/) into their migrated static sites. A [gallery](https://github.com/ccnmtl/interactives) will be live soon, authored by my colleague [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/).
+[In May](https://compiled.ctl.columbia.edu/articles/standalone-interactives/), I detailed our strategy for bundling JavaScript interactives into standard [webpacks](http://webpack.github.io/). We are now the proud authors of over [a dozen webpacks](https://github.com/search?p=1&q=org%3Accnmtl+pack&type=Repositories). The interactives embed seamlessly into our static learning modules, e.g. the [Older Adults Dresser Activity](https://pass.ctl.columbia.edu/older-adults/scenario-1/). A [gallery](https://github.com/ccnmtl/interactives) will be live soon, authored by my colleague [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/) in Hugo.
 
 ## Test, test, test
-Here at CTL, we are passionate about delivering high quality code that adheres to community standards. Our quality control arsenal includes unit and integration tests, code reviews, static analyzers, style checkers and continuous integration. Our Django/Python projects have excellent unit test coverage. Applications with complex client-side interactions are covered by [Selenium](http://www.seleniumhq.org/) tests.
+Here at CTL, we are passionate about delivering high quality code that adheres to community standards. Our quality control arsenal includes unit tests, code reviews, static analyzers, style checkers and continuous integration. Our Django/Python projects have excellent unit test coverage.
 
-One noticeable testing gap is the JavaScript supporting our web applications. The script is subject to static code analysis ([JSHint](http://jshint.com/)) and style checks ([JSCS](http://jscs.info/)), but a standard testing approach has proved elusive. As part of the interactives migration effort, I wanted to settle on frameworks for unit tests and client tests, i.e. tests that rely on the presence of the DOM, then start writing tests.
+One noticeable testing gap is the JavaScript supporting our web applications. All JavaScript is subject to static code analysis ([JSHint](http://jshint.com/)) and style checks ([JSCS](http://jscs.info/)). Applications with complex client-side interactions are sometimes covered by [Selenium](http://www.seleniumhq.org/) tests. But a standard client-side testing habit has proved elusive. As part of the interactives migration effort, I wanted to settle on frameworks for unit tests and client-side tests, i.e. tests that rely on the presence of the DOM, then start writing tests.
 
-*Note: I'm using the [Elder Issues Dresser](https://pass.ctl.columbia.edu/lib/elderdresser/) interactive as a demo throughout this post. This interactive was designed to convey the daily medical and social issues of older adults. This interactive uses [Backbone.js](http://backbonejs.org/) as a lightweight MVC layer. [Full code](https://github.com/ccnmtl/elderissuesdresser-pack/) is available on Github.*
+*Note: I'm using the [Older Adults Dresser Activity](https://pass.ctl.columbia.edu/lib/elderdresser/) interactive as a demo throughout this post. This interactive was designed to convey the daily medical and social issues of older adults. This interactive uses [Backbone.js](http://backbonejs.org/) as a lightweight MVC layer. [Full code](https://github.com/ccnmtl/elderissuesdresser-pack/) is available on Github.*
 
 ## Choosing a Test Framework
 JavaScript testing utilities are [proliferating](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript). Using [NPMCompare](http://npmcompare.com), I reviewed the most (currently) popular players [Jasmine](http://jasmine.github.io), [Mocha](https://mochajs.org/), [Facebook's Jest](https://facebook.github.io/jest/), [Tape](https://github.com/substack/tape) and [Karma](https://karma-runner.github.io/1.0/index.html).
 
 The [npm comparison](https://npmcompare.com/compare/jasmine,jest,karma,mocha,tape) shows Mocha as the overall leader. "Mocha has been out there for longer (since 2 years ago), it also has more daily downloads, more weekly downloads, more monthly downloads, more stars on Github, more followers on Github and more forks."
 
-A few other compelling features sealed the choice: an easy-to-read BDD style interface, asynchronous support via callback or [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and a [Nyan cat test reporter](https://mochajs.org/images/reporter-nyan.png). Mocha does require an additional assertion library, so I went with [Chai](http://chaijs.com/) for its [multiple assertion styles](http://chaijs.com/guide/styles/#differences).
+A few other compelling features sealed the choice: an easy-to-read BDD style interface, asynchronous support via callback or [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and a [Nyan cat test reporter](https://mochajs.org/images/reporter-nyan.png). Mocha does require an additional assertion library, so I went with [Chai](http://chaijs.com/) for its [versatile assertion styles](http://chaijs.com/guide/styles/#differences).
 
 ## Unit Tests
-The interactives code is generally broken up into models and views. The models are excellent test targets -- small discrete functions with no DOM requirements. Many step-by-step introductions walk through unit testing with Mocha, i.e. [here](http://mherman.org/blog/2015/09/10/testing-node-js-with-mocha-and-chai/#.V7ymoz4rJcw) and [here](@todo). I followed the pattern of creating a test directory, with a model-test.js.
+The interactives code is generally broken up into models and views. The models are excellent test targets -- small discrete functions with no DOM requirements. Many step-by-step introductions walk through unit testing with Mocha, like [here](http://mherman.org/blog/2015/09/10/testing-node-js-with-mocha-and-chai/#.V7ymoz4rJcw). I added the mocha and chai dependencies to my package.json. And, I followed the pattern of creating a test directory, with a model-test.js.
 
 ```
 project  
@@ -67,16 +67,20 @@ Type ```npm test``` and voila. The unit tests run and the Nyan cat moves across 
 
 {{< figure src="/img/assets/nyan-cat-1.png" class="text-center" alt="A screenshot of the Nyan Cat test reporter." >}}
 
-## Client tests
+## Client-side tests
 
-Writing and configuring the unit tests took an hour. Putting together DOM-based view tests that could run through the command line took days. The basic idea is to load a webpage, then interact and introspect the resulting DOM. Judging by the numerous blog posts and pleas for help on StackOverflow, an accepted common solution has not yet emerged. The fragmented world of Javascript frameworks, module bundlers and testing tools obviously complicates everything. Adding webpack to the mix boosts the pain. I ended up cobbling together an approach after *much* trial and error. I'm going to skip the heartache, and just review the stack and my final approach.
+Configuring and writing a unit tests took an hour. Putting together DOM-based view tests that could run through the command line took days.
+
+The basic idea is to load a webpage, then interact and introspect the resulting DOM. Judging by the numerous blog posts and pleas for help on StackOverflow, an accepted common solution has not yet emerged. The fragmented world of JavaScript frameworks and testing tools complicates everything. Adding webpack to the mix boosts the pain. I ended up cobbling together an approach after *much* trial and error. I'm going to skip the heartache, and just review my final approach.
+
+
 
 ### Dependencies
 
-You'll need a few npm packages to make this go:
-* phantomjs-prebuilt - [PhantomJS](http://phantomjs.org/) is a headless WebKit with a JavaScript API.
-* mocha-phantomjs -  [mocha-phantomjs](https://github.com/nathanboktae/mocha-phantomjs) runs on top of PhantomJS
-* jquery - for DOM manipulation.
+You'll need a few npm packages to make this happen.  
+* **phantomjs-prebuilt** - [PhantomJS](http://phantomjs.org/) is a headless WebKit with a JavaScript API. This library is essential for any tests requiring html rendering and JavaScript interaction.  
+* **mocha-phantomjs** -  [mocha-phantomjs](https://github.com/nathanboktae/mocha-phantomjs) runs on top of PhantomJS to translate tests to webpage interaction.  
+* **jquery** - for easy DOM manipulation.  
 
 ### Get started
 
@@ -128,11 +132,14 @@ project
     });
 ```
 
+
 ### Where the magic happens
 
-If you noticed, the view-test.html file includes a testBundle.js. In order for Mocha to test the webpack, all the code AND tests are bundled up, loaded and executed in the test page. Creating a testBundle just requires a bit of configuration.
+If you noticed, the `view-test.html` file includes `testBundle.js`. The webpack
+can only be tested if all the code AND tests are bundled up and loaded into the test page.
+Creating a testBundle just requires a bit of configuration.
 
-Add a [test.webpack.config.js]() that pulls in view-test.js and outputs testBundle.js.
+Add a [test.webpack.config.js](https://github.com/ccnmtl/elderissuesdresser-pack/blob/master/test/test.webpack.config.js) that pulls in view-test.js and outputs testBundle.js.
 
 ```
 module.exports = {
@@ -140,14 +147,12 @@ module.exports = {
     output: {
         filename: './testBundle.js'
     },
-    module: {
-        ...
-    }
+    ...
 };
-
 ```
 
-Update your package.json with the build directive and the test targets. I broke the unit and client tests into separate commands.
+Update your package.json with the build directive and the test targets.
+I broke the unit and client-side tests into separate commands.
 ```
 "scripts": {
     ...
@@ -161,13 +166,14 @@ Update your package.json with the build directive and the test targets. I broke 
 ### Run It
 ```npm build``` to create the bundle. ```npm test``` to run all the tests. Or, you can open ```test/view-test.html``` in a browser to see the tests run.
 
-//@todo - insert nyan cat test passing
+{{< figure src="/img/assets/nyan-cat-1.png" class="text-center" alt="A screenshot of the Nyan Cat test reporter." >}}
 
-### Not so fast...
+### Synchronicity
 
-Easy right? Well, that example was. But, the real point is to verify user interaction. 
-In this example, a user clicks a dresser item, the item displays as visited and 
-the progress bar increments. This test likely will fail.
+Easy right? Well, that example was. But, the real point is to verify user interaction not just the page render.
+
+In this example, a user clicks a dresser item and a modal appears with an item description.
+This test likely will fail.
 
 ```
 it('click candies', function() {
@@ -178,7 +184,7 @@ it('click candies', function() {
 ```
 
 Why would it fail? A click is an asynchronous event. A user clicks a button, an event is fired, a handler is executed.
-After the click, the test needs to hang out and wait a bit until the click flow completes and the modal appears. How to do that?
+After the click, the test needs to hang out and wait for the click flow to complete and the modal appear. How to do that?
 
 Long story short, I ended up just writing a little wait function based
 on the PhantomJS example [waitfor.js](https://github.com/ariya/phantomjs/blob/master/examples/waitfor.js#L15), and leveraged
@@ -223,4 +229,10 @@ forward. Good luck with your own testing efforts. I'd love to hear about any tri
 Now I have a lot more tests to write...
 
 ## Helpful Links
-[Testing JavaScript with PhantomJS](http://code.tutsplus.com/tutorials/testing-javascript-with-phantomjs--net-28243)
+[Webpack testing](https://github.com/webpack/docs/wiki/testing)  
+[Gettign started with mocha](https://medium.com/@_jh3y/getting-started-with-mocha-bfa20d403186#.7gegbbvza)  
+[Testing JavaScript with PhantomJS](http://code.tutsplus.com/tutorials/testing-javascript-with-phantomjs--net-28243)  
+[Testing jQuery with Mocha and PhantomJS](https://www.youtube.com/watch?v=ETge8HjRy5o)  
+[Testing with webpack and Mocha](https://www.youtube.com/watch?v=_sLLjPzOrXI)
+
+

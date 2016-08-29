@@ -2,24 +2,24 @@
 author_name: "Susan Dreher"
 author_url: http://ctl.columbia.edu/about/team/dreher/
 date: 2016-05-31
-lede: "At CTL, client-side interactives enrich many of our serial-learning web applications. These discrete Javascript blocks challenge students with quizzes, animations, case studies, calculators and games. Many of our interactives carry enough context to stand on their own statelessly. We recently explored ways to package these interactives for wider distribution."
+lede: "At CTL, client-side interactives enrich many of our serial-learning web applications. These discrete JavaScript blocks challenge students with quizzes, animations, case studies, calculators and games. Many of our interactives carry enough context to stand on their own statelessly. We recently explored ways to package these interactives for wider distribution."
 poster: poster-webpack.jpg
 poster_source: 10 Cats on YouTube
 poster_sourceurl: https://www.youtube.com/watch?v=hq2jVB9OGRo
 tags: ["javascript", "html5", "testing"]
-title: Packaging Javascript Interactives 
+title: Packaging JavaScript Interactives 
 topics:
 - Research and Development
 type: post
 ---
 
 ## Background
-At CTL, client-side interactives enrich many of our serial-learning web applications. These discrete Javascript blocks challenge students with quizzes, animations, case studies, calculators and games. The goal is to transform a passive reading exercise into an active learning experience. The interactives encourage students to use higher-order skills to deepen understanding and aid retention.
+At CTL, client-side interactives enrich many of our serial-learning web applications. These discrete JavaScript blocks challenge students with quizzes, animations, case studies, calculators and games. The goal is to transform a passive reading exercise into an active learning experience. The interactives encourage students to use higher-order skills to deepen understanding and aid retention.
 
-Our in-house content management tool [Pagetree](https://github.com/ccnmtl/django-pagetree) provides the framework for our interactives. The Javascript blocks hook into the content hierarchy using well-known patterns. The Pagetree infrastructure is a powerful and cost-effective approach when user data must be collected and analyzed. But, many of our interactives carry enough context to stand on their own statelessly. Our clients often want to make this class of content available in blogs, wikis and social media. Our developers began exploring a way to make this happen years ago, but failed to find a reasonable solution. I was recently re-tasked with finding a way to make this happen.
+Our in-house content management tool [Pagetree](https://github.com/ccnmtl/django-pagetree) provides the framework for our interactives. The JavaScript blocks hook into the content hierarchy using well-known patterns. The Pagetree infrastructure is a powerful and cost-effective approach when user data must be collected and analyzed. But, many of our interactives carry enough context to stand on their own statelessly. Our clients often want to make this class of content available in blogs, wikis and social media. Our developers began exploring a way to make this happen years ago, but failed to find a reasonable solution. I was recently re-tasked with finding a way to make this happen.
 
 ## Research
-Luckily, we're now not the only ones who want to organize, share and reuse Javascript code. Javascript build and release tools have matured and proliferated. [npm](https://npmjs.org) organizes code into packages, and offers a [repository](http://npmjs.org) for those packages. On install, npm downloads the package code and its dependencies. [Webpack](http://webpack.github.io/) is a module bundler that can package both scripts and other assets such as stylesheets and images. [Browserify](http://browserify.org/), [Require.js](http://requirejs.org/), [jspm.io](http://jspm.io/), [rollup.js](http://rollupjs.org/) are similar module bundlers. The [Web Components standard](http://webcomponents.org/presentations/web-components-the-future-is-here/) offers a way "to create reusable web components that include both HTML and JavaScript." The choices are now overwhelming. Here are just a few comparisons to review: [1](http://www.slant.co/topics/1089/compare/~webpack_vs_browserify_vs_requirejs), [2](https://webpack.github.io/docs/comparison.html), [3](https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9#.142du03jv).
+Luckily, we're now not the only ones who want to organize, share and reuse JavaScript code. JavaScript build and release tools have matured and proliferated. [npm](https://npmjs.org) organizes code into packages, and offers a [repository](http://npmjs.org) for those packages. On install, npm downloads the package code and its dependencies. [Webpack](http://webpack.github.io/) is a module bundler that can package both scripts and other assets such as stylesheets and images. [Browserify](http://browserify.org/), [Require.js](http://requirejs.org/), [jspm.io](http://jspm.io/), [rollup.js](http://rollupjs.org/) are similar module bundlers. The [Web Components standard](http://webcomponents.org/presentations/web-components-the-future-is-here/) offers a way "to create reusable web components that include both HTML and JavaScript." The choices are now overwhelming. Here are just a few comparisons to review: [1](http://www.slant.co/topics/1089/compare/~webpack_vs_browserify_vs_requirejs), [2](https://webpack.github.io/docs/comparison.html), [3](https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9#.142du03jv).
 
 In considering the options, I decided the Webpack module bundler was the best fit due to these winning features:
 
