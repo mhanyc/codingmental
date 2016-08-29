@@ -1,3 +1,5 @@
+/* global lunr: true, console: true */
+
 var index = lunr(function() {
     this.field('url');
     this.field('title', {boost: 10});
