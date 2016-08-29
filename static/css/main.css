@@ -477,6 +477,10 @@ hr.front-page {
     margin-bottom: 1em;
 }
 
+.entry-layout:first-child .entry-content h2:first-child {
+    margin-top: 0;
+}
+
 .entry-layout .entry-content h2 {
     margin: 2em 0 .8em 0;
     padding: 0;
