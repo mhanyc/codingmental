@@ -1,6 +1,6 @@
 ---
 date: 2016-08-30T12:04:38-04:00
-title: "CTL Software Developer Team"
+title: "CompilED Authors"
 lede: "CompilED is a collection of reflections and comments by the software developers at Columbia's Center for Teaching and Learning (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome."
 ---
 
