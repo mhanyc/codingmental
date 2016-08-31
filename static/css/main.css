@@ -606,6 +606,24 @@ hr.front-page {
     border-color: #9c9;
 }
 
+.bio-author {
+	margin-bottom: 40px;
+}
+
+.bio-author h2 {
+	font-size: 18px;
+	margin: 10px 0 5px 0;
+	padding: 0;
+}
+
+.bio-photo {
+	margin-right: 20px;
+}
+
+.bio-photo img {
+	width: 120px;
+}
+
 /* Footer ------------------------------ */
 
 footer {

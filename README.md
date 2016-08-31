@@ -2,7 +2,7 @@
 
 **URL:** https://compiled.ctl.columbia.edu
 
-CompilED is a collection of reflections and comments by the software developers at Columbia's [Center for Teaching and Learning](http://ctl.columbia.edu) (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome.
+CompilED is a collection of reflections and comments by the [software developers](https://compiled.ctl.columbia.edu/authors/) at Columbia's [Center for Teaching and Learning](http://ctl.columbia.edu) (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome.
 
 ## Overview
 
