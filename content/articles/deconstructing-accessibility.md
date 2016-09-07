@@ -18,11 +18,11 @@ This summer, we migrated two of our Dental School projects, [MATCH](https://matc
 
 With openness and sustainability come interesting challenges such as responsiveness and improving the sites' accessibility. We have committed ourselves to good faith effort in striving for comparable compliance to [Section 508 Accessibility Program](https://www.section508.gov/), and in making sure that both sites perform well on all devices including assistive technologies. 
 
-Both MATCH and PASS have the same code base, architecture, and user interface. This it what Pagetree-MATCH (and Pagetree-PASS) looks like:
+Both MATCH and PASS have the same code base, architecture, and user interface. This is what Pagetree-MATCH (and Pagetree-PASS) looks like:
 
 {{< figure src="/img/assets/match-screenshot.jpg" class="text-center" alt="A screenshot of Pagetree-MATCH web page." >}}
 
-The UI is relatively straightforward. Each content page has a standard banner and footer, a chapter navigation (`sidenav`) on the left, and a main content body that occupies the bulk of the page. Below is a simplified wireframe to encapsulate the layout.
+The UI is relatively straightforward. Each content page has a standard banner and footer, a chapter navigation on the left (`sidenav`), and a main content body that occupies the bulk of the page. Below is a simplified wireframe to encapsulate the layout.
 
 {{< figure src="/img/assets/match-layout.jpg" class="text-center" alt="A simplified wireframe to encapsulate the page layout." >}}
 
@@ -42,7 +42,7 @@ Pagetree-MATCH and its source code are neither responsive nor accessibility-comp
 <partner logo 2>
 ```
 
-The `sidenav` appears before the `main content` because it is a simple `div` that floats to the left. The source code yields the UI above and the form matches the its visual function. User can browse around the site with little obstruction.
+The `sidenav` appears before the `main content` because it is a simple `div` that floats to the left. The source code produces the UI above and the form matches the visual function. Users can browse around the site with little obstruction.
 
 However, VoiceOver reads the site in a linear flow as indicated by the red path:
 
@@ -50,7 +50,7 @@ However, VoiceOver reads the site in a linear flow as indicated by the red path:
 
 This flow is not an efficient outcome for a screen reader. The user will have to listen through the banner elements (`project logo 1`, `logo 2`, `module title`) and every item on the `sidenav` before reaching the main content.
 
-So, we have to evaluate what the roles of each element are for the users, and we have to look at the page from the screen reader’s perspective. The most important portion on the page is content, which consists of the `page title` and `main content`. The `previous`-`next` navigation is also necessary for the users to connect sequentially to the chapters the site. The banner elements on the top of the page (logos, module title) is useful for branding and identification. The `sidenav` that contains the links to all the chapters in the module, while convenient for navigation, is auxiliary.
+So, we have to evaluate what the roles of each element are for the users, and we have to look at the page from the screen reader’s perspective. The most important portion on the page is content, which consists of the `page title` and `main content`. The `previous`-`next` navigation is also necessary for the users to connect sequentially to the chapters of the module. The banner elements on the top of the page (logos, module title) are useful for branding and identification. The `sidenav` that links to the chapters in the module, while convenient for navigation, is auxiliary.
 
 The elements of the page must be deconstructed and rearranged linearly as "heard" by the screen reader. The ideal flow path for the page should be a short trip through the banner elements, to the `page title` and `main content`. The complementary `sidenav` can appear later in the structure. To further help the users get to the main content quickly, a `skip to content` (or `skip`) link is placed at the top of the page. It is interesting to note that this arrangement accommodates the layout design for smartphones as well.
 
