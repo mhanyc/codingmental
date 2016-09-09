@@ -2,7 +2,6 @@
 author_name: "Zarina Mustapha"
 author_url: http://ctl.columbia.edu/about/team/mustapha/
 date: 2016-09-09
-draft: true
 lede: "This summer, we revisited client-side interactives that we built for online learning web applications, and bundled them using Webpack as JavaScript packages for open and wider distribution. We are proud to announce that we now have a portfolio site to showcase about a dozen standalone interactives that we've authored."
 poster: poster-interactives-at-ctl.jpg
 poster_source: ""
