@@ -9,7 +9,7 @@ title: "Google geo hackathon"
 type: "post"
 ---
 
-<p><a href="http://ctl.columbia.edu/about/team/bossewitch/">Jonah</a> told me he had a spare ticket to yesterday's <a href="http://googlegeodevelopers.blogspot.com/2009/02/google-new-york-city-geo-apis-hackathon.html">geo <span class="caps">API </span>hackathon</a> at the <a href="http://maps.google.com/?q=Google%20New%20York%4040.741962%2C-74.004624&amp;hl=en">Google headquarters</a> last Thursday afternoon. I'd long been curious to see the fabled interior of the New York Googleplex, and the event also offered a chance to catch up with how <span class="caps">NYC </span>developers have been using with geospatial data. New York is, after all, a location-obsessed town.</p>
+<p><a href="http://alchemicalmusings.org/about/">Jonah</a> told me he had a spare ticket to yesterday's <a href="http://googlegeodevelopers.blogspot.com/2009/02/google-new-york-city-geo-apis-hackathon.html">geo <span class="caps">API </span>hackathon</a> at the <a href="http://maps.google.com/?q=Google%20New%20York%4040.741962%2C-74.004624&amp;hl=en">Google headquarters</a> last Thursday afternoon. I'd long been curious to see the fabled interior of the New York Googleplex, and the event also offered a chance to catch up with how <span class="caps">NYC </span>developers have been using with geospatial data. New York is, after all, a location-obsessed town.</p>
 
 <!--more-->
 

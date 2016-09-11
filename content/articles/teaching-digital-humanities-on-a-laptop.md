@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
+author_url: "http://alchemicalmusings.org/about/"
 date: "2014-07-23"
 lede: "This summer Graham Sack, a doctoral student in the English department is teaching an introductory course in Digital Humanities called ''Computational Methods for Literary and Cultural Criticism''. Together with CCNMTL, Graham developed a cutting edge approach, using a web-based programming environment called IPython Notebook, to teach programing to novices."
 poster: "book-computer.jpg"
