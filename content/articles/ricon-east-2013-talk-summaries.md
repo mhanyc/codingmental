@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
+author_url: "http://alchemicalmusings.org/about/"
 date: "2013-06-30"
 lede: "Back in May, Anders attended the Ricon East, \"a distributed systems conference by and for engineers, developers, scientists and architects\". The distributed data-store Riak was featured prominently at the conference but the event was intended more as a conference on distributed systems in general spanning academia and industry."
 topics: 

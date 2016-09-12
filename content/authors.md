@@ -6,11 +6,11 @@ lede: "CompilED is a collection of reflections and comments by the software deve
 
 <div class="row">
 	<div class="col-sm-6 clearfix bio-author">
-		{{< figure src="/img/authors/bossewitch.png" class="pull-left bio-photo clearfix" alt="Jonah Bossewitch" link="http://ctl.columbia.edu/about/team/bossewitch/" >}}
+		{{< figure src="/img/authors/bossewitch.png" class="pull-left bio-photo clearfix" alt="Jonah Bossewitch" link="http://alchemicalmusings.org/about/" >}}
 		<h2>Jonah Bossewitch</h2>
-		<p>Associate Director, Software Development<br />
-		jonahb@columbia.edu<br />
-		<a href="http://ctl.columbia.edu/about/team/bossewitch/" target="_blank">Biography</a></p>
+		<p>Guest contributor<br />Former Associate Director<br />
+		jonah@bossewitch.net<br />
+		<a href="http://alchemicalmusings.org/about/" target="_blank">Biography</a></p>
 	</div>
 	<div class="col-sm-6 clearfix bio-author">
 		{{< figure src="/img/authors/buonincontri.png" class="pull-left bio-photo clearfix" alt="Hugo logo" link="http://ctl.columbia.edu/about/team/buonincontri/" >}}

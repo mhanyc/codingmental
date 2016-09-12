@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: http://ctl.columbia.edu/about/team/bossewitch/
+author_url: "http://alchemicalmusings.org/about/"
 date: 2016-05-15
 lede: "Revisiting Manning Marable\u2019s decade-old digital humanities project that predates the term itself."
 poster: poster-marable-malcolmx.jpg

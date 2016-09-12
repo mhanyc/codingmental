@@ -1,6 +1,6 @@
 ---
 author_name: "Jonah Bossewitch"
-author_url: "http://ctl.columbia.edu/about/team/bossewitch/"
+author_url: "http://alchemicalmusings.org/about/"
 date: "2010-06-30"
 topics: 
 - Events
