@@ -9,7 +9,7 @@ lede: "CompilED is a collection of reflections and comments by the software deve
 		{{< figure src="/img/authors/bossewitch.png" class="pull-left bio-photo clearfix" alt="Jonah Bossewitch" link="http://alchemicalmusings.org/about/" >}}
 		<h2>Jonah Bossewitch</h2>
 		<p>Guest contributor<br />Former Associate Director<br />
-		jonahb@columbia.edu<br />
+		jonah@bossewitch.net<br />
 		<a href="http://alchemicalmusings.org/about/" target="_blank">Biography</a></p>
 	</div>
 	<div class="col-sm-6 clearfix bio-author">
