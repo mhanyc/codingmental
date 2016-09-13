@@ -861,6 +861,10 @@ div.interactive-placeholder {
     .print-header {
         margin: 0 0 1em 0;
     }
+    .entry-layout header img {
+        width: 600px;
+        margin: 0 auto 0 auto;
+    }
 }
 
 
