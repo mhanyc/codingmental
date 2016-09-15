@@ -163,9 +163,8 @@ The dream of collaboration remains an intriguing and often elusive promise of
 networked technologies. For my swan song at Columbia, Mark Phillipson and I
 co-presented on digital collaboration at the graduate student orientation:
 
-<div class="video-display embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="https://docs.google.com/a/columbia.edu/presentation/d/1axKuweiyc_TlK3NBYdZIoj0gTQI4PkcZ6Mpkqpqicf8/embed?start=false&loop=false&delayms=3000" allowfullscreen></iframe></div><p class="visible-print-block">
-[Slides:](https://docs.google.com/a/columbia.edu/presentation/d/1axKuweiyc_TlK3NBYdZIoj0gTQI4PkcZ6Mpkqpqicf8/embed?start=false&loop=false&delayms=3000)</p>
-
+<div class="video-display embed-responsive embed-responsive-4by3"><iframe src="https://docs.google.com/presentation/d/1w_RBPyemOmsD1qe_iZGnqIR_SgFOWtFPpYaF1ifZwUU/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+[Slides:](https://docs.google.com/presentation/d/1w_RBPyemOmsD1qe_iZGnqIR_SgFOWtFPpYaF1ifZwUU/edit?usp=sharing)</p>
 
 We recounted many ways that we’ve collaborated over the years, around documents
 authoring, wikis, and project management tools. The talk made me realize how
