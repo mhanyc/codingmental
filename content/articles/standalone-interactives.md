@@ -70,4 +70,4 @@ Many of our interactives rely on a database for static data. That data is usuall
 ## Summary
 The interactive migration coalesced into a [published package](https://www.npmjs.com/package/supportservices-pack) with minimal pain. Our long-term goal is to create an interactives gallery to allow our work to be reviewed and embedded. For now, I'm on to a [more complex interactive migration](https://github.com/ccnmtl/dentalvisitactivity-pack) to validate this approach.
 
-Look for a second post on composing and running unit tests and browser tests for a Webpack.
+Look for a [second post](/articles/standalone-interactives-testing/) on composing and running unit tests and browser tests for a Webpack.
