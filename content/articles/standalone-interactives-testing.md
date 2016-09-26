@@ -15,7 +15,7 @@ type: post
 
 ## Background
 
-[In May](https://compiled.ctl.columbia.edu/articles/standalone-interactives/), I detailed our strategy for bundling JavaScript interactives into standard [webpacks](http://webpack.github.io/). We are now the proud authors of over [a dozen webpacks](https://github.com/search?p=1&q=org%3Accnmtl+pack&type=Repositories). The interactives embed seamlessly into our static learning modules, e.g. the [Older Adults Dresser Activity](https://pass.ctl.columbia.edu/older-adults/scenario-1/). A [gallery](https://interactives.ctl.columbia.edu/), authored by my colleague [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/), in set up in Hugo.
+[In May](/articles/standalone-interactives/), I detailed our strategy for bundling JavaScript interactives into standard [webpacks](http://webpack.github.io/). We are now the proud authors of over [a dozen webpacks](https://github.com/search?p=1&q=org%3Accnmtl+pack&type=Repositories). The interactives embed seamlessly into our static learning modules, e.g. the [Older Adults Dresser Activity](https://pass.ctl.columbia.edu/older-adults/scenario-1/). A [gallery](https://interactives.ctl.columbia.edu/), authored by my colleague [Zarina Mustapha](http://ctl.columbia.edu/about/team/mustapha/), in set up in Hugo.
 
 ## Test, test, test
 
