@@ -2,7 +2,6 @@
 author_name: "Zarina Mustapha"
 author_url: http://ctl.columbia.edu/about/team/mustapha/
 date: 2016-10-04T12:15:58-04:00
-draft: true
 lede: "In second part of a the MATCH and PASS sustainability summary, we outline the solutions and development of the migration process, from framework choices for the sites to packaging JavaScript interactives."
 poster: poster-match-pass02.jpg
 poster_source: 10 Cats on YouTube
