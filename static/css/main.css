@@ -267,6 +267,10 @@ header.container {
     padding-right: 0;
 }
 
+.grey-border img {
+    border: 1px solid #ddd;
+}
+
 .recent-entry,
 .topics-index  {
     padding-left: 0;
