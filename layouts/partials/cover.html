@@ -12,7 +12,7 @@
             </div>
         </header>
         <div class="entry-summary">
-            <p class="text-center">{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
+            <p>{{ if .Params.lede }}{{ .Params.lede }}{{ else }}{{ .Summary  }}{{ end }}</p>
         </div>
         <div class="entry-more-link">
             <a href="{{.Permalink}}">Read more<span class="glyphicon glyphicon-chevron-right" role="presentation"></span></a>
