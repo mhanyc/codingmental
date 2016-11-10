@@ -2,7 +2,7 @@
 author_name: "Anders Pearson"
 author_url: http://ctl.columbia.edu/about/team/pearson/
 date: 2016-10-24
-lede: "In the quest for high quality, high reliability, and rapid development, one of the most powerful tools available to software developers is the automated test. A smoke test is a test that is designed to run within the actual production environment to help verify that both the production environment itself and the software's integration into that environment are functioning properly."
+lede: "At CTL, we've been using smoketest for several years now. It is a standard part of our stack now and has helped us prevent numerous issues from making it to production as well as simplified and sped up the identification and fixing of production environment issues."
 poster: 
 poster_source: ""
 poster_sourceurl: ""
