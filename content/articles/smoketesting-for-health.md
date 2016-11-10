@@ -1,10 +1,9 @@
 ---
 author_name: "Anders Pearson"
 author_url: http://ctl.columbia.edu/about/team/pearson/
-date: 2016-10-24T13:51:53+01:00
-draft: true
-lede: "Closing the testing gap in production"
-poster: filename
+date: 2016-10-24
+lede: "In the quest for high quality, high reliability, and rapid development, one of the most powerful tools available to software developers is the automated test. A smoke test is a test that is designed to run within the actual production environment to help verify that both the production environment itself and the software's integration into that environment are functioning properly."
+poster: 
 poster_source: ""
 poster_sourceurl: ""
 tags: ["testing", "django", "smoketests", "devops"]
