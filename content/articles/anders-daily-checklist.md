@@ -146,7 +146,7 @@ the trickier it can get to fix.
 So, I load the dashboard on our Jenkins server and just very quickly
 check that every build is in a healthy state, so everyone will be able
 to hit the ground running when they start their day. As a side effect,
-this also ensure that the Jenkins server is healthy and available.
+this also ensures that the Jenkins server is healthy and available.
 
 ### 6. Are there any urgent emails in my INBOX?
 
