@@ -239,13 +239,13 @@ important things to tackle.
 
 On non-workdays, I often run through an abbreviated version of the
 checklist, up through item #6. Again, since I'm not offically on-call,
-I'm under no obligation to do that, but if I'm the computer anyway, I
-don't mind spending a couple minutes basically just checking that
+I'm under no obligation to do that, but if I'm at the computer anyway,
+I don't mind spending a couple minutes basically just checking that
 nothing is on fire. I also find that it's easier to build and maintain
 a habit if I do it every single day.
 
 That's my current checklist. I've modified it a few times, removing
-less useful items and adding new items and I will continue to do that
+less useful items and adding new items and, I will continue to do that
 as our systems and team changes. It only takes five or ten minutes
 each morning, which isn't much of a burden, and I feel like it does a
 good job of setting me up for the rest of the day.
