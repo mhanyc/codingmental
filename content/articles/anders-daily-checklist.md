@@ -2,9 +2,8 @@
 author_name: "Anders Pearson"
 author_url: http://ctl.columbia.edu/about/team/pearson/
 date: 2016-12-01T17:26:02Z
-draft: true
-lede: "How I use a daily checklist"
-poster: filename
+lede: "How I use a daily checklist."
+poster: 
 poster_source: ""
 poster_sourceurl: ""
 tags: ["checklists", "devops"]
