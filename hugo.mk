@@ -11,6 +11,11 @@ runserver:
 	&& $(INTERMEDIATE_STEPS) \
 	&& $(HUGO) server --watch $(DRAFT_FLAGS) --pluralizeListTitles=false
 
+docker-compose-runserver:
+	$(HUGO) $(DRAFT_FLAGS) \
+	&& $(INTERMEDIATE_STEPS) \
+	&& $(HUGO) server --watch $(DRAFT_FLAGS) --pluralizeListTitles=false --bind=0.0.0.0
+
 deploy-stage:
 	rm -rf $(PUBLIC)/*
 	$(HUGO) $(PROD_FLAGS) -b '$(STAGING_URL)'  --pluralizeListTitles=false \
