@@ -48,12 +48,12 @@ matter what, just delete the response in question if it's there, and
 make a new one." Sounds reasonable, right? I thought I was programming
 cautiously and defensively here.
 
-Sentry recently alerted us of an IntegrityError triggered in the
+[Sentry](https://sentry.io) recently alerted us of an `IntegrityError` triggered in the
 except stanza of this code. I did some debugging, trying to come up
 with a unit test that reproduced this error. That's when I found that
 the except part of this code was always being used, because the method
 I wanted to call is [update_or_create()](https://docs.djangoproject.com/en/1.10/ref/models/querysets/#update-or-create),
-and there is no create_or_update() in Django. Back then I was more
+and there is no `create_or_update()` in Django. Back then I was more
 used to Rails than Django, so that explains the mistake. And this
 would have been quickly caught by my unit tests if it wasn't inside a
 try/except block that was hiding all exceptions.
