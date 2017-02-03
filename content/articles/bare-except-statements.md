@@ -9,7 +9,7 @@ poster_sourceurl: ""
 tags: ["python"]
 title: A reminder not to use bare except statements in Python
 topics:
-- Research and Development
+- Process
 type: post
 ---
 
