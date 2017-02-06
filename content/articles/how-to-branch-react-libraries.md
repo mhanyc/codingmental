@@ -3,11 +3,11 @@ author_name: "Nik Nyby"
 author_url: http://ctl.columbia.edu/about/team/nyby/
 date: 2017-02-03
 lede: "When I've found it necessary to make changes to the npm libraries I'm using in React, the process isn't well-documented and I've found some guidelines through trial and error."
-poster:
+poster: poster-react-branch.jpg
 poster_source: ""
 poster_sourceurl: ""
 tags: ["javascript", "react"]
-title: How to branch React libraries
+title: How to Branch React Libraries
 topics:
 - Research and Development
 type: post
