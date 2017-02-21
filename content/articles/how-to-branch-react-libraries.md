@@ -40,8 +40,25 @@ So any time my dependencies get installed, we go through each forked
 library's custom build process. I've found this pattern to be reliable
 so far.
 
-I'll admit that this configuration seems a little redundant. I'm
+I'll admit that this configuration seems a little ad hoc. I'm
 expecting things to change, either as the inevitable pace of
 JavaScript/node.js progress sweeps along, or as I learn more about the
 npm ecosystem. For example, could this be simpler if I was using yarn
 instead of npm?
+
+If your build is still failing, you might also need to give the
+library's `.npmignore` file some attention. Library authors tend to add
+the library's source directory to their `.npmignore` because it's not
+necessary to distribute the sources when using pre-built dist
+files. I've made the choice to build these libraries along with the
+package that's using them, but you could just as well pre-build the
+distribution files and commit the compiled code. I like to leave that
+step up to the library authors, though, and it also creates unwieldy
+diffs.
+
+In react-player I have to remove `src` and `webpack.config.*.js` from its
+`.npmignore`, and in react-grid-layout I've had to remove the `lib`
+directory. Again, these are ad hoc solutions to a problem that's not
+yet fully solved. The npm team gives a good overview of the state of
+things, at least, as it was in 2014, in their blog post:
+[npm and front-end packaging](http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging).
