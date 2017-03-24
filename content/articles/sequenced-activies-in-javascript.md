@@ -27,8 +27,8 @@ across different systems as possible.
 Our intervention consists of a series of videos with some text and
 interactive activities interspersed throughout. Because it's so
 video-centric, we've been wondering whether an ePub makes sense for
-this experience. One advantage of using ePub is the navigation
-controls that are provided automatically by the ePub reader, which
+this experience. One advantage of using ePub is that the navigation
+controls are provided automatically by the ePub reader, which
 we'd otherwise need to design ourselves in an HTML5 application.
 
 We're envisioning each interactive in this experience as sort of an
