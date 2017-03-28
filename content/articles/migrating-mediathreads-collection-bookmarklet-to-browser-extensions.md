@@ -53,7 +53,7 @@ scripts. [Chrome](https://developer.chrome.com/extensions/content_scripts),
 [Firefox](https://developer.mozilla.org/en-US/Add-ons/SDK/Guides/Content_Scripts),
 and
 [Safari](https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/InjectingScripts/InjectingScripts.html)
-all have a mechanisms for content scripts. Safari calls them injected
+all have mechanisms for content scripts. Safari calls them injected
 scripts. Because content scripts have access to the DOM, just like the
 old bookmarklet code expects, I was able to adapt the existing
 codebase to an "extension-compatible" version, and our three Mediathread
