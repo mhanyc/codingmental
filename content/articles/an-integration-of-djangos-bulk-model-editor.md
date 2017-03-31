@@ -2,7 +2,7 @@
 author_name: "Nik Nyby"
 author_url: http://ctl.columbia.edu/about/team/nyby/
 date: 2017-03-31
-draft: true
+draft: false
 lede: "We needed bulk editing in our project management tool, and this post outlines how we've taken advantage of some of Django's built-in functionality to achieve this."
 poster: ""
 poster_source: ""
