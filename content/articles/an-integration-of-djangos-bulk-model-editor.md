@@ -13,10 +13,11 @@ topics:
 - Research and Development
 type: post
 ---
-The Django project maintains a
-[web application](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/) for
-managing models in your Django database. They've included bulk editing
-functionality for operating on multiple models at once, like this:
+Django's
+[admin interface](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/) provides
+an excellent and well-maintained UI for managing models in your Django
+database. They've included bulk editing functionality for operating on
+multiple models at once, like this:
 
 ![Screenshot of Django's bulk admin editor](/img/bulkedit-screen1.png)
 
