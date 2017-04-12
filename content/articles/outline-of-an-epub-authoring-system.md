@@ -1,8 +1,7 @@
 ---
 author_name: "Nik Nyby"
 author_url: http://ctl.columbia.edu/about/team/nyby/
-date: 2017-04-07
-draft: true
+date: 2017-04-12
 lede: "I mentioned in a previous post that we're working on interactive e-book for the Women on the Road to Health project. Here I'll outline a simple system for authoring ePub 3 content."
 poster: 
 poster_source: ""
