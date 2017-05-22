@@ -111,7 +111,7 @@ From here out, I just want to make some clarifications and suggest some improvem
 One thing that caught me by surprise was that Salt uses a single Vault entry to store all the data for the external pillar rather than making use of the hierarchical path structure that Vault provides.
 You can set up multiple external pillars by adding additional `- vault: vault_config path=secret/salt/pillar_data` lines to the config and changing the path.
 This is particularly useful if different groups of admins might be responsible for different areas and you want to be able to further segregate and limit access.
-Adding those requires changing the Salt config and restarting the Salt master each time, so you probably don't want to have to explictly configure different paths for every secret that Vault is storing.
+Adding those requires changing the Salt config and restarting the Salt master each time, so you probably don't want to have to explicitly configure different paths for every secret that Vault is storing.
 From the Salt side, it's much more convenient to let it use one or two paths for everything.
 
 That gets annoying from the Vault side though.
@@ -125,7 +125,7 @@ Editing the `pillar_data` entry involves writing the data out to a JSON file, ex
 	$ vault write secret/salt/pillar_data @data.json
 
 JSON is not exactly a friendly format for editing by hand.
-It's way too easy to mess it up and it can be very difficult to see the structurewhen there are more than a few entries.
+It's way too easy to mess it up and it can be very difficult to see the structure when there are more than a few entries.
 Vault can output data in YAML format, which is much nicer to work with, but can't read it back in as YAML.
 You need an extra conversion step.
 I worry that if that's the process admins have to go through every time they want to add a credential to the pillar data, they'll eventually start taking shortcuts and we'll end up with those secrets winding up in unencrypted pillars or state definitions.
@@ -175,7 +175,7 @@ local:
     Failed to load ext_pillar vault: [Errno 111] Connection refused
 ```
 
-Interestingly, `saltutil.refresh_pillar` didn't explictly through an error, but it did result in an entry in the salt master log:
+Interestingly, `saltutil.refresh_pillar` didn't explicitly throw an error, but it did result in an entry in the salt master log:
 
 ```
 2017-05-18 04:51:21,824 [salt.pillar      ][CRITICAL][22506] Pillar render error: Failed to load ext_pillar vault: [Errno 111] Connection refused
@@ -205,7 +205,7 @@ local:
     Failed to load ext_pillar vault: HTTP 503: Service Unavailable
 ```
 
-Unsealing Vault immediately fixed the issues without requring any other action.
+Unsealing Vault immediately fixed the issues without requiring any other action.
 
 I also verified that the Salt master could be started even if Vault was down or sealed (ie, it doesn't attempt to connect to Vault when it starts up; we don't have to be too careful about starting them in a particular order).
 
