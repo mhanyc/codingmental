@@ -23,7 +23,7 @@ At a very high level, you can think of Salt states as functions and the pillar d
 It's already a best practice to keep the states and pillar data in separate git repos and to keep sensitive data out of the state definitions.
 Even if the pillar repo isn't any more secure than the states repo, that simplifies basic tasks like changing passwords or rotating credentials.
 
-But, we still end up with the pillar repo containing more sensitive information unencrypted in one location than we were really comfortable with.
+But, we still ended up with the pillar repo containing more sensitive information unencrypted in one location than we were really comfortable with.
 
 The solution we've come up with for this is using Hashicorp's [Vault](https://www.vaultproject.io/) as an "external pillar" for Salt.
 They rhyme, so they *must* work well together, right?
