@@ -11,6 +11,7 @@ node{
     }
     stage('Deploy blog'){
         withAWS(credentials:'mha-jenkins', region:'us-east-1'){
+            s3Delete(file:'', bucket:'codingmental', path:'')
             s3Upload(file:'public', bucket:'codingmental', path:'')
         }
     }
