@@ -1,4 +1,7 @@
 node{
+    stage('Remove old workspace data'){
+        deleteDir()
+    }
     stage('Clone source'){
         git url: 'http://github.com/mhanyc/codingmental.git'
     }
