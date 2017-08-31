@@ -3,7 +3,7 @@ node{
         deleteDir()
     }
     stage('Clone source'){
-        git url: 'http://github.com/mhanyc/codingmental.git' branch: 'nhess'
+        git(url: 'http://github.com/mhanyc/codingmental.git', branch: 'nhess')
     }
     stage('Build blog'){
         sh 'make'
