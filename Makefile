@@ -1,7 +1,7 @@
-STAGING_URL=https://compiled.stage.ccnmtl.columbia.edu/
-PROD_URL=https://compiled.ctl.columbia.edu/
-STAGING_BUCKET=compiled.stage.ccnmtl.columbia.edu
-PROD_BUCKET=compiled.ctl.columbia.edu
+STAGING_URL=TBD
+PROD_URL=TBD
+STAGING_BUCKET=TBD
+PROD_BUCKET=codingmental
 INTERMEDIATE_STEPS ?= make $(PUBLIC)/js/all.json
 
 JS_FILES=static/js/src
@@ -14,6 +14,6 @@ $(PUBLIC)/js/all.json: $(PUBLIC)/json/all/index.html
 	mkdir $(PUBLIC)/js/ || true
 	mv $< $@ && ./checkjson.py
 
-runserver-zarina:
+runserver-mha:
 	hugo --buildDrafts --verboseLog=true -v
-	hugo server --baseUrl=http://kodos.ccnmtl.columbia.edu/ --bind=0.0.0.0 --port=13093 --watch --buildDrafts --verboseLog=true -v
+	hugo server --baseUrl=TBD --bind=0.0.0.0 --port=13093 --watch --buildDrafts --verboseLog=true -v

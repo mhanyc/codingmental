@@ -1,7 +1,7 @@
 ---
 date: "2016-05-09T11:57:04-04:00"
-title: "About CompilED"
-lede: "CompilED is a collection of reflections and comments by the software developers at Columbia's Center for Teaching and Learning (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome."
+title: "About Coding Mental"
+lede: "Coding Mental, a blog by the tech team at MHA-NYC"
 ---
 
 CompilED is a collection of reflections and comments by the [software developers](/authors/) at Columbia's [Center for Teaching and Learning](http://ctl.columbia.edu) (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome.

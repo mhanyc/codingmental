@@ -3,7 +3,7 @@
     {{ if .IsHome }}
     <h1 id="front-page-logo"><img src="{{ .Site.BaseURL }}img/banner-front-logo.png" srcset="{{ .Site.BaseURL }}img/banner-front-logo.png 2x" role="presentation" alt="" itemprop="primaryImageOfPage" /><span class="sr-only" itemprop="name">CompilED:</span><span id="tagline">And Often Interpreted</span></h1>
     {{ else }}
-    <h1 class="sr-only"><span itemprop="name">CompilED:</span></h1>
+    <h1 class="sr-only"><span itemprop="name">Coding Mental:</span></h1>
     {{ end }}
     <nav class="navbar navbar-default" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <div class="container">
@@ -21,15 +21,14 @@
             <li {{ if eq .Title "Articles" }}class="active"{{ end }}><a itemprop="url" href="/articles/"><span itemprop="name">Articles</span></a></li>
             <li {{ if eq .Title "Topics" }}class="active"{{ end }}><a itemprop="url" href="/topics/"><span itemprop="name">Topics</span></a></li>
             <li {{ if eq .Title "Tags" }}class="active"{{ end }}><a itemprop="url" href="/tags/"><span itemprop="name">Tags</span></a></li>
-            <li {{ if eq .Title "About CompilED" }}class="active"{{ end }}><a itemprop="url" href="/about/"><span itemprop="name">About</span></a></li>
-            <li {{ if eq .Title "CompilED Authors" }}class="active"{{ end }}><a itemprop="url" href="/authors/"><span itemprop="name">Authors</span></a></li>
-            <li><a itemprop="url" href="https://interactives.ctl.columbia.edu"><span itemprop="name">Interactives</span></a></li>
+            <li {{ if eq .Title "About Coding Mental" }}class="active"{{ end }}><a itemprop="url" href="/about/"><span itemprop="name">About</span></a></li>
+            <li {{ if eq .Title "Coding Mental Authors" }}class="active"{{ end }}><a itemprop="url" href="/authors/"><span itemprop="name">Authors</span></a></li>
             <!-- <li><a itemprop="url" href="#"><span itemprop="name">Authors</span></a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
         <div class="search-wrapper">
             <form role="search">
-                <input id="q" type="text" required="" class="search-box" placeholder="Search CompilED..." />
+                <input id="q" type="text" required="" class="search-box" placeholder="Search Coding Mental" />
                 <button class="close-icon" id="clear-search" type="reset"></button>
                 <button type="submit" id="search" style="display:none;"></button>
             </form>
