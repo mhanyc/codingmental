@@ -8,7 +8,7 @@ node{
     }
     stage('Deploy blog'){
         withAWS(credentials:'mha-jenkins', region:'us-east-1'){
-            s3Upload(file:'public', bucket:'codingmental', path:'blog/')
+            s3Upload(file:'public', bucket:'codingmental', path:'/')
         }
     }
 }
