@@ -1,6 +1,6 @@
 # Coding Mental
 
-Coding Mental is a 
+Coding Mental is a tech blog contributed to and maintained by the tech team at MHA-NYC
 
 ## Overview
 

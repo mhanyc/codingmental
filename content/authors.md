@@ -23,9 +23,11 @@ lede: "Coding Mental, a blog by the tech team at MHA-NYC"
 
 <div class="row">
 	<div class="col-sm-6 clearfix bio-author">
+	<!-- TODO: Add additional contributor --> 
 	</div>
 
 	<div class="col-sm-6 clearfix bio-author">
+	<!-- TODO: Add additional contributor --> 
 	</div>
 
 </div>
@@ -33,9 +35,11 @@ lede: "Coding Mental, a blog by the tech team at MHA-NYC"
 
 <div class="row">
 	<div class="col-sm-6 clearfix bio-author">
+	<!-- TODO: Add additional contributor --> 
 	</div>
 
 	<div class="col-sm-6 clearfix bio-author">
+	<!-- TODO: Add additional contributor --> 
 	</div>
 
 </div>
