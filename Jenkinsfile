@@ -43,12 +43,10 @@ node{
                 s3Upload(file:'public', bucket:'codingmental', path:'')
             }
         }
-    } catch (Exception e) {
-        echo 'CATCH: ${currentBuild.result}'
+    } catch (Throwable e) {
         currentBuild.result = 'FAILURE'
         throw e
     } finally {
-        echo 'FINALLY: ${currentBuild.result}'
         notifySlack(currentBuild.result)
     }
     
