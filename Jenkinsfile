@@ -44,9 +44,11 @@ node{
             }
         }
     } catch (e) {
+        echo 'CATCH: ${currentBuild.result}'
         currentBuild.result = 'FAILURE'
         throw e
     } finally {
+        echo 'FINALLY: ${currentBuild.result}'
         notifySlack(currentBuild.result)
     }
     
