@@ -43,7 +43,7 @@ node{
                 s3Upload(file:'public', bucket:'codingmental', path:'')
             }
         }
-    } catch (e) {
+    } catch (Exception e) {
         echo 'CATCH: ${currentBuild.result}'
         currentBuild.result = 'FAILURE'
         throw e
