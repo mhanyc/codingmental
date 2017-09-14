@@ -23,7 +23,7 @@ node{
     try {
         notifySlack()
         
-        stage('Remove old workspace data'){
+        stage('Remove any old workspace data'){
             deleteDir()
         }
         stage('Clone source'){
@@ -42,6 +42,9 @@ node{
             withAWS(credentials:'mha-jenkins_AWS', region:'us-east-1'){
                 s3Upload(file:'public', bucket:'codingmental', path:'')
             }
+        }
+        stage('Cleanup workspace'){
+            deleteDir()
         }
     } catch (Throwable e) {
         currentBuild.result = 'FAILURE'
