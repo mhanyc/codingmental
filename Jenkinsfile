@@ -25,10 +25,12 @@ def notifySlack(String buildStatus = 'STARTED', String currentStage = '') {
 }
 
 node{
+    def currentStage = ''
+    
     try {
         // Initialize curentStage, then set currentStage in each stage, so if the build fails,
         // we can post to slack which step caused the build failure
-        def currentStage = ''
+        currentStage = 'Pre-build'
 
         notifySlack()
         
