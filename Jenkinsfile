@@ -31,7 +31,6 @@ node{
         // Initialize curentStage, then set currentStage in each stage, so if the build fails,
         // we can post to slack which step caused the build failure
         currentStage = 'Pre-build'
-
         notifySlack()
         
         stage('Remove any old workspace data'){
@@ -40,7 +39,7 @@ node{
         }
         stage('Clone source'){
             currentStage = 'Clone source'
-            git(url: 'http://github.com/mhanyc/codingmental.git', branch: 'nhess')
+            git(url: 'http://github.com/mhanyc/codingmental.git', branch: 'nhess', credentials: 'mhaofnyc-admin')
         }
         stage('Build blog'){
             currentStage = 'Build blog'
