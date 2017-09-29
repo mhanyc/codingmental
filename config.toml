@@ -1,9 +1,8 @@
-baseURL = "http://compiled.ctl.columbia.edu/"
+baseURL = "http://codingmental.s3-website-us-east-1.amazonaws.com/"
 copyright = "Creative Commons Attribution-ShareAlike 3.0 United States."
-googleAnalytics = "UA-51144540-12"
 languageCode = "en-us"
 metaDataFormat = "yaml"
-title = "CompilED: And Often Interpreted"
+title = "Coding Mental"
 SectionPagesMenu = "main"
 
 [taxonomies]
@@ -11,6 +10,6 @@ SectionPagesMenu = "main"
     tag = "tags"
 
 [params]
-    description = "CompilED is a collection of reflections and comments by the software developers at Columbia's Center for Teaching and Learning (CTL). These views are rooted in our professional and personal experiences developing educational technology. This blog is directed at hackers, programmers, designers, and architects of all flavors, but everyone is welcome."
+    description = "Coding Mental, a blog by the tech team at MHA-NYC"
     keywords = ""
-    shortTitle = "CompilED"
+    shortTitle = "Coding Mental"
