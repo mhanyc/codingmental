@@ -7,8 +7,8 @@ lede: "Coding Mental, a blog by the tech team at MHA-NYC"
 <div class="row">
 	<div class="col-sm-6 clearfix bio-author">
 		{{< figure src="/img/authors/bossewitch.png" class="pull-left bio-photo clearfix" alt="Jonah Bossewitch" link="http://alchemicalmusings.org/about/" >}}
-		<h2>Jonah Bossewitch</h2>
-		<p>Director of Arcitechture & Applications<br />
+		<h2>Jonah Bossewitch, PhD</h2>
+		<p>Director of Software Arcitechture & Applications<br />
 		jonah@bossewitch.net<br />
 		<a href="http://alchemicalmusings.org/about/" target="_blank">Biography</a></p>
 	</div>
