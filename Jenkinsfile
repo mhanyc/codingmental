@@ -39,7 +39,7 @@ node{
         }
         stage('Clone source'){
             currentStage = 'Clone source'
-            git(url: 'http://github.com/mhanyc/codingmental.git', branch: 'nhess', credentials: 'mhaofnyc-admin')
+            git(url: 'http://github.com/mhanyc/codingmental.git', branch: 'master', credentials: 'mhaofnyc-admin')
         }
         stage('Build blog'){
             currentStage = 'Build blog'
