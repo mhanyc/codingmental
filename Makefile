@@ -13,10 +13,7 @@ include *.mk
 $(PUBLIC)/js/all.json: $(PUBLIC)/json/all/index.html
 	mkdir $(PUBLIC)/js/ || true
 	mv $< $@ && ./checkjson.py
-
-runserver-localhost:
-	hugo --buildDrafts --verboseLog=true -v
-	hugo server --baseUrl=http://localhost:13093/ --bind=0.0.0.0 --port=13093 --watch --buildDrafts --verboseLog=true -v
+	cp $@ static/js/all.json
 
 runserver-mha:
 	hugo --buildDrafts --verboseLog=true -v

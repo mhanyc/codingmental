@@ -11,16 +11,16 @@ runserver:
 	&& $(INTERMEDIATE_STEPS) \
 	&& $(HUGO) server --watch $(DRAFT_FLAGS) --pluralizeListTitles=false
 
-docker-compose-runserver:
-	$(HUGO) $(DRAFT_FLAGS) \
-	&& $(INTERMEDIATE_STEPS) \
-	&& $(HUGO) server --watch $(DRAFT_FLAGS) --pluralizeListTitles=false --bind=0.0.0.0
-
 deploy-stage:
 	rm -rf $(PUBLIC)/*
 	$(HUGO) $(PROD_FLAGS) -b '$(STAGING_URL)'  --pluralizeListTitles=false \
 	&& $(INTERMEDIATE_STEPS) \
 	&& $(S3CMD) $(S3_FLAGS) sync $(PUBLIC)/* s3://$(STAGING_BUCKET)/
+
+build-prod:
+	rm -rf $(PUBLIC)/*
+	$(HUGO) $(PROD_FLAGS) -b '$(PROD_URL)' --pluralizeListTitles=false \
+	&& $(INTERMEDIATE_STEPS) 
 
 deploy-prod:
 	rm -rf $(PUBLIC)/*

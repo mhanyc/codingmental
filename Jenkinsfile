@@ -44,7 +44,7 @@ node{
         stage('Build blog'){
             currentStage = 'Build blog'
             sh 'make'
-            sh 'hugo'
+            sh 'make build-prod'
         }
         stage('Empty old s3 bucket'){
             currentStage = 'Empty old s3 bucket'
