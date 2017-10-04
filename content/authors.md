@@ -32,7 +32,7 @@ lede: "Coding Mental, a blog by the tech team at MHA-NYC"
 	</div>
 	<div class="col-sm-6 clearfix bio-author">
 	<!-- TODO: Add additional contributor --> 
-	{{< figure src="/img/authors/NAME_HERE.png" class="pull-left bio-photo clearfix" alt="NAME_HERE" link="WEBSITE_HERE >}}
+	{{< figure src="/img/authors/NAME_HERE.png" class="pull-left bio-photo clearfix" alt="NAME_HERE" link="WEBSITE_HERE" >}}
 		<h2>NAME</h2>
 		<p>JOB TITLE<br />
 		EMAIL<br />
