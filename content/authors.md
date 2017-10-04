@@ -13,33 +13,48 @@ lede: "Coding Mental, a blog by the tech team at MHA-NYC"
 		<a href="http://alchemicalmusings.org/about/" target="_blank">Biography</a></p>
 	</div>
 	<div class="col-sm-6 clearfix bio-author">
-		{{< figure src="/img/authors/hess.png" class="pull-left bio-photo clearfix" alt="Hugo logo" link="www.nickhess.net" >}}
+		{{< figure src="/img/authors/hess.png" class="pull-left bio-photo clearfix" alt="Hugo logo" link="http://www.nickhess.net/about/" >}}
 		<h2>Nick Hess</h2>
 		<p>Software Developer<br />
 		nhess@mhaofnyc.org<br />
-		<a href="www.nickhess.net" target="_blank">Biography</a></p>
+		<a href="http://www.nickhess.net/about/" target="_blank">Biography</a></p>
 	</div>
 </div>
 
 <div class="row">
 	<div class="col-sm-6 clearfix bio-author">
 	<!-- TODO: Add additional contributor --> 
+	{{< figure src="/img/authors/NAME_HERE.png" class="pull-left bio-photo clearfix" alt="NAME_HERE" link="WEBSITE_HERE" >}}
+		<h2>NAME</h2>
+		<p>JOB TITLE<br />
+		EMAIL<br />
+		<a href="WEBSITE" target="_blank">Biography</a></p>
 	</div>
-
 	<div class="col-sm-6 clearfix bio-author">
 	<!-- TODO: Add additional contributor --> 
+	{{< figure src="/img/authors/NAME_HERE.png" class="pull-left bio-photo clearfix" alt="NAME_HERE" link="WEBSITE_HERE >}}
+		<h2>NAME</h2>
+		<p>JOB TITLE<br />
+		EMAIL<br />
+		<a href="WEBSITE" target="_blank">Biography</a></p> 
 	</div>
-
 </div>
-
 
 <div class="row">
 	<div class="col-sm-6 clearfix bio-author">
 	<!-- TODO: Add additional contributor --> 
+	{{< figure src="/img/authors/NAME_HERE.png" class="pull-left bio-photo clearfix" alt="NAME_HERE" link="WEBSITE_HERE" >}}
+		<h2>NAME</h2>
+		<p>JOB TITLE<br />
+		EMAIL<br />
+		<a href="WEBSITE" target="_blank">Biography</a></p>
 	</div>
-
 	<div class="col-sm-6 clearfix bio-author">
 	<!-- TODO: Add additional contributor --> 
+	{{< figure src="/img/authors/NAME_HERE.png" class="pull-left bio-photo clearfix" alt="NAME_HERE" link="WEBSITE_HERE >}}
+		<h2>NAME</h2>
+		<p>JOB TITLE<br />
+		EMAIL<br />
+		<a href="WEBSITE" target="_blank">Biography</a></p> 
 	</div>
-
 </div>
