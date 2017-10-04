@@ -1,7 +1,31 @@
 [events]
     title="Events"
-    description="Lorem ipsum events."
+    description="Thoughts, experiences, general discussion, and more regarding the various conferences and events we attend or present at. These are typically related to tech, mental health, or civic issues"
+
+[process]
+    title="Process"
+    description="Lorem Ipsum Process"
+
+[projects]
+    title="Projects"
+    description="Projects we are working on, whether it be in-house, open source, or a side project."
 
 [research-and-development]
-    title="Research & Development"
-    description="Lorem ipsum R and D."
+    title="Research and Development"
+    description="Emerging technologies and research both within the organization and in the overall tech ecosystem."
+
+[reviews]
+    title="Reviews"
+    description="Reviews of products, technologies, services, conferences, or anything else we can think of."
+
+[sysadmin]
+    title="System Administration"
+    description="All things system administration related, both bare metal and in the cloud."
+
+[user-experience]
+    title="User Experience"
+    description="UI/UX and front-end development related insights, discussion, and more."
+
+[web]
+    title="Web"
+    description="The overall internet and the technologies and entities that make it run."

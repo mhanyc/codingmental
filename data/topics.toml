@@ -1,20 +1,23 @@
 [events]
-    description="We attend conferences, meetings, meetups, workshops, summits, talks, and hackathons. Sometimes we even present at these events. And here, we share our reactions, impressions, ideas, what we've learned, and follow-ups."
+    description="Thoughts, experiences, general discussion, and more regarding the various conferences and events we attend or present at. These are typically related to tech, mental health, or civic issues"
 
 [process]
-    description="Lorem ipsum process."
+    description="Lorem Ipsum Process"
 
 [projects]
-    description="Lorem ipsum projects."
+    description="Projects we are working on, whether it be in-house, open source, or a side project"
 
 [research-and-development]
-    description="Lorem ipsum R and D."
+    description="Emerging technologies and research both within the organization and in the overall tech ecosystem"
 
 [reviews]
-    description="Lorem ipsum reviews."
+    description="Reviews of products, technologies, services, conferences, or anything else we can think of"
 
 [sysadmin]
-    description="Lorem ipsum sysadmin."
+    description="All things system administration related, both bare metal and in the cloud"
 
 [user-experience]
-    description="Lorem ipsum UI."
+    description="UI/UX and front-end development related insights, discussion, and more"
+
+[web]
+    description="The overall internet and the technologies and entities that make it run"
