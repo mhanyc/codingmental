@@ -1,4 +1,4 @@
-HUGO ?= /usr/local/bin/hugo
+HUGO ?= /usr/bin/hugo
 S3CMD ?= s3cmd
 PUBLIC ?= public
 DRAFT_FLAGS ?= --buildDrafts --verboseLog=true -v
