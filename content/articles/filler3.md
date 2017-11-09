@@ -10,6 +10,6 @@ type: "post"
 
 ---
 
-<p>Lorem Ipsum</p>
+<p>Lorem Idpsum</p>
 
 <!--more-->
